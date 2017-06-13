@@ -46,3 +46,10 @@ putCategoriaByIdR categoriaId = do
     categoria <- requireJsonBody :: Handler Categoria
     runDB $ DB.replace categoriaId categoria
     sendStatusJSON noContent204 emptyObject
+
+
+-- DELETE ----------------------------------------------------------------------
+deleteCategoriaByIdR :: CategoriaId -> Handler Value
+deleteCategoriaByIdR categoriaId = do
+    runDB $ delete categoriaId
+    sendStatusJSON noContent204 emptyObject

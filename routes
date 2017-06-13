@@ -7,5 +7,5 @@
  /buscar/autor/#Text                              BuscarAutorR                     OPTIONS GET
 
  /categoria                                       CategoriaR                       OPTIONS POST
-!/categoria/#CategoriaId                          CategoriaByIdR                   OPTIONS GET PUT
+!/categoria/#CategoriaId                          CategoriaByIdR                   OPTIONS GET PUT DELETE
  /buscar/categoria/#Text                          BuscarCategoriaR                 OPTIONS GET
