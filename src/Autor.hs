@@ -38,3 +38,11 @@ postAutorR = do
     autor   <- requireJsonBody :: Handler Autor
     autorId <- runDB $ insert autor
     sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey autorId ) ]
+
+
+-- PUT -------------------------------------------------------------------------
+putAutorByIdR :: AutorId -> Handler Value
+putAutorByIdR autorId = do
+    autor <- requireJsonBody :: Handler Autor 
+    runDB $ DB.replace autorId autor
+    sendStatusJSON noContent204 emptyObject
