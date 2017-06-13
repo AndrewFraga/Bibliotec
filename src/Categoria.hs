@@ -17,3 +17,10 @@ optionsCategoriaByIdR _ = anyOriginIn [ OPTIONS, GET, PUT, DELETE ]
 
 optionsBuscarCategoriaR :: Text -> Handler ()
 optionsBuscarCategoriaR _ = anyOriginIn [ OPTIONS, GET ]
+
+
+-- GET -------------------------------------------------------------------------
+getCategoriaByIdR :: CategoriaId -> Handler Value
+getCategoriaByIdR categoriaId = do
+    categoria <- runDB $ get404 categoriaId
+    sendStatusJSON ok200 $ object [ "resp" .= categoria ]
