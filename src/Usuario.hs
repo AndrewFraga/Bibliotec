@@ -39,3 +39,13 @@ postUsuarioR = do
     usuario   <- requireJsonBody :: Handler Usuario
     usuarioId <- runDB $ insert usuario
     sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey usuarioId ) ]
+
+-- PATCH -----------------------------------------------------------------------
+patchUsuarioByIdR :: UsuarioId -> Handler Value
+patchUsuarioByIdR usuarioId = do
+    (nome, genero, dataNascimento) <- requireJsonBody :: Handler ( Text, GeneroId, Day ) 
+    runDB $ update usuarioId [ UsuarioNome           =. nome
+                             , UsuarioGenero         =. genero
+                             , UsuarioDataNascimento =. dataNascimento
+                             ]
+    sendStatusJSON noContent204 emptyObject

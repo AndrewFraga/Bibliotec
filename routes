@@ -1,3 +1,7 @@
  /usuario                                         UsuarioR                         OPTIONS POST
 !/usuario/#UsuarioId                              UsuarioByIdR                     OPTIONS GET PATCH
  /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS GET
+ 
+ /autor                                           AutorR                           OPTIONS
+!/autor/#AutorId                                  AutorByIdR                       OPTIONS
+ /buscar/autor/#Text                              BuscarAutorR                     OPTIONS
