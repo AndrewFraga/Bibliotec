@@ -11,5 +11,5 @@
  /buscar/categoria/#Text                          BuscarCategoriaR                 OPTIONS GET
 
  /editora                                         EditoraR                         OPTIONS POST
-!/editora/#EditoraId                              EditoraByIdR                     OPTIONS GET PUT
+!/editora/#EditoraId                              EditoraByIdR                     OPTIONS GET PUT DELETE
  /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS GET

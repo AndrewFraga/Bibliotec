@@ -46,3 +46,10 @@ putEditoraByIdR editoraId = do
     editora <- requireJsonBody :: Handler Editora
     runDB $ DB.replace editoraId editora
     sendStatusJSON noContent204 emptyObject
+
+
+-- DELETE ----------------------------------------------------------------------
+deleteEditoraByIdR :: EditoraId -> Handler Value
+deleteEditoraByIdR editoraId = do
+    runDB $ delete editoraId
+    sendStatusJSON noContent204 emptyObject
