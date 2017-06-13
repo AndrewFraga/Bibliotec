@@ -38,3 +38,11 @@ postEditoraR = do
     editora   <- requireJsonBody :: Handler Editora
     editoraId <- runDB $ insert editora
     sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey editoraId ) ]
+
+
+-- PUT -------------------------------------------------------------------------
+putEditoraByIdR :: EditoraId -> Handler Value
+putEditoraByIdR editoraId = do
+    editora <- requireJsonBody :: Handler Editora
+    runDB $ DB.replace editoraId editora
+    sendStatusJSON noContent204 emptyObject
