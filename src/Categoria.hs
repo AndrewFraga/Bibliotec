@@ -24,3 +24,9 @@ getCategoriaByIdR :: CategoriaId -> Handler Value
 getCategoriaByIdR categoriaId = do
     categoria <- runDB $ get404 categoriaId
     sendStatusJSON ok200 $ object [ "resp" .= categoria ]
+
+
+getBuscarCategoriaR :: Text -> Handler Value
+getBuscarCategoriaR pesquisa = do
+    listaCategoria <- runDB $ selectList [ CategoriaNome %=. pesquisa ] []
+    sendStatusJSON ok200 $ object [ "resp" .= listaCategoria ]

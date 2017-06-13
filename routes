@@ -8,4 +8,4 @@
 
  /categoria                                       CategoriaR                       OPTIONS
 !/categoria/#CategoriaId                          CategoriaByIdR                   OPTIONS GET
- /buscar/categoria/#Text                          BuscarCategoriaR                 OPTIONS
+ /buscar/categoria/#Text                          BuscarCategoriaR                 OPTIONS GET
