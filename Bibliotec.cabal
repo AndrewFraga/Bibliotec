@@ -12,6 +12,7 @@ executable          Bibliotec
                     Funcs
                     Usuario
                     Autor
+                    Categoria
 
   ghc-options:      -Wall -fwarn-tabs -O2
   

@@ -6,5 +6,6 @@ import Yesod.Core
 
 import Usuario
 import Autor
+import Categoria
 
 mkYesodDispatch "App" resourcesApp
