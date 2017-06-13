@@ -8,6 +8,8 @@ executable          Bibliotec
   main-is:          Main.hs
   other-modules:    Application
                     Foundation
+                    
+                    Funcs
 
   ghc-options:      -Wall -fwarn-tabs -O2
   
