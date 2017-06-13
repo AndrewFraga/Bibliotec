@@ -11,3 +11,15 @@ import Database.Persist.Postgresql
 -- OPTIONS ---------------------------------------------------------------------
 optionsLoginR :: Handler ()
 optionsLoginR = anyOriginIn [ OPTIONS, POST ]
+
+
+-- POST ------------------------------------------------------------------------
+postLoginR :: Handler Value
+postLoginR = do
+    (email, senha) <- requireJsonBody :: Handler (Text, Text)
+    usuario        <- runDB $ selectFirst [ UsuarioEmail ==. email
+                                          , UsuarioSenha ==. senha
+                                          ] []
+    case usuario of
+        Nothing -> sendStatusJSON unauthorized401 emptyObject
+        Just (Entity uid _) -> sendStatusJSON ok200 (object [ "resp" .= (fromSqlKey uid) ])
