@@ -18,3 +18,24 @@ optionsUsuarioByIdR _ = anyOriginIn [ OPTIONS, GET, PATCH ]
 
 optionsBuscarUsuarioR :: Text -> Handler ()
 optionsBuscarUsuarioR _ = anyOriginIn [ OPTIONS, GET ]
+
+-- GET -------------------------------------------------------------------------
+getUsuarioByIdR :: UsuarioId -> Handler Value
+getUsuarioByIdR usuarioId = do
+    ( Usuario n e _ g d ) <- runDB $ get404 usuarioId
+    sendStatusJSON ok200 $ object [ "resp" .= Usuario n e "" g d ]
+
+
+getBuscarUsuarioR :: Text -> Handler Value
+getBuscarUsuarioR pesquisa = do
+    lu <- runDB $ selectList [ UsuarioNome %=. pesquisa ] []
+    listaUsuario <- return $ Prelude.map (\( Entity i (Usuario n e _ g d) ) -> Entity i $ Usuario n e "" g d ) lu
+    sendStatusJSON ok200 $ object [ "resp" .= listaUsuario ]
+
+
+-- POST ------------------------------------------------------------------------
+postUsuarioR :: Handler Value
+postUsuarioR = do
+    usuario   <- requireJsonBody :: Handler Usuario
+    usuarioId <- runDB $ insert usuario
+    sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey usuarioId ) ]

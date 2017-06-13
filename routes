@@ -1,3 +1,3 @@
- /usuario                                         UsuarioR                         OPTIONS
+ /usuario                                         UsuarioR                         OPTIONS POST
 !/usuario/#UsuarioId                              UsuarioByIdR                     OPTIONS GET
  /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS GET
