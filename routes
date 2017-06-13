@@ -3,5 +3,5 @@
  /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS GET
  
  /autor                                           AutorR                           OPTIONS POST
-!/autor/#AutorId                                  AutorByIdR                       OPTIONS GET PUT
+!/autor/#AutorId                                  AutorByIdR                       OPTIONS GET PUT DELETE
  /buscar/autor/#Text                              BuscarAutorR                     OPTIONS GET

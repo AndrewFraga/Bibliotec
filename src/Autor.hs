@@ -46,3 +46,10 @@ putAutorByIdR autorId = do
     autor <- requireJsonBody :: Handler Autor 
     runDB $ DB.replace autorId autor
     sendStatusJSON noContent204 emptyObject
+
+
+-- DELETE ----------------------------------------------------------------------
+deleteAutorByIdR :: AutorId -> Handler Value
+deleteAutorByIdR autorId = do
+    runDB $ delete autorId
+    sendStatusJSON noContent204 emptyObject
