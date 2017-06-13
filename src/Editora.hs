@@ -17,3 +17,10 @@ optionsEditoraByIdR _ = anyOriginIn [ OPTIONS, GET, PUT, DELETE ]
 
 optionsBuscarEditoraR :: Text -> Handler ()
 optionsBuscarEditoraR _ = anyOriginIn [ OPTIONS, GET ]
+
+
+-- GET -------------------------------------------------------------------------
+getEditoraByIdR :: EditoraId -> Handler Value
+getEditoraByIdR editoraId = do
+    editora <- runDB $ get404 editoraId
+    sendStatusJSON ok200 $ object [ "resp" .= editora ]
