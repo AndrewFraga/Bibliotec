@@ -10,6 +10,6 @@
 !/categoria/#CategoriaId                          CategoriaByIdR                   OPTIONS GET PUT DELETE
  /buscar/categoria/#Text                          BuscarCategoriaR                 OPTIONS GET
 
- /editora                                         EditoraR                         OPTIONS
+ /editora                                         EditoraR                         OPTIONS POST
 !/editora/#EditoraId                              EditoraByIdR                     OPTIONS GET
  /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS GET
