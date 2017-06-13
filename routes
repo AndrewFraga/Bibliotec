@@ -13,3 +13,5 @@
  /editora                                         EditoraR                         OPTIONS POST
 !/editora/#EditoraId                              EditoraByIdR                     OPTIONS GET PUT DELETE
  /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS GET
+ 
+ /login                                           LoginR                           OPTIONS

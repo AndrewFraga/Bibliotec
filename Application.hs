@@ -8,5 +8,6 @@ import Usuario
 import Autor
 import Categoria
 import Editora
+import Login
 
 mkYesodDispatch "App" resourcesApp
