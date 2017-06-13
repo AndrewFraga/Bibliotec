@@ -30,3 +30,11 @@ getBuscarCategoriaR :: Text -> Handler Value
 getBuscarCategoriaR pesquisa = do
     listaCategoria <- runDB $ selectList [ CategoriaNome %=. pesquisa ] []
     sendStatusJSON ok200 $ object [ "resp" .= listaCategoria ]
+
+
+-- POST ------------------------------------------------------------------------
+postCategoriaR :: Handler Value
+postCategoriaR = do
+    categoria   <- requireJsonBody :: Handler Categoria
+    categoriaId <- runDB $ insert categoria
+    sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey categoriaId ) ]

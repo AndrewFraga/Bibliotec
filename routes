@@ -6,6 +6,6 @@
 !/autor/#AutorId                                  AutorByIdR                       OPTIONS GET PUT DELETE
  /buscar/autor/#Text                              BuscarAutorR                     OPTIONS GET
 
- /categoria                                       CategoriaR                       OPTIONS
+ /categoria                                       CategoriaR                       OPTIONS POST
 !/categoria/#CategoriaId                          CategoriaByIdR                   OPTIONS GET
  /buscar/categoria/#Text                          BuscarCategoriaR                 OPTIONS GET
