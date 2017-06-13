@@ -24,3 +24,9 @@ getEditoraByIdR :: EditoraId -> Handler Value
 getEditoraByIdR editoraId = do
     editora <- runDB $ get404 editoraId
     sendStatusJSON ok200 $ object [ "resp" .= editora ]
+
+
+getBuscarEditoraR :: Text -> Handler Value
+getBuscarEditoraR pesquisa = do
+    listaEditora <- runDB $ selectList [ EditoraNome %=. pesquisa ] []
+    sendStatusJSON ok200 $ object [ "resp" .= listaEditora ]

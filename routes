@@ -12,4 +12,4 @@
 
  /editora                                         EditoraR                         OPTIONS
 !/editora/#EditoraId                              EditoraByIdR                     OPTIONS GET
- /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS
+ /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS GET
