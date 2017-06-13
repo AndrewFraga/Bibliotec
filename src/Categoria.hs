@@ -38,3 +38,11 @@ postCategoriaR = do
     categoria   <- requireJsonBody :: Handler Categoria
     categoriaId <- runDB $ insert categoria
     sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey categoriaId ) ]
+
+
+-- PUT -------------------------------------------------------------------------
+putCategoriaByIdR :: CategoriaId -> Handler Value
+putCategoriaByIdR categoriaId = do
+    categoria <- requireJsonBody :: Handler Categoria
+    runDB $ DB.replace categoriaId categoria
+    sendStatusJSON noContent204 emptyObject
