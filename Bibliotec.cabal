@@ -10,6 +10,7 @@ executable          Bibliotec
                     Foundation
                     
                     Funcs
+                    Usuario
 
   ghc-options:      -Wall -fwarn-tabs -O2
   

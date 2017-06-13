@@ -1,0 +1,3 @@
+ /usuario                                         UsuarioR                         OPTIONS
+!/usuario/#UsuarioId                              UsuarioByIdR                     OPTIONS
+ /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS
