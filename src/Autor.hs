@@ -24,3 +24,9 @@ getAutorByIdR :: AutorId -> Handler Value
 getAutorByIdR autorId = do
     autor <- runDB $ get404 autorId
     sendStatusJSON ok200 $ object [ "resp" .= autor ]
+
+
+getBuscarAutorR :: Text -> Handler Value
+getBuscarAutorR pesquisa = do
+    listaAutor <- runDB $ selectList [ AutorNome %=. pesquisa ] []
+    sendStatusJSON ok200 $ object [ "resp" .= listaAutor ]

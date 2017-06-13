@@ -4,4 +4,4 @@
  
  /autor                                           AutorR                           OPTIONS
 !/autor/#AutorId                                  AutorByIdR                       OPTIONS GET
- /buscar/autor/#Text                              BuscarAutorR                     OPTIONS
+ /buscar/autor/#Text                              BuscarAutorR                     OPTIONS GET
