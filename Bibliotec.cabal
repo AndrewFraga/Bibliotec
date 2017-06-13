@@ -15,6 +15,7 @@ executable          Bibliotec
                     Categoria
                     Editora
                     Login
+                    Imagem
 
   ghc-options:      -Wall -fwarn-tabs -O2
   
