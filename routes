@@ -3,5 +3,5 @@
  /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS GET
  
  /autor                                           AutorR                           OPTIONS
-!/autor/#AutorId                                  AutorByIdR                       OPTIONS
+!/autor/#AutorId                                  AutorByIdR                       OPTIONS GET
  /buscar/autor/#Text                              BuscarAutorR                     OPTIONS

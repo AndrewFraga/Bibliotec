@@ -17,3 +17,10 @@ optionsAutorByIdR _ = anyOriginIn [ OPTIONS, GET, PUT, DELETE ]
 
 optionsBuscarAutorR :: Text -> Handler ()
 optionsBuscarAutorR _ = anyOriginIn [ OPTIONS, GET ]
+
+
+-- GET -------------------------------------------------------------------------
+getAutorByIdR :: AutorId -> Handler Value
+getAutorByIdR autorId = do
+    autor <- runDB $ get404 autorId
+    sendStatusJSON ok200 $ object [ "resp" .= autor ]
