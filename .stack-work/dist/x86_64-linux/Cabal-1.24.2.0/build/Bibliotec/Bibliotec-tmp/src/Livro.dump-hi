@@ -1,0 +1,2972 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-13 22:11:51.14175 UTC
+
+interface main@main:Livro 8002
+  interface hash: f37892309de3c6b15bf44dd64476cd83
+  ABI hash: 08e6928351af6b9f5d723222ff33f59f
+  export-list hash: 7760517e7594daf6a5ff9bd0e340b80d
+  orphan hash: eacd7a5e54ddf319f5d5f7cfcdcb239b
+  flag hash: 9fec89afbba470e88fe791025d6433b1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Livro.deleteLivroByIdR
+  Livro.getBuscarLivroIdByAutorIdR
+  Livro.getBuscarLivroIdByCategoriaIdR
+  Livro.getBuscarLivroIdR
+  Livro.getLivroByIdR
+  Livro.getQtLivroAlugadoByIdR
+  Livro.optionsBuscarLivroIdByAutorIdR
+  Livro.optionsBuscarLivroIdByCategoriaIdR
+  Livro.optionsBuscarLivroIdR
+  Livro.optionsLivroByIdR
+  Livro.optionsLivroR
+  Livro.optionsQtLivroAlugadoByIdR
+  Livro.postLivroR
+  Livro.putLivroByIdR
+module dependencies: Foundation Funcs Imagem
+package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-5YZK4rUKxhP8OOPFhv9dCc
+                      ansi-terminal-0.6.3@ansi-terminal-0.6.3-5kYVXjMEHHrAlaHmqGutj8
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-395ZdLOcM0Y7ltaJ6rvhz2
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-CGB8BvrFgghHy5bLy0SFOg
+                      blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy
+                      blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT
+                      byteable-0.1.1@byteable-0.1.1-2lU1pexQSLj1KbNO17UifQ
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-7eVVX59t93gCl3XctAmuil
+                      cereal-0.5.4.0@cereal-0.5.4.0-BsAGxfp8yAs3CiRo2E875e
+                      cipher-aes-0.2.11@cipher-aes-0.2.11-8lsmmv0hSMmFUsxtl3lTHe
+                      clientsession-0.9.1.2@clientsession-0.9.1.2-HoXJNfRtHiHLFzVDwthBx0
+                      conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT
+                      conduit-extra-1.1.16@conduit-extra-1.1.16-3pKSUheUBpdA35UaF6p73j
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cookie-0.4.2.1@cookie-0.4.2.1-K68NuFIZ07nEstxwB6c3aL
+                      cprng-aes-0.6.1@cprng-aes-0.6.1-E65zC5gFDIyD7Ch2uJqJqU
+                      crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q
+                      crypto-cipher-types-0.0.9@crypto-cipher-types-0.0.9-FA7JbbMMbhEH27pAOVwcHg
+                      crypto-random-0.0.9@crypto-random-0.0.9-BFfNQwJ0z3LL4M2YAih4n4
+                      cryptohash-0.11.9@cryptohash-0.11.9-279ZsRS4xxhJVCdujU1Uyx
+                      cryptohash-conduit-0.1.1@cryptohash-conduit-0.1.1-gTLjZi1ugRKyEEBwuxGdf
+                      cryptonite-0.21@cryptonite-0.21-HIZBsFgX0eP4iYP6YdLd9f
+                      css-text-0.1.2.2@css-text-0.1.2.2-2s9sdW2ugVg7tdfgLJDLs4
+                      data-default-0.7.1.1@data-default-0.7.1.1-7EGYJX2YWqWJRbPFUHNoCr
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      deepseq-generics-0.2.0.0@deepseq-generics-0.2.0.0-IjS8Jfo7YCzLKpV8N96gbz
+                      directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      easy-file-0.2.1@easy-file-0.2.1-rguMBNaECxLikt4CCDx0D
+                      email-validate-2.2.0@email-validate-2.2.0-9DdJbbiWN49B1rX3M24NIP
+                      entropy-0.3.7@entropy-0.3.7-GVoReSVE1cZ4Y1pKgzhBYO
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-AASpkRsupvWAQEpNM5DQI
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-BAjxswArqb0E0N0L7J8qbL
+                      http-date-0.0.6.1@http-date-0.0.6.1-5HOvcIxha088JfGZJ7KCrN
+                      http-types-0.9.1@http-types-0.9.1-JfqUh6MfqqR8Kpp4vaoPhu
+                      http2-1.6.3@http2-1.6.3-CCNOUEIMNPCIwgKnOg84uS integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-2nctQ8abLa4F4qppuBPWFl
+                      memory-0.14.5@memory-0.14.5-1ona7ZgZyqo2N2VMnDny9U
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-31dnC2ifQ9r5TApUZagLPk
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5
+                      monad-logger-0.3.24@monad-logger-0.3.24-G9ZPf05x6VlDKMDQKzml3b
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mwc-random-0.13.6.0@mwc-random-0.13.6.0-4EKMGw6QfaJLMhRUSL730j
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-KGBP1BSKxH5GCm0LnZP04j
+                      old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
+                      parsec-3.1.11@parsec-3.1.11-113irVHGgd88sRnywByDNw
+                      path-pieces-0.2.1@path-pieces-0.2.1-7jYjtDsNHN0JfYriIYgB3j
+                      persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM
+                      persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk
+                      persistent-template-2.5.2@persistent-template-2.5.2-F8gewL25fDg4mcqDivNqUq
+                      postgresql-libpq-0.9.3.1@postgresql-libpq-0.9.3.1-PNtzTLZ1kPBlp0W2VWiJp
+                      postgresql-simple-0.5.3.0@postgresql-simple-0.5.3.0-FCW3vqCF2IgLr1Qc9KS5rO
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      psqueues-0.2.2.3@psqueues-0.2.2.3-9nDehYbroydEusqdFJopTa
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-1AOSrWwsk6kGNVrZRdikMV
+                      resourcet-1.1.9@resourcet-1.1.9-JF0GCaCqGTSEsAmsa8Gm9e
+                      safe-0.3.14@safe-0.3.14-GsbXn9D9F3BDazVNcErzdQ
+                      scientific-0.3.4.13@scientific-0.3.4.13-2xII4ZQfmEWrTXn2dbZc3
+                      securemem-0.1.9@securemem-0.1.9-7cBozdH7LYOGgrHRgd7B5b
+                      shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-JJ9zm1wZxYIARxlVa3oQgs
+                      skein-1.0.9.4@skein-1.0.9.4-1r9hT02ZzU5HeQ9SvXvQV
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-pXxQEId7Ie1SLoOLcDazB
+                      stringsearch-0.3.6.6@stringsearch-0.3.6.6-2soGORichTR6reHVhDqKip
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tagsoup-0.14.1@tagsoup-0.14.1-6d5jSu6VuYIIoyQixz5L7u
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl
+                      vault-0.3.0.7@vault-0.3.0.7-HJSJzPTOq6IJLrOGPrOio
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+                      wai-3.2.1.1@wai-3.2.1.1-DzgXwtfU2hBCOxHTusHk9u
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-8g4RZ6XBAEz2rInjcb9qxr
+                      wai-extra-3.0.19.1@wai-extra-3.0.19.1-GDgs7QP4bcBBbHxqxzRSRZ
+                      wai-logger-2.3.0@wai-logger-2.3.0-7qGm9HVnBFG4aOw1Kh4171
+                      warp-3.2.12@warp-3.2.12-8NkWJiglkAJ3KRAh2wZosZ
+                      word8-0.1.2@word8-0.1.2-9WDPGCTpW7JJnsiAQavtd1
+                      xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-LhrllhD0CUxGo6ZOE9B1nx
+                      yesod-1.4.5@yesod-1.4.5-KkuohOR46AGJaQebI2xaBn
+                      yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA
+                      yesod-form-1.4.12@yesod-form-1.4.12-4R82yM19wAsBZqBiggu31i
+                      yesod-persistent-1.4.2@yesod-persistent-1.4.2-LBApvzv570iG1mLpIiASnM
+                      yesod-static-1.5.2@yesod-static-1.5.2-Apz4aqm2LKc804P321bqFb
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q:Crypto.Classes
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
+         hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x:Data.Hashable.Generic
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.2@persistent-template-2.5.2-F8gewL25fDg4mcqDivNqUq:Database.Persist.TH
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE:Data.UnixTime.Diff
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT:Data.Conduit.Internal.Conduit
+                         conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT:Data.Conduit.Internal.Pipe
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         email-validate-2.2.0@email-validate-2.2.0-9DdJbbiWN49B1rX3M24NIP:Text.Email.Parser
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Bitmap
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Boxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Buildable
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Collection
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Element
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Keyed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Mutable
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Numerical.Subtractive
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Block.Base
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Monad
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Types.OffsetSize
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.UTF8.Base
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.ASCII7
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.ISO_8859_1
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.UTF16
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.UTF32
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.UTF8
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
+                         main@main:Foundation
+                         monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5:Control.Monad.Trans.Control
+                         monad-logger-0.3.24@monad-logger-0.3.24-G9ZPf05x6VlDKMDQKzml3b:Control.Monad.Logger
+                         mwc-random-0.13.6.0@mwc-random-0.13.6.0-4EKMGw6QfaJLMhRUSL730j:System.Random.MWC
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF:Network.URI
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistConfig
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Types.Internal
+                         persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk:Database.Persist.Postgresql
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         resourcet-1.1.9@resourcet-1.1.9-JF0GCaCqGTSEsAmsa8Gm9e:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o:Text.Internal.Css
+                         shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o:Text.Shakespeare
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal.Builder
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Class.Handler
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Types
+                         yesod-static-1.5.2@yesod-static-1.5.2-Apz4aqm2LKc804P321bqFb:Yesod.Static
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types cca8fe352d412dcafd792be797769137
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types.Internal 854bb132d6f0fbcc043a2365356b51dc
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types.ToJSON 31e13e0fbcc1628680533c9d371f5c81
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  http-types-0.9.1@http-types-0.9.1-JfqUh6MfqqR8Kpp4vaoPhu:Network.HTTP.Types.Status b1d45c624b8c67961bc811066117346d
+import  -/  Foundation 70794cf1dd7eb65f8e6012373a0d2b63
+  exports: 73ce260fae8f29eaed84fefbf1a7c209
+  AluguelDevolucao 127f4b64c9be33e2171d55ed1a8acb78
+  AluguelLivro 6055d05fc1aed176bf4815ac773ab393
+  AutorId 3bf486418720590e447b79bede8aa77b
+  AutorLivro 2fbd66eba6f140b5ec0588adbc218933
+  AutorLivroAutor 6f50989bcbf84ae747c45a2e7bc97172
+  AutorLivroLivro 8c7c307d4ed00b6e987ca88af5766739
+  CategoriaId 50d37fe1ed21202ed0e14d37ea1c3049
+  CategoriaLivro 98465cc23c23e102e111da57d48265c0
+  CategoriaLivroCategoria 8ed12cf86210e7dcbdff2d7e3ec38aa7
+  CategoriaLivroLivro e62e7be8353b38e06f7fd784e87e328a
+  Handler a310d57e79abfd605656bf15570e24ea
+  Livro ca7da55fb62c4918e31cf1b758b2204c
+  LivroId 6305c1a06f21aba08ba4de3993a6a1da
+  LivroTitulo 8425737a963805f287e1c4b480da2880
+  autorLivroAutor 250cd6d9593f60187e459ffe456cc26a
+  autorLivroLivro bd29a3713e4468c1f9125c3a66cedbe7
+  categoriaLivroCategoria 96079cc1a47a1b2db9f193959dedf420
+  categoriaLivroLivro 01d2cf984528157c488ced951c8b73f9
+import  -/  Funcs 2402f84019fb09ceeb9e953b4013150c
+  exports: 5c1d8a0bf50fd053189d09484ae583df
+  %=. 09f9fc5e3db4aeeabad16c068d53930f
+  DELETE 86dd36b6e74a32abf9369d4848dad0c2
+  GET ab8c4b7d894543dab87ba97fa2ba59d4
+  OPTIONS c2ab4705d527069c61913c836b3099eb
+  POST d5e7ded54f2fa2b4202d10824af95d16
+  PUT 9635b210157788482902673f54f6ee37
+  anyOriginIn 11cb7fc688f79e156c91c7af03e2c192
+import  -/  Imagem 8e56317806296a0f768cbd3bd61537e2
+  exports: de4c4cd01086e7bbe624c6b4d711bc3b
+  writeToServer 9bf72362949c92ad47c69829705e0f82
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist fe3a39fff4539f7b00d06ebe497b9c8f
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistEntity 9b53e00c0944774de6d888c494872c43
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistQuery a0443625c636182657a78811dabc1a54
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistStore c1ac085d9fe14404ac8e1708e83e8691
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore 578591250a64a1e2f7989b5ddce9953d
+import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk:Database.Persist.Postgresql 14e325f69656cbdce05b427af5a05040
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Internal a2f6f66c5bb1247458d9fa25257ab188
+import  -/  yesod-1.4.5@yesod-1.4.5-KkuohOR46AGJaQebI2xaBn:Yesod e9085892ecdae63fde0f9ac2eb6f89dd
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Handler f0395cd116f061339f74fc813c1633e9
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Json e11e695487bcbdbf3c4eb6308e74451c
+import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-LBApvzv570iG1mLpIiASnM:Yesod.Persist.Core be9e13d9d70fd0775c7c65b1955335ed
+4d3ef8193ed8614478bda0f0b3e39837
+  $s$WAluguelDevolucao2 ::
+    GHC.Base.Maybe Data.Time.Calendar.Days.Day
+    GHC.Types.~~ GHC.Base.Maybe Data.Time.Calendar.Days.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+                   @ (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+                   @~ <GHC.Base.Maybe Data.Time.Calendar.Days.Day>_N) -}
+81ff1cabe7c23484db5078c9d6fdf297
+  $s$WAluguelLivro2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Livro
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
+                   Foundation.Livro
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Livro)
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Livro)
+                   @~ <Database.Persist.Class.PersistEntity.Key
+                         Foundation.Livro>_N) -}
+6d86e298a8f5b6a28d034e13e788fc90
+  $s$WAutorLivroAutor2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Autor
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
+                   Foundation.Autor
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Autor)
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Autor)
+                   @~ <Database.Persist.Class.PersistEntity.Key
+                         Foundation.Autor>_N) -}
+10f3686a4e54990b386399226802a934
+  $s$WCategoriaLivroCategoria2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Categoria
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
+                   Foundation.Categoria
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Categoria)
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Categoria)
+                   @~ <Database.Persist.Class.PersistEntity.Key
+                         Foundation.Categoria>_N) -}
+af2ceaac43f61e4ad44a4f08af75f000
+  $s$WLivroTitulo2 ::
+    Data.Text.Internal.Text GHC.Types.~~ Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Text.Internal.Text
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
+424e33fa1948bec5b1e0e81fa5bb44d1
+  $s$fApplicativeHandlerT_$creturn ::
+    a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ site
+                   @ a
+                   (eta :: a)
+                   (eta1 :: Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta) `cast` (GHC.Types.N:IO[0] <a>_R) eta2)
+                  `cast`
+                (forall (site :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <site>_N <GHC.Types.IO>_N <a>_N))) -}
+6002b38f861e46bb0f812db563bda285
+  $s$fFromJSON(,,,) ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      (Foundation.Livro, Data.Text.Internal.Text,
+       [Foundation.CategoriaId], [Foundation.AutorId])
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Foundation.Livro, Data.Text.Internal.Text,
+                     [Foundation.CategoriaId], [Foundation.AutorId])
+                  (let {
+                     pC :: Data.Aeson.Types.Internal.Value
+                           -> Data.Aeson.Types.Internal.Parser [Foundation.CategoriaId]
+                     = Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON
+                         @ (Database.Persist.Class.PersistEntity.Key Foundation.Categoria)
+                         Foundation.$fFromJSONKey3
+                   } in
+                   let {
+                     pD :: Data.Aeson.Types.Internal.Value
+                           -> Data.Aeson.Types.Internal.Parser [Foundation.AutorId]
+                     = Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON
+                         @ (Database.Persist.Class.PersistEntity.Key Foundation.Autor)
+                         Foundation.$fFromJSONKey2
+                   } in
+                   GHC.Base.$
+                     @ 'GHC.Types.PtrRepLifted
+                     @ (Data.Aeson.Types.Internal.Array
+                        -> Data.Aeson.Types.Internal.Parser
+                             (Foundation.Livro, Data.Text.Internal.Text,
+                              [Foundation.CategoriaId], [Foundation.AutorId]))
+                     @ (Data.Aeson.Types.Internal.Value
+                        -> Data.Aeson.Types.Internal.Parser
+                             (Foundation.Livro, Data.Text.Internal.Text,
+                              [Foundation.CategoriaId], [Foundation.AutorId]))
+                     (Data.Aeson.Types.FromJSON.withArray
+                        @ (Foundation.Livro, Data.Text.Internal.Text,
+                           [Foundation.CategoriaId], [Foundation.AutorId])
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "(a, b, c, d)"#)))
+                     (\ (t :: Data.Aeson.Types.Internal.Array) ->
+                      let {
+                        n :: GHC.Types.Int = Livro.$s$fFromJSON(,,,)_$slength t
+                      } in
+                      case GHC.Classes.eqInt n (GHC.Types.I# 4#) of wild {
+                        GHC.Types.False
+                        -> GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ GHC.Base.String
+                             @ (Data.Aeson.Types.Internal.Parser
+                                  (Foundation.Livro, Data.Text.Internal.Text,
+                                   [Foundation.CategoriaId], [Foundation.AutorId]))
+                             (Data.Aeson.Types.Internal.$fMonadFailParser_$cfail
+                                @ (Foundation.Livro, Data.Text.Internal.Text,
+                                   [Foundation.CategoriaId], [Foundation.AutorId]))
+                             (GHC.Base.build
+                                @ GHC.Types.Char
+                                (\ @ b1
+                                   (c1 :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                                   (n1 :: b1)[OneShot] ->
+                                 GHC.CString.unpackFoldrCString#
+                                   @ b1
+                                   "cannot unpack array of length "#
+                                   c1
+                                   (GHC.Base.foldr
+                                      @ GHC.Types.Char
+                                      @ b1
+                                      c1
+                                      (GHC.CString.unpackFoldrCString#
+                                         @ b1
+                                         " into a tuple of length 4"#
+                                         c1
+                                         n1)
+                                      (GHC.Show.$fShowInt_$cshow n))))
+                        GHC.Types.True
+                        -> let {
+                             d1 :: Data.Aeson.Types.Internal.Parser
+                                     ([Foundation.AutorId]
+                                      -> (Foundation.Livro, Data.Text.Internal.Text,
+                                          [Foundation.CategoriaId], [Foundation.AutorId]))
+                             = let {
+                                 d2 :: Data.Aeson.Types.Internal.Parser
+                                         ([Foundation.CategoriaId]
+                                          -> [Foundation.AutorId]
+                                          -> (Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId]))
+                                 = let {
+                                     d3 :: Data.Aeson.Types.Internal.Parser Foundation.Livro
+                                     = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                         @ Foundation.Livro
+                                         Foundation.$fFromJSONLivro_$cparseJSON
+                                         (GHC.Types.I# 0#)
+                                         t
+                                   } in
+                                   let {
+                                     d4 :: Data.Aeson.Types.Internal.Parser
+                                             (Data.Text.Internal.Text
+                                              -> [Foundation.CategoriaId]
+                                              -> [Foundation.AutorId]
+                                              -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                  [Foundation.CategoriaId], [Foundation.AutorId]))
+                                       {- Arity: 3 -}
+                                     = Data.Aeson.Types.FromJSON.$fFromJSON(,)_$s<$>
+                                         @ Foundation.Livro
+                                         @ (Data.Text.Internal.Text
+                                            -> [Foundation.CategoriaId]
+                                            -> [Foundation.AutorId]
+                                            -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                [Foundation.CategoriaId], [Foundation.AutorId]))
+                                         (GHC.Tuple.(,,,)
+                                            @ Foundation.Livro
+                                            @ Data.Text.Internal.Text
+                                            @ [Foundation.CategoriaId]
+                                            @ [Foundation.AutorId])
+                                         d3
+                                   } in
+                                   let {
+                                     e :: Data.Aeson.Types.Internal.Parser Data.Text.Internal.Text
+                                     = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                         @ Data.Text.Internal.Text
+                                         Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON16
+                                         (GHC.Types.I# 1#)
+                                         t
+                                   } in
+                                   GHC.Base.$
+                                     @ 'GHC.Types.PtrRepLifted
+                                     @ (forall (f :: * -> *) r.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f r
+                                        -> Data.Aeson.Types.Internal.Success
+                                             ([Foundation.CategoriaId]
+                                              -> [Foundation.AutorId]
+                                              -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                  [Foundation.CategoriaId], [Foundation.AutorId]))
+                                             f
+                                             r
+                                        -> f r)
+                                     @ (Data.Aeson.Types.Internal.Parser
+                                          ([Foundation.CategoriaId]
+                                           -> [Foundation.AutorId]
+                                           -> (Foundation.Livro, Data.Text.Internal.Text,
+                                               [Foundation.CategoriaId], [Foundation.AutorId])))
+                                     (\ (tpl :: forall (f :: * -> *) r.
+                                                Data.Aeson.Types.Internal.JSONPath
+                                                -> Data.Aeson.Types.Internal.Failure f r
+                                                -> Data.Aeson.Types.Internal.Success
+                                                     ([Foundation.CategoriaId]
+                                                      -> [Foundation.AutorId]
+                                                      -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                          [Foundation.CategoriaId],
+                                                          [Foundation.AutorId]))
+                                                     f
+                                                     r
+                                                -> f r) ->
+                                      tpl)
+                                       `cast`
+                                     (<forall (f :: * -> *) r.
+                                       Data.Aeson.Types.Internal.JSONPath
+                                       -> Data.Aeson.Types.Internal.Failure f r
+                                       -> Data.Aeson.Types.Internal.Success
+                                            ([Foundation.CategoriaId]
+                                             -> [Foundation.AutorId]
+                                             -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                 [Foundation.CategoriaId], [Foundation.AutorId]))
+                                            f
+                                            r
+                                       -> f r>_R
+                                      ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                    <[Foundation.CategoriaId]
+                                                     -> [Foundation.AutorId]
+                                                     -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                         [Foundation.CategoriaId],
+                                                         [Foundation.AutorId])>_R))
+                                     (\ @ (f :: * -> *)
+                                        @ r
+                                        (path :: Data.Aeson.Types.Internal.JSONPath)
+                                        (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                        (ks :: Data.Aeson.Types.Internal.Success
+                                                 ([Foundation.CategoriaId]
+                                                  -> [Foundation.AutorId]
+                                                  -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                      [Foundation.CategoriaId],
+                                                      [Foundation.AutorId]))
+                                                 f
+                                                 r) ->
+                                      Data.Aeson.Types.Internal.runParser
+                                        @ (Data.Text.Internal.Text
+                                           -> [Foundation.CategoriaId]
+                                           -> [Foundation.AutorId]
+                                           -> (Foundation.Livro, Data.Text.Internal.Text,
+                                               [Foundation.CategoriaId], [Foundation.AutorId]))
+                                        d4
+                                        @ f
+                                        @ r
+                                        path
+                                        kf
+                                        (\ (a1 :: Data.Text.Internal.Text
+                                                  -> [Foundation.CategoriaId]
+                                                  -> [Foundation.AutorId]
+                                                  -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                      [Foundation.CategoriaId],
+                                                      [Foundation.AutorId])) ->
+                                         Data.Aeson.Types.Internal.runParser
+                                           @ ([Foundation.CategoriaId]
+                                              -> [Foundation.AutorId]
+                                              -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                  [Foundation.CategoriaId], [Foundation.AutorId]))
+                                           (GHC.Base.$
+                                              @ 'GHC.Types.PtrRepLifted
+                                              @ (forall (f1 :: * -> *) r1.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      ([Foundation.CategoriaId]
+                                                       -> [Foundation.AutorId]
+                                                       -> (Foundation.Livro,
+                                                           Data.Text.Internal.Text,
+                                                           [Foundation.CategoriaId],
+                                                           [Foundation.AutorId]))
+                                                      f1
+                                                      r1
+                                                 -> f1 r1)
+                                              @ (Data.Aeson.Types.Internal.Parser
+                                                   ([Foundation.CategoriaId]
+                                                    -> [Foundation.AutorId]
+                                                    -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                        [Foundation.CategoriaId],
+                                                        [Foundation.AutorId])))
+                                              (\ (tpl :: forall (f1 :: * -> *) r1.
+                                                         Data.Aeson.Types.Internal.JSONPath
+                                                         -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                         -> Data.Aeson.Types.Internal.Success
+                                                              ([Foundation.CategoriaId]
+                                                               -> [Foundation.AutorId]
+                                                               -> (Foundation.Livro,
+                                                                   Data.Text.Internal.Text,
+                                                                   [Foundation.CategoriaId],
+                                                                   [Foundation.AutorId]))
+                                                              f1
+                                                              r1
+                                                         -> f1 r1) ->
+                                               tpl)
+                                                `cast`
+                                              (<forall (f1 :: * -> *) r1.
+                                                Data.Aeson.Types.Internal.JSONPath
+                                                -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                -> Data.Aeson.Types.Internal.Success
+                                                     ([Foundation.CategoriaId]
+                                                      -> [Foundation.AutorId]
+                                                      -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                          [Foundation.CategoriaId],
+                                                          [Foundation.AutorId]))
+                                                     f1
+                                                     r1
+                                                -> f1 r1>_R
+                                               ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                             <[Foundation.CategoriaId]
+                                                              -> [Foundation.AutorId]
+                                                              -> (Foundation.Livro,
+                                                                  Data.Text.Internal.Text,
+                                                                  [Foundation.CategoriaId],
+                                                                  [Foundation.AutorId])>_R))
+                                              (\ @ (f1 :: * -> *)
+                                                 @ r1
+                                                 (path1 :: Data.Aeson.Types.Internal.JSONPath)
+                                                 (kf1 :: Data.Aeson.Types.Internal.Failure f1 r1)
+                                                 (ks1 :: Data.Aeson.Types.Internal.Success
+                                                           ([Foundation.CategoriaId]
+                                                            -> [Foundation.AutorId]
+                                                            -> (Foundation.Livro,
+                                                                Data.Text.Internal.Text,
+                                                                [Foundation.CategoriaId],
+                                                                [Foundation.AutorId]))
+                                                           f1
+                                                           r1) ->
+                                               Data.Aeson.Types.Internal.runParser
+                                                 @ Data.Text.Internal.Text
+                                                 e
+                                                 @ f1
+                                                 @ r1
+                                                 path1
+                                                 kf1
+                                                 (\ (a2 :: Data.Text.Internal.Text) ->
+                                                  let {
+                                                    a3 :: [Foundation.CategoriaId]
+                                                          -> [Foundation.AutorId]
+                                                          -> (Foundation.Livro,
+                                                              Data.Text.Internal.Text,
+                                                              [Foundation.CategoriaId],
+                                                              [Foundation.AutorId])
+                                                    = a1 a2
+                                                  } in
+                                                  Data.Aeson.Types.Internal.runParser
+                                                    @ ([Foundation.CategoriaId]
+                                                       -> [Foundation.AutorId]
+                                                       -> (Foundation.Livro,
+                                                           Data.Text.Internal.Text,
+                                                           [Foundation.CategoriaId],
+                                                           [Foundation.AutorId]))
+                                                    (GHC.Base.$
+                                                       @ 'GHC.Types.PtrRepLifted
+                                                       @ (forall (f2 :: * -> *) r2.
+                                                          Data.Aeson.Types.Internal.JSONPath
+                                                          -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                          -> Data.Aeson.Types.Internal.Success
+                                                               ([Foundation.CategoriaId]
+                                                                -> [Foundation.AutorId]
+                                                                -> (Foundation.Livro,
+                                                                    Data.Text.Internal.Text,
+                                                                    [Foundation.CategoriaId],
+                                                                    [Foundation.AutorId]))
+                                                               f2
+                                                               r2
+                                                          -> f2 r2)
+                                                       @ (Data.Aeson.Types.Internal.Parser
+                                                            ([Foundation.CategoriaId]
+                                                             -> [Foundation.AutorId]
+                                                             -> (Foundation.Livro,
+                                                                 Data.Text.Internal.Text,
+                                                                 [Foundation.CategoriaId],
+                                                                 [Foundation.AutorId])))
+                                                       (\ (tpl :: forall (f2 :: * -> *) r2.
+                                                                  Data.Aeson.Types.Internal.JSONPath
+                                                                  -> Data.Aeson.Types.Internal.Failure
+                                                                       f2 r2
+                                                                  -> Data.Aeson.Types.Internal.Success
+                                                                       ([Foundation.CategoriaId]
+                                                                        -> [Foundation.AutorId]
+                                                                        -> (Foundation.Livro,
+                                                                            Data.Text.Internal.Text,
+                                                                            [Foundation.CategoriaId],
+                                                                            [Foundation.AutorId]))
+                                                                       f2
+                                                                       r2
+                                                                  -> f2 r2) ->
+                                                        tpl)
+                                                         `cast`
+                                                       (<forall (f2 :: * -> *) r2.
+                                                         Data.Aeson.Types.Internal.JSONPath
+                                                         -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                         -> Data.Aeson.Types.Internal.Success
+                                                              ([Foundation.CategoriaId]
+                                                               -> [Foundation.AutorId]
+                                                               -> (Foundation.Livro,
+                                                                   Data.Text.Internal.Text,
+                                                                   [Foundation.CategoriaId],
+                                                                   [Foundation.AutorId]))
+                                                              f2
+                                                              r2
+                                                         -> f2 r2>_R
+                                                        ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                                      <[Foundation.CategoriaId]
+                                                                       -> [Foundation.AutorId]
+                                                                       -> (Foundation.Livro,
+                                                                           Data.Text.Internal.Text,
+                                                                           [Foundation.CategoriaId],
+                                                                           [Foundation.AutorId])>_R))
+                                                       (\ @ (f2 :: * -> *)
+                                                          @ r2
+                                                          (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                                          (_kf :: Data.Aeson.Types.Internal.Failure
+                                                                    f2 r2)
+                                                          (ks2 :: Data.Aeson.Types.Internal.Success
+                                                                    ([Foundation.CategoriaId]
+                                                                     -> [Foundation.AutorId]
+                                                                     -> (Foundation.Livro,
+                                                                         Data.Text.Internal.Text,
+                                                                         [Foundation.CategoriaId],
+                                                                         [Foundation.AutorId]))
+                                                                    f2
+                                                                    r2) ->
+                                                        ks2 a3))
+                                                    @ f1
+                                                    @ r1
+                                                    path1
+                                                    kf1
+                                                    ks1)))
+                                           @ f
+                                           @ r
+                                           path
+                                           kf
+                                           ks))
+                               } in
+                               let {
+                                 e :: Data.Aeson.Types.Internal.Parser [Foundation.CategoriaId]
+                                 = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                     @ [Foundation.CategoriaId]
+                                     pC
+                                     (GHC.Types.I# 2#)
+                                     t
+                               } in
+                               GHC.Base.$
+                                 @ 'GHC.Types.PtrRepLifted
+                                 @ (forall (f :: * -> *) r.
+                                    Data.Aeson.Types.Internal.JSONPath
+                                    -> Data.Aeson.Types.Internal.Failure f r
+                                    -> Data.Aeson.Types.Internal.Success
+                                         ([Foundation.AutorId]
+                                          -> (Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId]))
+                                         f
+                                         r
+                                    -> f r)
+                                 @ (Data.Aeson.Types.Internal.Parser
+                                      ([Foundation.AutorId]
+                                       -> (Foundation.Livro, Data.Text.Internal.Text,
+                                           [Foundation.CategoriaId], [Foundation.AutorId])))
+                                 (\ (tpl :: forall (f :: * -> *) r.
+                                            Data.Aeson.Types.Internal.JSONPath
+                                            -> Data.Aeson.Types.Internal.Failure f r
+                                            -> Data.Aeson.Types.Internal.Success
+                                                 ([Foundation.AutorId]
+                                                  -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                      [Foundation.CategoriaId],
+                                                      [Foundation.AutorId]))
+                                                 f
+                                                 r
+                                            -> f r) ->
+                                  tpl)
+                                   `cast`
+                                 (<forall (f :: * -> *) r.
+                                   Data.Aeson.Types.Internal.JSONPath
+                                   -> Data.Aeson.Types.Internal.Failure f r
+                                   -> Data.Aeson.Types.Internal.Success
+                                        ([Foundation.AutorId]
+                                         -> (Foundation.Livro, Data.Text.Internal.Text,
+                                             [Foundation.CategoriaId], [Foundation.AutorId]))
+                                        f
+                                        r
+                                   -> f r>_R
+                                  ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                <[Foundation.AutorId]
+                                                 -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                     [Foundation.CategoriaId],
+                                                     [Foundation.AutorId])>_R))
+                                 (\ @ (f :: * -> *)
+                                    @ r
+                                    (path :: Data.Aeson.Types.Internal.JSONPath)
+                                    (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                    (ks :: Data.Aeson.Types.Internal.Success
+                                             ([Foundation.AutorId]
+                                              -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                  [Foundation.CategoriaId], [Foundation.AutorId]))
+                                             f
+                                             r) ->
+                                  Data.Aeson.Types.Internal.runParser
+                                    @ ([Foundation.CategoriaId]
+                                       -> [Foundation.AutorId]
+                                       -> (Foundation.Livro, Data.Text.Internal.Text,
+                                           [Foundation.CategoriaId], [Foundation.AutorId]))
+                                    d2
+                                    @ f
+                                    @ r
+                                    path
+                                    kf
+                                    (\ (a1 :: [Foundation.CategoriaId]
+                                              -> [Foundation.AutorId]
+                                              -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                  [Foundation.CategoriaId],
+                                                  [Foundation.AutorId])) ->
+                                     Data.Aeson.Types.Internal.runParser
+                                       @ ([Foundation.AutorId]
+                                          -> (Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId]))
+                                       (GHC.Base.$
+                                          @ 'GHC.Types.PtrRepLifted
+                                          @ (forall (f1 :: * -> *) r1.
+                                             Data.Aeson.Types.Internal.JSONPath
+                                             -> Data.Aeson.Types.Internal.Failure f1 r1
+                                             -> Data.Aeson.Types.Internal.Success
+                                                  ([Foundation.AutorId]
+                                                   -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                       [Foundation.CategoriaId],
+                                                       [Foundation.AutorId]))
+                                                  f1
+                                                  r1
+                                             -> f1 r1)
+                                          @ (Data.Aeson.Types.Internal.Parser
+                                               ([Foundation.AutorId]
+                                                -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                    [Foundation.CategoriaId],
+                                                    [Foundation.AutorId])))
+                                          (\ (tpl :: forall (f1 :: * -> *) r1.
+                                                     Data.Aeson.Types.Internal.JSONPath
+                                                     -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                     -> Data.Aeson.Types.Internal.Success
+                                                          ([Foundation.AutorId]
+                                                           -> (Foundation.Livro,
+                                                               Data.Text.Internal.Text,
+                                                               [Foundation.CategoriaId],
+                                                               [Foundation.AutorId]))
+                                                          f1
+                                                          r1
+                                                     -> f1 r1) ->
+                                           tpl)
+                                            `cast`
+                                          (<forall (f1 :: * -> *) r1.
+                                            Data.Aeson.Types.Internal.JSONPath
+                                            -> Data.Aeson.Types.Internal.Failure f1 r1
+                                            -> Data.Aeson.Types.Internal.Success
+                                                 ([Foundation.AutorId]
+                                                  -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                      [Foundation.CategoriaId],
+                                                      [Foundation.AutorId]))
+                                                 f1
+                                                 r1
+                                            -> f1 r1>_R
+                                           ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                         <[Foundation.AutorId]
+                                                          -> (Foundation.Livro,
+                                                              Data.Text.Internal.Text,
+                                                              [Foundation.CategoriaId],
+                                                              [Foundation.AutorId])>_R))
+                                          (\ @ (f1 :: * -> *)
+                                             @ r1
+                                             (path1 :: Data.Aeson.Types.Internal.JSONPath)
+                                             (kf1 :: Data.Aeson.Types.Internal.Failure f1 r1)
+                                             (ks1 :: Data.Aeson.Types.Internal.Success
+                                                       ([Foundation.AutorId]
+                                                        -> (Foundation.Livro,
+                                                            Data.Text.Internal.Text,
+                                                            [Foundation.CategoriaId],
+                                                            [Foundation.AutorId]))
+                                                       f1
+                                                       r1) ->
+                                           Data.Aeson.Types.Internal.runParser
+                                             @ [Foundation.CategoriaId]
+                                             e
+                                             @ f1
+                                             @ r1
+                                             path1
+                                             kf1
+                                             (\ (a2 :: [Foundation.CategoriaId]) ->
+                                              let {
+                                                a3 :: [Foundation.AutorId]
+                                                      -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                          [Foundation.CategoriaId],
+                                                          [Foundation.AutorId])
+                                                = a1 a2
+                                              } in
+                                              Data.Aeson.Types.Internal.runParser
+                                                @ ([Foundation.AutorId]
+                                                   -> (Foundation.Livro, Data.Text.Internal.Text,
+                                                       [Foundation.CategoriaId],
+                                                       [Foundation.AutorId]))
+                                                (GHC.Base.$
+                                                   @ 'GHC.Types.PtrRepLifted
+                                                   @ (forall (f2 :: * -> *) r2.
+                                                      Data.Aeson.Types.Internal.JSONPath
+                                                      -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                      -> Data.Aeson.Types.Internal.Success
+                                                           ([Foundation.AutorId]
+                                                            -> (Foundation.Livro,
+                                                                Data.Text.Internal.Text,
+                                                                [Foundation.CategoriaId],
+                                                                [Foundation.AutorId]))
+                                                           f2
+                                                           r2
+                                                      -> f2 r2)
+                                                   @ (Data.Aeson.Types.Internal.Parser
+                                                        ([Foundation.AutorId]
+                                                         -> (Foundation.Livro,
+                                                             Data.Text.Internal.Text,
+                                                             [Foundation.CategoriaId],
+                                                             [Foundation.AutorId])))
+                                                   (\ (tpl :: forall (f2 :: * -> *) r2.
+                                                              Data.Aeson.Types.Internal.JSONPath
+                                                              -> Data.Aeson.Types.Internal.Failure
+                                                                   f2 r2
+                                                              -> Data.Aeson.Types.Internal.Success
+                                                                   ([Foundation.AutorId]
+                                                                    -> (Foundation.Livro,
+                                                                        Data.Text.Internal.Text,
+                                                                        [Foundation.CategoriaId],
+                                                                        [Foundation.AutorId]))
+                                                                   f2
+                                                                   r2
+                                                              -> f2 r2) ->
+                                                    tpl)
+                                                     `cast`
+                                                   (<forall (f2 :: * -> *) r2.
+                                                     Data.Aeson.Types.Internal.JSONPath
+                                                     -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                     -> Data.Aeson.Types.Internal.Success
+                                                          ([Foundation.AutorId]
+                                                           -> (Foundation.Livro,
+                                                               Data.Text.Internal.Text,
+                                                               [Foundation.CategoriaId],
+                                                               [Foundation.AutorId]))
+                                                          f2
+                                                          r2
+                                                     -> f2 r2>_R
+                                                    ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                                  <[Foundation.AutorId]
+                                                                   -> (Foundation.Livro,
+                                                                       Data.Text.Internal.Text,
+                                                                       [Foundation.CategoriaId],
+                                                                       [Foundation.AutorId])>_R))
+                                                   (\ @ (f2 :: * -> *)
+                                                      @ r2
+                                                      (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                                      (_kf :: Data.Aeson.Types.Internal.Failure
+                                                                f2 r2)
+                                                      (ks2 :: Data.Aeson.Types.Internal.Success
+                                                                ([Foundation.AutorId]
+                                                                 -> (Foundation.Livro,
+                                                                     Data.Text.Internal.Text,
+                                                                     [Foundation.CategoriaId],
+                                                                     [Foundation.AutorId]))
+                                                                f2
+                                                                r2) ->
+                                                    ks2 a3))
+                                                @ f1
+                                                @ r1
+                                                path1
+                                                kf1
+                                                ks1)))
+                                       @ f
+                                       @ r
+                                       path
+                                       kf
+                                       ks))
+                           } in
+                           let {
+                             e :: Data.Aeson.Types.Internal.Parser [Foundation.AutorId]
+                             = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                 @ [Foundation.AutorId]
+                                 pD
+                                 (GHC.Types.I# 3#)
+                                 t
+                           } in
+                           GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ (forall (f :: * -> *) r.
+                                Data.Aeson.Types.Internal.JSONPath
+                                -> Data.Aeson.Types.Internal.Failure f r
+                                -> Data.Aeson.Types.Internal.Success
+                                     (Foundation.Livro, Data.Text.Internal.Text,
+                                      [Foundation.CategoriaId], [Foundation.AutorId])
+                                     f
+                                     r
+                                -> f r)
+                             @ (Data.Aeson.Types.Internal.Parser
+                                  (Foundation.Livro, Data.Text.Internal.Text,
+                                   [Foundation.CategoriaId], [Foundation.AutorId]))
+                             (\ (tpl :: forall (f :: * -> *) r.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f r
+                                        -> Data.Aeson.Types.Internal.Success
+                                             (Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId])
+                                             f
+                                             r
+                                        -> f r) ->
+                              tpl)
+                               `cast`
+                             (<forall (f :: * -> *) r.
+                               Data.Aeson.Types.Internal.JSONPath
+                               -> Data.Aeson.Types.Internal.Failure f r
+                               -> Data.Aeson.Types.Internal.Success
+                                    (Foundation.Livro, Data.Text.Internal.Text,
+                                     [Foundation.CategoriaId], [Foundation.AutorId])
+                                    f
+                                    r
+                               -> f r>_R
+                              ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                            <(Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId])>_R))
+                             (\ @ (f :: * -> *)
+                                @ r
+                                (path :: Data.Aeson.Types.Internal.JSONPath)
+                                (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                (ks :: Data.Aeson.Types.Internal.Success
+                                         (Foundation.Livro, Data.Text.Internal.Text,
+                                          [Foundation.CategoriaId], [Foundation.AutorId])
+                                         f
+                                         r) ->
+                              Data.Aeson.Types.Internal.runParser
+                                @ ([Foundation.AutorId]
+                                   -> (Foundation.Livro, Data.Text.Internal.Text,
+                                       [Foundation.CategoriaId], [Foundation.AutorId]))
+                                d1
+                                @ f
+                                @ r
+                                path
+                                kf
+                                (\ (a1 :: [Foundation.AutorId]
+                                          -> (Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId])) ->
+                                 Data.Aeson.Types.Internal.runParser
+                                   @ (Foundation.Livro, Data.Text.Internal.Text,
+                                      [Foundation.CategoriaId], [Foundation.AutorId])
+                                   (GHC.Base.$
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ (forall (f1 :: * -> *) r1.
+                                         Data.Aeson.Types.Internal.JSONPath
+                                         -> Data.Aeson.Types.Internal.Failure f1 r1
+                                         -> Data.Aeson.Types.Internal.Success
+                                              (Foundation.Livro, Data.Text.Internal.Text,
+                                               [Foundation.CategoriaId], [Foundation.AutorId])
+                                              f1
+                                              r1
+                                         -> f1 r1)
+                                      @ (Data.Aeson.Types.Internal.Parser
+                                           (Foundation.Livro, Data.Text.Internal.Text,
+                                            [Foundation.CategoriaId], [Foundation.AutorId]))
+                                      (\ (tpl :: forall (f1 :: * -> *) r1.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      (Foundation.Livro, Data.Text.Internal.Text,
+                                                       [Foundation.CategoriaId],
+                                                       [Foundation.AutorId])
+                                                      f1
+                                                      r1
+                                                 -> f1 r1) ->
+                                       tpl)
+                                        `cast`
+                                      (<forall (f1 :: * -> *) r1.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f1 r1
+                                        -> Data.Aeson.Types.Internal.Success
+                                             (Foundation.Livro, Data.Text.Internal.Text,
+                                              [Foundation.CategoriaId], [Foundation.AutorId])
+                                             f1
+                                             r1
+                                        -> f1 r1>_R
+                                       ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                     <(Foundation.Livro, Data.Text.Internal.Text,
+                                                       [Foundation.CategoriaId],
+                                                       [Foundation.AutorId])>_R))
+                                      (\ @ (f1 :: * -> *)
+                                         @ r1
+                                         (path1 :: Data.Aeson.Types.Internal.JSONPath)
+                                         (kf1 :: Data.Aeson.Types.Internal.Failure f1 r1)
+                                         (ks1 :: Data.Aeson.Types.Internal.Success
+                                                   (Foundation.Livro, Data.Text.Internal.Text,
+                                                    [Foundation.CategoriaId], [Foundation.AutorId])
+                                                   f1
+                                                   r1) ->
+                                       Data.Aeson.Types.Internal.runParser
+                                         @ [Foundation.AutorId]
+                                         e
+                                         @ f1
+                                         @ r1
+                                         path1
+                                         kf1
+                                         (\ (a2 :: [Foundation.AutorId]) ->
+                                          let {
+                                            a3 :: (Foundation.Livro, Data.Text.Internal.Text,
+                                                   [Foundation.CategoriaId], [Foundation.AutorId])
+                                            = a1 a2
+                                          } in
+                                          Data.Aeson.Types.Internal.runParser
+                                            @ (Foundation.Livro, Data.Text.Internal.Text,
+                                               [Foundation.CategoriaId], [Foundation.AutorId])
+                                            (GHC.Base.$
+                                               @ 'GHC.Types.PtrRepLifted
+                                               @ (forall (f2 :: * -> *) r2.
+                                                  Data.Aeson.Types.Internal.JSONPath
+                                                  -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                  -> Data.Aeson.Types.Internal.Success
+                                                       (Foundation.Livro, Data.Text.Internal.Text,
+                                                        [Foundation.CategoriaId],
+                                                        [Foundation.AutorId])
+                                                       f2
+                                                       r2
+                                                  -> f2 r2)
+                                               @ (Data.Aeson.Types.Internal.Parser
+                                                    (Foundation.Livro, Data.Text.Internal.Text,
+                                                     [Foundation.CategoriaId],
+                                                     [Foundation.AutorId]))
+                                               (\ (tpl :: forall (f2 :: * -> *) r2.
+                                                          Data.Aeson.Types.Internal.JSONPath
+                                                          -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                          -> Data.Aeson.Types.Internal.Success
+                                                               (Foundation.Livro,
+                                                                Data.Text.Internal.Text,
+                                                                [Foundation.CategoriaId],
+                                                                [Foundation.AutorId])
+                                                               f2
+                                                               r2
+                                                          -> f2 r2) ->
+                                                tpl)
+                                                 `cast`
+                                               (<forall (f2 :: * -> *) r2.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      (Foundation.Livro, Data.Text.Internal.Text,
+                                                       [Foundation.CategoriaId],
+                                                       [Foundation.AutorId])
+                                                      f2
+                                                      r2
+                                                 -> f2 r2>_R
+                                                ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                              <(Foundation.Livro,
+                                                                Data.Text.Internal.Text,
+                                                                [Foundation.CategoriaId],
+                                                                [Foundation.AutorId])>_R))
+                                               (\ @ (f2 :: * -> *)
+                                                  @ r2
+                                                  (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                                  (_kf :: Data.Aeson.Types.Internal.Failure f2 r2)
+                                                  (ks2 :: Data.Aeson.Types.Internal.Success
+                                                            (Foundation.Livro,
+                                                             Data.Text.Internal.Text,
+                                                             [Foundation.CategoriaId],
+                                                             [Foundation.AutorId])
+                                                            f2
+                                                            r2) ->
+                                                ks2 a3))
+                                            @ f1
+                                            @ r1
+                                            path1
+                                            kf1
+                                            ks1)))
+                                   @ f
+                                   @ r
+                                   path
+                                   kf
+                                   ks)) }))
+                  (Data.Aeson.Types.FromJSON.$fFromJSON(,,,)_$cparseJSONList
+                     @ Foundation.Livro
+                     @ Data.Text.Internal.Text
+                     @ [Foundation.CategoriaId]
+                     @ [Foundation.AutorId]
+                     Foundation.$fFromJSONLivro
+                     Data.Aeson.Types.FromJSON.$fFromJSONText0
+                     Livro.$s$fFromJSON(,,,)2
+                     Livro.$s$fFromJSON(,,,)1) -}
+c888226f49753802a433bdeced9ad9c2
+  $s$fFromJSON(,,,)1 ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      [Database.Persist.Class.PersistEntity.Key Foundation.Autor]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Livro.$s$fFromJSON(,,,)_$s$fFromJSON[] -}
+716468af838ca532be202e65b532d467
+  $s$fFromJSON(,,,)2 ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      [Database.Persist.Class.PersistEntity.Key Foundation.Categoria]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Livro.$s$fFromJSON(,,,)_$s$fFromJSON[]1 -}
+36874e66ecdeef60172d098f3fd8d1e4
+  $s$fFromJSON(,,,)_$s$fFromJSON[] ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      [Database.Persist.Class.PersistEntity.Key Foundation.Autor]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [Database.Persist.Class.PersistEntity.Key Foundation.Autor]
+                  (Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON
+                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Autor)
+                     Foundation.$fFromJSONKey2)
+                  (Data.Aeson.Types.FromJSON.$fFromJSONKey[]_$cparseJSONList
+                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Autor)
+                     Foundation.$fFromJSONKey2) -}
+41e0ada56721208de1b49591f5f71da2
+  $s$fFromJSON(,,,)_$s$fFromJSON[]1 ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      [Database.Persist.Class.PersistEntity.Key Foundation.Categoria]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [Database.Persist.Class.PersistEntity.Key Foundation.Categoria]
+                  (Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON
+                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Categoria)
+                     Foundation.$fFromJSONKey3)
+                  (Data.Aeson.Types.FromJSON.$fFromJSONKey[]_$cparseJSONList
+                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Categoria)
+                     Foundation.$fFromJSONKey3) -}
+407b8a135e88442cc54e52479d0c70ab
+  $s$fFromJSON(,,,)_$slength ::
+    Data.Vector.Vector Data.Aeson.Types.Internal.Value -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,A)>m,
+     Inline: [NEVER] -}
+b5a93e53c467d21f89e48d5b943ea513
+  $s$fMonadHandlerHandlerT ::
+    Yesod.Core.Class.Handler.MonadHandler
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cp1MonadHandler
+                     @ GHC.Types.IO
+                     @ site
+                     Livro.$s$fMonadHandlerHandlerT1)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cliftHandlerT
+                     @ GHC.Types.IO
+                     @ site
+                     Livro.$s$fMonadHandlerHandlerT1) -}
+8f4af23b89454972b4876dfbc997c77d
+  $s$fMonadHandlerHandlerT1 ::
+    Control.Monad.Trans.Resource.MonadResourceBase GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: ((Control.Monad.Trans.Control.$fMonadBaseControlIOIO,
+                  Control.Monad.Catch.$fMonadThrowIO,
+                  Control.Monad.Base.$fMonadBaseIOIO,
+                  Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
+0e5d05a98d675ae8fcb68b9829318045
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$cp1Monad
+                     @ GHC.Types.IO
+                     @ site
+                     GHC.Base.$fMonadIO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>=
+                     @ GHC.Types.IO
+                     @ site
+                     GHC.Base.$fMonadIO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>
+                     @ GHC.Types.IO
+                     @ site
+                     GHC.Base.$fMonadIO)
+                  (Livro.$s$fApplicativeHandlerT_$creturn @ site)
+                  (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+                     @ site) -}
+782150a5fa86cdb05ddb5734cfb9bfd1
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail ::
+    GHC.Base.String -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Base.String) ->
+                 Yesod.Core.Types.$fMonadHandlerT1
+                   @ site
+                   @ GHC.Types.IO
+                   @ a
+                   GHC.Base.$fMonadIO
+                   eta) -}
+9a9fed005eeba0ce1be235392862987b
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT ::
+    Control.Monad.IO.Class.MonadIO
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+                     @ site)
+                  (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+                     @ site) -}
+b8cb17d954937f223cdc6de9d12aa3d3
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO ::
+    GHC.Types.IO a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Types.IO a) ->
+                 let {
+                   eta1 :: GHC.Types.IO a = GHC.Base.id @ (GHC.Types.IO a) eta
+                 } in
+                 (\ (ds :: Yesod.Core.Types.HandlerData
+                             site (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
+                  eta1)
+                   `cast`
+                 (Sym (Yesod.Core.Types.N:HandlerT[0]
+                           <site>_N <GHC.Types.IO>_N <a>_N))) -}
+81c2cd0eab00b376020aa7b34b6b5467
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT -}
+0a4f834ecfe2fa002d44f9a4ccb5458d
+  $s$fPersistFieldMaybe ::
+    Database.Persist.Class.PersistField.PersistField
+      (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+                  Livro.$s$fPersistFieldMaybe1
+                  (Database.Persist.Class.PersistField.$fPersistFieldMaybe_$cfromPersistValue
+                     @ Data.Time.Calendar.Days.Day
+                     Database.Persist.Class.PersistField.$fPersistFieldDay) -}
+254105f7d80d7cc9068fd7adf93d0c56
+  $s$fPersistFieldMaybe1 ::
+    GHC.Base.Maybe Data.Time.Calendar.Days.Day
+    -> Database.Persist.Types.Base.PersistValue
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.Maybe Data.Time.Calendar.Days.Day) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> Database.Persist.Types.Base.PersistNull
+                   GHC.Base.Just a1 -> Database.Persist.Types.Base.PersistDay a1 }) -}
+0336af3724284c1b2d16a83777e69682
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Livro.$trModule2 Livro.$trModule1) -}
+932fa75ea2b198824aeb13de196d392c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Livro"#) -}
+837ac7089b336b67f477ff6dc74d7047
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+4bbb6f60a64828bb92dc4ecb84198c86
+  deleteLivroByIdR ::
+    Foundation.LivroId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.deleteLivroByIdR1
+                  `cast`
+                (<Foundation.LivroId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+b7c17f2ff549d8ef2579db37e89e9364
+  deleteLivroByIdR1 ::
+    Foundation.LivroId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (livroId :: Foundation.LivroId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Foundation.$fYesodPersistApp1
+                        @ ()
+                        (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
+                           @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           @ Foundation.Livro
+                           (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                              @ Foundation.App)
+                           Livro.deleteLivroByIdR4
+                             `cast`
+                           (GHC.Classes.(%,%)
+                              <Database.Persist.Class.PersistEntity.PersistEntity
+                                 Foundation.Livro>_N
+                              ((Data.Type.Equality.~)
+                                 <*>_N
+                                 (Sym (Foundation.D:R:PersistEntityBackendLivro[0]))
+                                 (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                           livroId)
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <()>_N)_R
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   Livro.deleteLivroByIdR2
+                   ipv }) -}
+3deefcb2bb22af6e437a0f7004a0bf45
+  deleteLivroByIdR2 :: GHC.Exception.SomeException
+  {- Unfolding: (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                   Livro.deleteLivroByIdR3) -}
+c3f520ac530e164ab7ff6f80f2ad27ac
+  deleteLivroByIdR3 :: Yesod.Core.Types.HandlerContents
+  {- Unfolding: (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                 case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                         Data.Aeson.Types.Internal.emptyObject)
+                        `cast`
+                      (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                 Yesod.Core.Types.HCContent
+                   Network.HTTP.Types.Status.status204
+                   (Yesod.Core.Types.TypedContent
+                      dt
+                      (Yesod.Core.Types.ContentBuilder
+                         nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                         (GHC.Base.Nothing @ GHC.Types.Int))) } }) -}
+c3c6d799add4555760f693e9b63672b7
+  deleteLivroByIdR4 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Livro,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityLivro,
+                  Livro.deleteLivroByIdR5
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+f052769c9fcbb793cac614c87a0aacd8
+  deleteLivroByIdR5 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
+78677a08cf7df1e08bf666841f9490c4
+  getBuscarLivroIdByAutorIdR ::
+    Foundation.AutorId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.getBuscarLivroIdByAutorIdR1
+                  `cast`
+                (<Foundation.AutorId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+213bb8215c83aba7cdda22293cc11e2b
+  getBuscarLivroIdByAutorIdR1 ::
+    Foundation.AutorId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (autorId :: Foundation.AutorId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity
+                                    Foundation.AutorLivro)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.AutorLivro
+                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Livro.getBuscarLivroIdByAutorIdR5
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.AutorLivro>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendAutorLivro[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.App)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter
+                               Foundation.AutorLivro)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.AutorLivro
+                             @ Foundation.AutorId
+                             Foundation.$fPersistFieldKey2
+                             Livro.getBuscarLivroIdByAutorIdR4
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldAutorLivrotyp0[0]) <Foundation.AutorId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AutorId
+                                @ [Foundation.AutorId]
+                                autorId)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Foundation.AutorLivro)))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.AutorLivro))
+                 } in
+                 case Foundation.$fYesodPersistApp1
+                        @ [Database.Persist.Class.PersistEntity.Entity
+                             Foundation.AutorLivro]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.App
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.AutorLivro)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.AutorLivro))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.App>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.AutorLivro))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.AutorLivro))>_R)
+                                 s of ds1 { (#,#) ipv ipv1 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity
+                                     Foundation.AutorLivro))
+                             @ [Database.Persist.Class.PersistEntity.Entity
+                                  Foundation.AutorLivro]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv1
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.AutorLivro)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity
+                                    Foundation.AutorLivro)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.AutorLivro]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.AutorLivro]>_R)
+                            ipv })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.AutorLivro]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.App>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.AutorLivro]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendApp[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.AutorLivro]>_N))
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv2 ipv3 ipv4 ipv5 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Livro.getBuscarLivroIdByAutorIdR3,
+                                  case GHC.Magic.runRW#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ (Data.Vector.Vector Data.Aeson.Types.Internal.Value)
+                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          case GHC.Prim.newArray#
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 0#
+                                                 (Data.Vector.Mutable.uninitialised
+                                                    @ Data.Aeson.Types.Internal.Value)
+                                                 s1
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv6 ipv7 ->
+                                          case Livro.getBuscarLivroIdByAutorIdR_$sfoldlM_loop
+                                                 ipv6
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                         <GHC.Prim.RealWorld>_N))_R
+                                                 (GHC.Base.map
+                                                    @ GHC.Int.Int64
+                                                    @ Data.Aeson.Types.Internal.Value
+                                                    Data.Aeson.Types.ToJSON.$fToJSONInt64_$ctoJSON
+                                                    (GHC.Base.map
+                                                       @ (Database.Persist.Class.PersistEntity.Entity
+                                                            Foundation.AutorLivro)
+                                                       @ (Database.Persist.Class.PersistEntity.Key
+                                                            Foundation.Livro)
+                                                       Livro.getBuscarLivroIdByAutorIdR2
+                                                       ipv1)
+                                                      `cast`
+                                                    ([Trans
+                                                          (Foundation.D:R:KeyLivro0[0])
+                                                          (Trans
+                                                               (Foundation.N:R:KeyLivro[0])
+                                                               (Trans
+                                                                    (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                                                    (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))])_R)
+                                                 0#
+                                                 0#
+                                                 ipv7
+                                                 @~ (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                     (GHC.ST.ST
+                                                                                                        GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N)
+                                                 0# of ds3 { (#,#) ipv8 ipv9 ->
+                                          case ipv9 of wild5 { (,) v' n ->
+                                          case v'
+                                                 `cast`
+                                               (Sub (Data.Vector.D:R:MutableVector[0]) <Control.Monad.Primitive.PrimState
+                                                                                          (GHC.ST.ST
+                                                                                             GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N) of wild { Data.Vector.Mutable.MVector dt1 dt2 dt3 ->
+                                          case n of dt5 { GHC.Types.I# dt6 ->
+                                          case GHC.Prim.unsafeFreezeArray#
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 dt3
+                                                 ipv8
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds4 { (#,#) ipv10 ipv11 ->
+                                          (# ipv10
+                                               `cast`
+                                             (GHC.Prim.State#
+                                                (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                     <GHC.Prim.RealWorld>_N))_R,
+                                             Data.Vector.Vector
+                                               @ Data.Aeson.Types.Internal.Value
+                                               dt1
+                                               dt6
+                                               ipv11 #) } } } } } }) of ds2 { (#,#) ipv6 ipv7 ->
+                                  case ipv7 of dt1 { Data.Vector.Vector ipv8 ipv9 ipv10 ->
+                                  Data.Aeson.Types.Internal.Array dt1 } })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status200
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv }) -}
+66b4a00ee56402e6515127b5c3ea4166
+  getBuscarLivroIdByAutorIdR2 ::
+    Database.Persist.Class.PersistEntity.Entity Foundation.AutorLivro
+    -> Database.Persist.Class.PersistEntity.Key Foundation.Livro
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS(LS)),1*U(A,A,1*U(A,U(U)))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Database.Persist.Class.PersistEntity.Entity
+                           Foundation.AutorLivro) ->
+                 case x of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                 case ds2 of wild1 { Foundation.AutorLivro ds4 ds5 -> ds5 } }) -}
+41f3fe639949f7fe3b369a959fae1c2b
+  getBuscarLivroIdByAutorIdR3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "resp"#) -}
+5849097f337edabfdb455c91cbab75bc
+  getBuscarLivroIdByAutorIdR4 ::
+    Foundation.R:EntityFieldAutorLivrotyp Foundation.AutorId
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foundation.AutorLivroAutor
+                   @ Foundation.AutorId
+                   Livro.$s$WAutorLivroAutor2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                       Foundation.Autor>_N <Database.Persist.Class.PersistEntity.Key
+                                                              Foundation.Autor>_N)) -}
+3c2f00af70260cd4a7c65b66f48ed85b
+  getBuscarLivroIdByAutorIdR5 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.AutorLivro,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityAutorLivro,
+                  Livro.deleteLivroByIdR5
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+f45f3eb792e6ec0672209fc13538f913
+  getBuscarLivroIdByAutorIdR_$sfoldlM_loop ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> [Data.Aeson.Types.Internal.Value]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray#
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+    -> Data.Vector.Mutable.MVector
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+       ~R# Data.Vector.Generic.Base.Mutable
+             Data.Vector.Vector
+             (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+             Data.Aeson.Types.Internal.Value =>
+       GHC.Prim.Int#
+       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+             (Data.Vector.Generic.Base.Mutable
+                Data.Vector.Vector
+                (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+                Data.Aeson.Types.Internal.Value,
+              GHC.Types.Int) #)
+  {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
+6eb2cee12f6fb994a7e3299d70f26b14
+  getBuscarLivroIdByCategoriaIdR ::
+    Foundation.CategoriaId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.getBuscarLivroIdByCategoriaIdR1
+                  `cast`
+                (<Foundation.CategoriaId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+04bd8622938bd42d7927b46f34a6e5c0
+  getBuscarLivroIdByCategoriaIdR1 ::
+    Foundation.CategoriaId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (categoriaId :: Foundation.CategoriaId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity
+                                    Foundation.CategoriaLivro)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.CategoriaLivro
+                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Livro.getBuscarLivroIdByCategoriaIdR4
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.CategoriaLivro>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendCategoriaLivro[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.App)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter
+                               Foundation.CategoriaLivro)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.CategoriaLivro
+                             @ Foundation.CategoriaId
+                             Foundation.$fPersistFieldKey3
+                             Livro.getBuscarLivroIdByCategoriaIdR3
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldCategoriaLivrotyp0[0]) <Foundation.CategoriaId>_N)
+                             (Data.Either.Left
+                                @ Foundation.CategoriaId
+                                @ [Foundation.CategoriaId]
+                                categoriaId)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Foundation.CategoriaLivro)))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.CategoriaLivro))
+                 } in
+                 case Foundation.$fYesodPersistApp1
+                        @ [Database.Persist.Class.PersistEntity.Entity
+                             Foundation.CategoriaLivro]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.App
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.CategoriaLivro)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.CategoriaLivro))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.App>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.CategoriaLivro))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.CategoriaLivro))>_R)
+                                 s of ds1 { (#,#) ipv ipv1 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity
+                                     Foundation.CategoriaLivro))
+                             @ [Database.Persist.Class.PersistEntity.Entity
+                                  Foundation.CategoriaLivro]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv1
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.CategoriaLivro)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity
+                                    Foundation.CategoriaLivro)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.CategoriaLivro]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.CategoriaLivro]>_R)
+                            ipv })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.CategoriaLivro]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.App>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.CategoriaLivro]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendApp[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.CategoriaLivro]>_N))
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv2 ipv3 ipv4 ipv5 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Livro.getBuscarLivroIdByAutorIdR3,
+                                  case GHC.Magic.runRW#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ (Data.Vector.Vector Data.Aeson.Types.Internal.Value)
+                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          case GHC.Prim.newArray#
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 0#
+                                                 (Data.Vector.Mutable.uninitialised
+                                                    @ Data.Aeson.Types.Internal.Value)
+                                                 s1
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv6 ipv7 ->
+                                          case Livro.getBuscarLivroIdByCategoriaIdR_$sfoldlM_loop
+                                                 ipv6
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                         <GHC.Prim.RealWorld>_N))_R
+                                                 (GHC.Base.map
+                                                    @ GHC.Int.Int64
+                                                    @ Data.Aeson.Types.Internal.Value
+                                                    Data.Aeson.Types.ToJSON.$fToJSONInt64_$ctoJSON
+                                                    (GHC.Base.map
+                                                       @ (Database.Persist.Class.PersistEntity.Entity
+                                                            Foundation.CategoriaLivro)
+                                                       @ (Database.Persist.Class.PersistEntity.Key
+                                                            Foundation.Livro)
+                                                       Livro.getBuscarLivroIdByCategoriaIdR2
+                                                       ipv1)
+                                                      `cast`
+                                                    ([Trans
+                                                          (Foundation.D:R:KeyLivro0[0])
+                                                          (Trans
+                                                               (Foundation.N:R:KeyLivro[0])
+                                                               (Trans
+                                                                    (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                                                    (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))])_R)
+                                                 0#
+                                                 0#
+                                                 ipv7
+                                                 @~ (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                     (GHC.ST.ST
+                                                                                                        GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N)
+                                                 0# of ds3 { (#,#) ipv8 ipv9 ->
+                                          case ipv9 of wild5 { (,) v' n ->
+                                          case v'
+                                                 `cast`
+                                               (Sub (Data.Vector.D:R:MutableVector[0]) <Control.Monad.Primitive.PrimState
+                                                                                          (GHC.ST.ST
+                                                                                             GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N) of wild { Data.Vector.Mutable.MVector dt1 dt2 dt3 ->
+                                          case n of dt5 { GHC.Types.I# dt6 ->
+                                          case GHC.Prim.unsafeFreezeArray#
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 dt3
+                                                 ipv8
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds4 { (#,#) ipv10 ipv11 ->
+                                          (# ipv10
+                                               `cast`
+                                             (GHC.Prim.State#
+                                                (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                     <GHC.Prim.RealWorld>_N))_R,
+                                             Data.Vector.Vector
+                                               @ Data.Aeson.Types.Internal.Value
+                                               dt1
+                                               dt6
+                                               ipv11 #) } } } } } }) of ds2 { (#,#) ipv6 ipv7 ->
+                                  case ipv7 of dt1 { Data.Vector.Vector ipv8 ipv9 ipv10 ->
+                                  Data.Aeson.Types.Internal.Array dt1 } })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status200
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv }) -}
+cce19deaa9abf5cfd626dbd82f22dcb0
+  getBuscarLivroIdByCategoriaIdR2 ::
+    Database.Persist.Class.PersistEntity.Entity
+      Foundation.CategoriaLivro
+    -> Database.Persist.Class.PersistEntity.Key Foundation.Livro
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS(LS)),1*U(A,A,1*U(A,U(U)))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Database.Persist.Class.PersistEntity.Entity
+                           Foundation.CategoriaLivro) ->
+                 case x of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                 case ds2 of wild1 { Foundation.CategoriaLivro ds4 ds5 ->
+                 ds5 } }) -}
+fe0430c17bc8df96c626b7a46969378c
+  getBuscarLivroIdByCategoriaIdR3 ::
+    Foundation.R:EntityFieldCategoriaLivrotyp Foundation.CategoriaId
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foundation.CategoriaLivroCategoria
+                   @ Foundation.CategoriaId
+                   Livro.$s$WCategoriaLivroCategoria2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                       Foundation.Categoria>_N <Database.Persist.Class.PersistEntity.Key
+                                                                  Foundation.Categoria>_N)) -}
+642e2dad18d8b01f1cd00e1242d1cce0
+  getBuscarLivroIdByCategoriaIdR4 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.CategoriaLivro,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityCategoriaLivro,
+                  Livro.deleteLivroByIdR5
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+b5b644306f2b96820dacb8a8f204ec7b
+  getBuscarLivroIdByCategoriaIdR_$sfoldlM_loop ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> [Data.Aeson.Types.Internal.Value]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray#
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+    -> Data.Vector.Mutable.MVector
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+       ~R# Data.Vector.Generic.Base.Mutable
+             Data.Vector.Vector
+             (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+             Data.Aeson.Types.Internal.Value =>
+       GHC.Prim.Int#
+       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+             (Data.Vector.Generic.Base.Mutable
+                Data.Vector.Vector
+                (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+                Data.Aeson.Types.Internal.Value,
+              GHC.Types.Int) #)
+  {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
+0e28c71017bb173433b0973265f2a64e
+  getBuscarLivroIdR ::
+    Data.Text.Internal.Text
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.getBuscarLivroIdR1
+                  `cast`
+                (<Data.Text.Internal.Text>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+281e4330dde71523baabc20ed8d0584f
+  getBuscarLivroIdR1 ::
+    Data.Text.Internal.Text
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (pesquisa :: Data.Text.Internal.Text)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Livro)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Livro
+                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Livro.deleteLivroByIdR4
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Livro>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendLivro[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.App)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Livro)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Livro
+                             @ Data.Text.Internal.Text
+                             Database.Persist.Class.PersistField.$fPersistFieldText0
+                             Livro.getBuscarLivroIdR3
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldLivrotyp0[0]) <Data.Text.Internal.Text>_N)
+                             (Data.Either.Left
+                                @ Data.Text.Internal.Text
+                                @ [Data.Text.Internal.Text]
+                                (Data.Text.concat
+                                   (GHC.Types.:
+                                      @ Data.Text.Internal.Text
+                                      Funcs.%=.3
+                                      (GHC.Types.:
+                                         @ Data.Text.Internal.Text
+                                         pesquisa
+                                         Livro.getBuscarLivroIdR2))))
+                             Funcs.%=.1)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Livro)))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Livro))
+                 } in
+                 case Foundation.$fYesodPersistApp1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Livro]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.App
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Livro)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Livro))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.App>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Livro))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Livro))>_R)
+                                 s of ds1 { (#,#) ipv ipv1 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Livro))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Livro]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv1
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Livro)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Livro)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Livro]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity Foundation.Livro]>_R)
+                            ipv })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Livro]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.App>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Livro]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendApp[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Livro]>_N))
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv2 ipv3 ipv4 ipv5 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Livro.getBuscarLivroIdByAutorIdR3,
+                                  case GHC.Magic.runRW#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ (Data.Vector.Vector Data.Aeson.Types.Internal.Value)
+                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          case GHC.Prim.newArray#
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 0#
+                                                 (Data.Vector.Mutable.uninitialised
+                                                    @ Data.Aeson.Types.Internal.Value)
+                                                 s1
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv6 ipv7 ->
+                                          case Livro.getBuscarLivroIdR_$sfoldlM_loop
+                                                 ipv6
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                         <GHC.Prim.RealWorld>_N))_R
+                                                 (GHC.Base.map
+                                                    @ GHC.Int.Int64
+                                                    @ Data.Aeson.Types.Internal.Value
+                                                    Data.Aeson.Types.ToJSON.$fToJSONInt64_$ctoJSON
+                                                    (GHC.Base.map
+                                                       @ (Database.Persist.Class.PersistEntity.Entity
+                                                            Foundation.Livro)
+                                                       @ (Database.Persist.Class.PersistEntity.Key
+                                                            Foundation.Livro)
+                                                       (Database.Persist.Class.PersistEntity.entityKey
+                                                          @ Foundation.Livro)
+                                                       ipv1)
+                                                      `cast`
+                                                    ([Trans
+                                                          (Foundation.D:R:KeyLivro0[0])
+                                                          (Trans
+                                                               (Foundation.N:R:KeyLivro[0])
+                                                               (Trans
+                                                                    (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                                                    (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))])_R)
+                                                 0#
+                                                 0#
+                                                 ipv7
+                                                 @~ (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                     (GHC.ST.ST
+                                                                                                        GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N)
+                                                 0# of ds3 { (#,#) ipv8 ipv9 ->
+                                          case ipv9 of wild5 { (,) v' n ->
+                                          case v'
+                                                 `cast`
+                                               (Sub (Data.Vector.D:R:MutableVector[0]) <Control.Monad.Primitive.PrimState
+                                                                                          (GHC.ST.ST
+                                                                                             GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N) of wild { Data.Vector.Mutable.MVector dt1 dt2 dt3 ->
+                                          case n of dt5 { GHC.Types.I# dt6 ->
+                                          case GHC.Prim.unsafeFreezeArray#
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 dt3
+                                                 ipv8
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds4 { (#,#) ipv10 ipv11 ->
+                                          (# ipv10
+                                               `cast`
+                                             (GHC.Prim.State#
+                                                (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                     <GHC.Prim.RealWorld>_N))_R,
+                                             Data.Vector.Vector
+                                               @ Data.Aeson.Types.Internal.Value
+                                               dt1
+                                               dt6
+                                               ipv11 #) } } } } } }) of ds2 { (#,#) ipv6 ipv7 ->
+                                  case ipv7 of dt1 { Data.Vector.Vector ipv8 ipv9 ipv10 ->
+                                  Data.Aeson.Types.Internal.Array dt1 } })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status200
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv }) -}
+7ecf019d2d56e531583429df56668351
+  getBuscarLivroIdR2 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Funcs.%=.3
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+6c99883da873a8c0462e33c4925fcf2a
+  getBuscarLivroIdR3 ::
+    Foundation.R:EntityFieldLivrotyp Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foundation.LivroTitulo
+                   @ Data.Text.Internal.Text
+                   Livro.$s$WLivroTitulo2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_N)) -}
+27b3b9a74956e933d0cca2d079dbcf1e
+  getBuscarLivroIdR_$sfoldlM_loop ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> [Data.Aeson.Types.Internal.Value]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray#
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+    -> Data.Vector.Mutable.MVector
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+       ~R# Data.Vector.Generic.Base.Mutable
+             Data.Vector.Vector
+             (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+             Data.Aeson.Types.Internal.Value =>
+       GHC.Prim.Int#
+       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+             (Data.Vector.Generic.Base.Mutable
+                Data.Vector.Vector
+                (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+                Data.Aeson.Types.Internal.Value,
+              GHC.Types.Int) #)
+  {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
+ef14ec8269e0e3b9c6729ae04743dcc2
+  getLivroByIdR ::
+    Foundation.LivroId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.getLivroByIdR1
+                  `cast`
+                (<Foundation.LivroId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+6e8776b9a35b6cfe5e3047a51bb0a9b0
+  getLivroByIdR1 ::
+    Foundation.LivroId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U> -}
+a128497b8f61078326dbd6c01c2ed063
+  getQtLivroAlugadoByIdR ::
+    Foundation.LivroId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.getQtLivroAlugadoByIdR1
+                  `cast`
+                (<Foundation.LivroId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+cb19b8f97e2a4866898023354633e0d1
+  getQtLivroAlugadoByIdR1 ::
+    Foundation.LivroId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (livroId :: Foundation.LivroId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Foundation.$fYesodPersistApp1
+                        @ GHC.Types.Int
+                        (Livro.getQtLivroAlugadoByIdR7
+                           (GHC.Types.:
+                              @ (Database.Persist.Class.PersistEntity.Filter Foundation.Aluguel)
+                              (Database.Persist.Class.PersistEntity.Filter
+                                 @ Foundation.Aluguel
+                                 @ Foundation.LivroId
+                                 Foundation.$fPersistFieldKey4
+                                 Livro.getQtLivroAlugadoByIdR6
+                                   `cast`
+                                 (Sym (Foundation.D:R:EntityFieldAlugueltyp0[0]) <Foundation.LivroId>_N)
+                                 (Data.Either.Left
+                                    @ Foundation.LivroId
+                                    @ [Foundation.LivroId]
+                                    livroId)
+                                 Database.Persist.Types.Base.Eq)
+                              Livro.getQtLivroAlugadoByIdR2))
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <GHC.Types.Int>_N)_R
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv2 ipv3 ipv4 ipv5 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Livro.getBuscarLivroIdByAutorIdR3,
+                                  case ipv1 of wild { GHC.Types.I# i ->
+                                  case GHC.Integer.Type.smallInteger i of dt1 { DEFAULT ->
+                                  Data.Aeson.Types.Internal.Number
+                                    (Data.Scientific.Scientific dt1 0#) } })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status200
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv }) -}
+3a56d3a0f006bb33a2a4fdaffeb7a115
+  getQtLivroAlugadoByIdR2 ::
+    [Database.Persist.Class.PersistEntity.Filter Foundation.Aluguel]
+  {- Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.Filter Foundation.Aluguel)
+                   Livro.getQtLivroAlugadoByIdR3
+                   (GHC.Types.[]
+                      @ (Database.Persist.Class.PersistEntity.Filter
+                           Foundation.Aluguel))) -}
+3eab34b7453b6c1487b450d5ca384996
+  getQtLivroAlugadoByIdR3 ::
+    Database.Persist.Class.PersistEntity.Filter Foundation.Aluguel
+  {- Unfolding: (Database.Persist.Class.PersistEntity.Filter
+                   @ Foundation.Aluguel
+                   @ (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+                   Livro.$s$fPersistFieldMaybe
+                   Livro.getQtLivroAlugadoByIdR5
+                     `cast`
+                   (Sym (Foundation.D:R:EntityFieldAlugueltyp0[0]) <GHC.Base.Maybe
+                                                                      Data.Time.Calendar.Days.Day>_N)
+                   Livro.getQtLivroAlugadoByIdR4
+                   Database.Persist.Types.Base.Eq) -}
+610be39d25a76809609d5f289864de78
+  getQtLivroAlugadoByIdR4 ::
+    Data.Either.Either
+      (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+      [GHC.Base.Maybe Data.Time.Calendar.Days.Day]
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+                   @ [GHC.Base.Maybe Data.Time.Calendar.Days.Day]
+                   (GHC.Base.Nothing @ Data.Time.Calendar.Days.Day)) -}
+0a9f0fc5516dcb113661c72cf00b687f
+  getQtLivroAlugadoByIdR5 ::
+    Foundation.R:EntityFieldAlugueltyp
+      (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+  {- HasNoCafRefs, Strictness: m7,
+     Unfolding: (Foundation.AluguelDevolucao
+                   @ (GHC.Base.Maybe Data.Time.Calendar.Days.Day)
+                   Livro.$s$WAluguelDevolucao2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0] <*>_N) <GHC.Base.Maybe
+                                                             Data.Time.Calendar.Days.Day>_N <GHC.Base.Maybe
+                                                                                               Data.Time.Calendar.Days.Day>_N)) -}
+12be7997d418099e4576347d0286fde7
+  getQtLivroAlugadoByIdR6 ::
+    Foundation.R:EntityFieldAlugueltyp Foundation.LivroId
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Foundation.AluguelLivro
+                   @ Foundation.LivroId
+                   Livro.$s$WAluguelLivro2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                       Foundation.Livro>_N <Database.Persist.Class.PersistEntity.Key
+                                                              Foundation.Livro>_N)) -}
+55e04e9fa9109747638af5972fbe4904
+  getQtLivroAlugadoByIdR7 ::
+    [Database.Persist.Class.PersistEntity.Filter Foundation.Aluguel]
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.Internal.SqlBackend
+         (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+         GHC.Types.Int
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$ccount
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Foundation.Aluguel
+                   (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                      @ Foundation.App)
+                   Livro.getQtLivroAlugadoByIdR8
+                     `cast`
+                   (GHC.Classes.(%,%)
+                      <Database.Persist.Class.PersistEntity.PersistEntity
+                         Foundation.Aluguel>_N
+                      ((Data.Type.Equality.~)
+                         <*>_N
+                         (Sym (Foundation.D:R:PersistEntityBackendAluguel[0]))
+                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+eeb8b4d380df146954c6d38b4922b872
+  getQtLivroAlugadoByIdR8 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Aluguel,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityAluguel,
+                  Livro.deleteLivroByIdR5
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+1654f3b91c4d6097506cad534b0204c3
+  optionsBuscarLivroIdByAutorIdR ::
+    Foundation.AutorId -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foundation.AutorId) ->
+                 Livro.optionsBuscarLivroIdByAutorIdR1) -}
+684d0f1abd2cda4148ec95fece22bfd0
+  optionsBuscarLivroIdByAutorIdR1 :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn
+                   Livro.optionsBuscarLivroIdByAutorIdR2) -}
+b7db0a79b46db5f32f711689a74e0654
+  optionsBuscarLivroIdByAutorIdR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Livro.optionsBuscarLivroIdByAutorIdR3) -}
+fabcf25d7b73e45980d2c220c50b80e6
+  optionsBuscarLivroIdByAutorIdR3 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.GET
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+9b466439447f9f8c1bf0cc6f4c177fa6
+  optionsBuscarLivroIdByCategoriaIdR ::
+    Foundation.CategoriaId -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foundation.CategoriaId) ->
+                 Livro.optionsBuscarLivroIdByAutorIdR1) -}
+4b8e36b2f5bf37a879a42943ff77cc9d
+  optionsBuscarLivroIdR ::
+    Data.Text.Internal.Text -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Data.Text.Internal.Text) ->
+                 Livro.optionsBuscarLivroIdByAutorIdR1) -}
+71702dcde5b2ae9343cb859fad6e1662
+  optionsLivroByIdR :: Foundation.LivroId -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foundation.LivroId) -> Livro.optionsLivroByIdR1) -}
+5603169679274f78ae4bb8a7c703510b
+  optionsLivroByIdR1 :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn Livro.optionsLivroByIdR2) -}
+d1d03ed103f8df447d6f63b4b36b15c4
+  optionsLivroByIdR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Livro.optionsLivroByIdR3) -}
+0a73037af11cb4af1cb3cc2758fb51e5
+  optionsLivroByIdR3 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.GET
+                   Livro.optionsLivroByIdR4) -}
+f3a083a3cfd30d016b3788efe77bd041
+  optionsLivroByIdR4 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.PUT
+                   Livro.optionsLivroByIdR5) -}
+93ab1a7edd76faedb24ca6914d2033c0
+  optionsLivroByIdR5 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.DELETE
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+acf28eccab87488cf9bcb567c2673723
+  optionsLivroR :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn Livro.optionsLivroR1) -}
+8a02a3790e763868146457f51aaf776a
+  optionsLivroR1 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Livro.optionsLivroR2) -}
+481d2eac4d5a0686ac82acf882911ad2
+  optionsLivroR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.POST
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+c4c85ce5d182f5c5b2a1cec980f65917
+  optionsQtLivroAlugadoByIdR ::
+    Foundation.LivroId -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foundation.LivroId) ->
+                 Livro.optionsBuscarLivroIdByAutorIdR1) -}
+7386174c01409fbcad4e973c1ef38adf
+  postLivroR :: Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.postLivroR1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.App>_N
+                               <GHC.Types.IO>_N
+                               <Data.Aeson.Types.Internal.Value>_N))) -}
+a640addba41805e04c48ef4b94db1cb0
+  postLivroR1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+e35aa55483cfa01056c33b16a13f4155
+  putLivroByIdR ::
+    Foundation.LivroId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Livro.putLivroByIdR1
+                  `cast`
+                (<Foundation.LivroId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+ee072d3cf1b8c89615fcbe6aeffa9dcc
+  putLivroByIdR1 ::
+    Foundation.LivroId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (livroId :: Foundation.LivroId)
+                   (r :: Yesod.Core.Types.HandlerData
+                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Livro.putLivroByIdR2
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.App>_N <GHC.Types.IO>_N <Foundation.Livro>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Foundation.Livro>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Foundation.$fYesodPersistApp1
+                        @ ()
+                        (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$creplace
+                           @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           @ Foundation.Livro
+                           (Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                              @ Foundation.App)
+                           Livro.deleteLivroByIdR4
+                             `cast`
+                           (GHC.Classes.(%,%)
+                              <Database.Persist.Class.PersistEntity.PersistEntity
+                                 Foundation.Livro>_N
+                              ((Data.Type.Equality.~)
+                                 <*>_N
+                                 (Sym (Foundation.D:R:PersistEntityBackendLivro[0]))
+                                 (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                           livroId
+                           ipv1)
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <()>_N)_R
+                        r
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   Livro.deleteLivroByIdR2
+                   ipv2 } }) -}
+cb8e344aba01a9e7f1eb2d02bb9913a3
+  putLivroByIdR2 ::
+    Yesod.Core.Types.HandlerT
+      Foundation.App GHC.Types.IO Foundation.Livro
+  {- Unfolding: (Yesod.Core.Json.requireJsonBody
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Foundation.Livro
+                   (Livro.$s$fMonadHandlerHandlerT @ Foundation.App)
+                   Foundation.$fFromJSONLivro) -}
+"SPEC/Livro $fApplicativeHandlerT_$creturn @ IO _" [ALWAYS] forall @ site
+                                                                   ($dMonad :: GHC.Base.Monad
+                                                                                 GHC.Types.IO)
+  Yesod.Core.Types.$fApplicativeHandlerT_$creturn @ GHC.Types.IO
+                                                  @ site
+                                                  $dMonad
+  = Livro.$s$fApplicativeHandlerT_$creturn @ site
+"SPEC/Livro $fFromJSON(,,,) @ Livro @ Text @ [CategoriaId] @ [AutorId]" [ALWAYS] forall ($dFromJSON3 :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                                          [Foundation.AutorId])
+                                                                                        ($dFromJSON2 :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                                          [Foundation.CategoriaId])
+                                                                                        ($dFromJSON1 :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                                          Data.Text.Internal.Text)
+                                                                                        ($dFromJSON :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                                         Foundation.Livro)
+  Data.Aeson.Types.FromJSON.$fFromJSON(,,,) @ Foundation.Livro
+                                            @ Data.Text.Internal.Text
+                                            @ [Foundation.CategoriaId]
+                                            @ [Foundation.AutorId]
+                                            $dFromJSON
+                                            $dFromJSON1
+                                            $dFromJSON2
+                                            $dFromJSON3
+  = Livro.$s$fFromJSON(,,,)
+"SPEC/Livro $fFromJSON[] @ (Key Autor)" [ALWAYS] forall ($dFromJSON :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                         (Database.Persist.Class.PersistEntity.Key
+                                                                            Foundation.Autor))
+  Data.Aeson.Types.FromJSON.$fFromJSON[] @ (Database.Persist.Class.PersistEntity.Key
+                                              Foundation.Autor)
+                                         $dFromJSON
+  = Livro.$s$fFromJSON(,,,)_$s$fFromJSON[]
+"SPEC/Livro $fFromJSON[] @ (Key Categoria)" [ALWAYS] forall ($dFromJSON :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                             (Database.Persist.Class.PersistEntity.Key
+                                                                                Foundation.Categoria))
+  Data.Aeson.Types.FromJSON.$fFromJSON[] @ (Database.Persist.Class.PersistEntity.Key
+                                              Foundation.Categoria)
+                                         $dFromJSON
+  = Livro.$s$fFromJSON(,,,)_$s$fFromJSON[]1
+"SPEC/Livro $fMonadHandlerHandlerT @ IO _" [ALWAYS] forall @ site
+                                                           ($d(%,,,,%) :: Control.Monad.Trans.Resource.MonadResourceBase
+                                                                            GHC.Types.IO)
+  Yesod.Core.Class.Handler.$fMonadHandlerHandlerT @ GHC.Types.IO
+                                                  @ site
+                                                  $d(%,,,,%)
+  = Livro.$s$fMonadHandlerHandlerT @ site
+"SPEC/Livro $fMonadHandlerT @ IO _" [ALWAYS] forall @ site
+                                                    ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT @ GHC.Types.IO @ site $dMonad
+  = Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT
+      @ site
+"SPEC/Livro $fMonadHandlerT_$cfail @ IO _" [ALWAYS] forall @ site
+                                                           ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT_$cfail @ GHC.Types.IO
+                                          @ site
+                                          $dMonad
+  = Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+      @ site
+"SPEC/Livro $fMonadIOHandlerT @ IO _" [ALWAYS] forall @ site
+                                                      ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                      GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT @ GHC.Types.IO @ site $dMonadIO
+  = Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+      @ site
+"SPEC/Livro $fMonadIOHandlerT_$cliftIO @ IO _" [ALWAYS] forall @ site
+                                                               ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                               GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cliftIO @ GHC.Types.IO
+                                              @ site
+                                              $dMonadIO
+  = Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+      @ site
+"SPEC/Livro $fMonadIOHandlerT_$cp1MonadLogger @ IO _" [ALWAYS] forall @ site
+                                                                      ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                      GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cp1MonadLogger @ GHC.Types.IO
+                                                     @ site
+                                                     $dMonadIO
+  = Livro.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+      @ site
+"SPEC/Livro $fPersistFieldMaybe @ Day" [ALWAYS] forall ($dPersistField :: Database.Persist.Class.PersistField.PersistField
+                                                                            Data.Time.Calendar.Days.Day)
+  Database.Persist.Class.PersistField.$fPersistFieldMaybe @ Data.Time.Calendar.Days.Day
+                                                          $dPersistField
+  = Livro.$s$fPersistFieldMaybe
+"SPEC/Livro length @ Vector @ Value" [ALWAYS] forall ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                    Data.Vector.Vector
+                                                                    Data.Aeson.Types.Internal.Value)
+  Data.Vector.Generic.length @ Data.Vector.Vector
+                             @ Data.Aeson.Types.Internal.Value
+                             $dVector
+  = Livro.$s$fFromJSON(,,,)_$slength
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

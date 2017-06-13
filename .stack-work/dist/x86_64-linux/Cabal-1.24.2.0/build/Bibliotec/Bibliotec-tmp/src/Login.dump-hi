@@ -1,0 +1,1070 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-13 22:11:51.919055 UTC
+
+interface main@main:Login 8002
+  interface hash: f4f5893d570ecad0c3522aa425c8d3a6
+  ABI hash: 6dc8438242e099989b28fafc8eb2b257
+  export-list hash: 959e6ffc42449153ead53210b3b0ef1f
+  orphan hash: 09fa891779fd462d56ffbcf8af54eefe
+  flag hash: 9fec89afbba470e88fe791025d6433b1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Login.optionsLoginR
+  Login.postLoginR
+module dependencies: Foundation Funcs
+package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-5YZK4rUKxhP8OOPFhv9dCc
+                      ansi-terminal-0.6.3@ansi-terminal-0.6.3-5kYVXjMEHHrAlaHmqGutj8
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-395ZdLOcM0Y7ltaJ6rvhz2
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-CGB8BvrFgghHy5bLy0SFOg
+                      blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy
+                      blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT
+                      byteable-0.1.1@byteable-0.1.1-2lU1pexQSLj1KbNO17UifQ
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-7eVVX59t93gCl3XctAmuil
+                      cereal-0.5.4.0@cereal-0.5.4.0-BsAGxfp8yAs3CiRo2E875e
+                      cipher-aes-0.2.11@cipher-aes-0.2.11-8lsmmv0hSMmFUsxtl3lTHe
+                      clientsession-0.9.1.2@clientsession-0.9.1.2-HoXJNfRtHiHLFzVDwthBx0
+                      conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT
+                      conduit-extra-1.1.16@conduit-extra-1.1.16-3pKSUheUBpdA35UaF6p73j
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cookie-0.4.2.1@cookie-0.4.2.1-K68NuFIZ07nEstxwB6c3aL
+                      cprng-aes-0.6.1@cprng-aes-0.6.1-E65zC5gFDIyD7Ch2uJqJqU
+                      crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q
+                      crypto-cipher-types-0.0.9@crypto-cipher-types-0.0.9-FA7JbbMMbhEH27pAOVwcHg
+                      crypto-random-0.0.9@crypto-random-0.0.9-BFfNQwJ0z3LL4M2YAih4n4
+                      cryptohash-0.11.9@cryptohash-0.11.9-279ZsRS4xxhJVCdujU1Uyx
+                      cryptohash-conduit-0.1.1@cryptohash-conduit-0.1.1-gTLjZi1ugRKyEEBwuxGdf
+                      cryptonite-0.21@cryptonite-0.21-HIZBsFgX0eP4iYP6YdLd9f
+                      css-text-0.1.2.2@css-text-0.1.2.2-2s9sdW2ugVg7tdfgLJDLs4
+                      data-default-0.7.1.1@data-default-0.7.1.1-7EGYJX2YWqWJRbPFUHNoCr
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      deepseq-generics-0.2.0.0@deepseq-generics-0.2.0.0-IjS8Jfo7YCzLKpV8N96gbz
+                      directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      easy-file-0.2.1@easy-file-0.2.1-rguMBNaECxLikt4CCDx0D
+                      email-validate-2.2.0@email-validate-2.2.0-9DdJbbiWN49B1rX3M24NIP
+                      entropy-0.3.7@entropy-0.3.7-GVoReSVE1cZ4Y1pKgzhBYO
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-AASpkRsupvWAQEpNM5DQI
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-BAjxswArqb0E0N0L7J8qbL
+                      http-date-0.0.6.1@http-date-0.0.6.1-5HOvcIxha088JfGZJ7KCrN
+                      http-types-0.9.1@http-types-0.9.1-JfqUh6MfqqR8Kpp4vaoPhu
+                      http2-1.6.3@http2-1.6.3-CCNOUEIMNPCIwgKnOg84uS integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-2nctQ8abLa4F4qppuBPWFl
+                      memory-0.14.5@memory-0.14.5-1ona7ZgZyqo2N2VMnDny9U
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-31dnC2ifQ9r5TApUZagLPk
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5
+                      monad-logger-0.3.24@monad-logger-0.3.24-G9ZPf05x6VlDKMDQKzml3b
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mwc-random-0.13.6.0@mwc-random-0.13.6.0-4EKMGw6QfaJLMhRUSL730j
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-KGBP1BSKxH5GCm0LnZP04j
+                      old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
+                      parsec-3.1.11@parsec-3.1.11-113irVHGgd88sRnywByDNw
+                      path-pieces-0.2.1@path-pieces-0.2.1-7jYjtDsNHN0JfYriIYgB3j
+                      persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM
+                      persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk
+                      persistent-template-2.5.2@persistent-template-2.5.2-F8gewL25fDg4mcqDivNqUq
+                      postgresql-libpq-0.9.3.1@postgresql-libpq-0.9.3.1-PNtzTLZ1kPBlp0W2VWiJp
+                      postgresql-simple-0.5.3.0@postgresql-simple-0.5.3.0-FCW3vqCF2IgLr1Qc9KS5rO
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      psqueues-0.2.2.3@psqueues-0.2.2.3-9nDehYbroydEusqdFJopTa
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-1AOSrWwsk6kGNVrZRdikMV
+                      resourcet-1.1.9@resourcet-1.1.9-JF0GCaCqGTSEsAmsa8Gm9e
+                      safe-0.3.14@safe-0.3.14-GsbXn9D9F3BDazVNcErzdQ
+                      scientific-0.3.4.13@scientific-0.3.4.13-2xII4ZQfmEWrTXn2dbZc3
+                      securemem-0.1.9@securemem-0.1.9-7cBozdH7LYOGgrHRgd7B5b
+                      shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-JJ9zm1wZxYIARxlVa3oQgs
+                      skein-1.0.9.4@skein-1.0.9.4-1r9hT02ZzU5HeQ9SvXvQV
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-pXxQEId7Ie1SLoOLcDazB
+                      stringsearch-0.3.6.6@stringsearch-0.3.6.6-2soGORichTR6reHVhDqKip
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tagsoup-0.14.1@tagsoup-0.14.1-6d5jSu6VuYIIoyQixz5L7u
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl
+                      vault-0.3.0.7@vault-0.3.0.7-HJSJzPTOq6IJLrOGPrOio
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+                      wai-3.2.1.1@wai-3.2.1.1-DzgXwtfU2hBCOxHTusHk9u
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-8g4RZ6XBAEz2rInjcb9qxr
+                      wai-extra-3.0.19.1@wai-extra-3.0.19.1-GDgs7QP4bcBBbHxqxzRSRZ
+                      wai-logger-2.3.0@wai-logger-2.3.0-7qGm9HVnBFG4aOw1Kh4171
+                      warp-3.2.12@warp-3.2.12-8NkWJiglkAJ3KRAh2wZosZ
+                      word8-0.1.2@word8-0.1.2-9WDPGCTpW7JJnsiAQavtd1
+                      xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-LhrllhD0CUxGo6ZOE9B1nx
+                      yesod-1.4.5@yesod-1.4.5-KkuohOR46AGJaQebI2xaBn
+                      yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA
+                      yesod-form-1.4.12@yesod-form-1.4.12-4R82yM19wAsBZqBiggu31i
+                      yesod-persistent-1.4.2@yesod-persistent-1.4.2-LBApvzv570iG1mLpIiASnM
+                      yesod-static-1.5.2@yesod-static-1.5.2-Apz4aqm2LKc804P321bqFb
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q:Crypto.Classes
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
+         hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x:Data.Hashable.Generic
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.2@persistent-template-2.5.2-F8gewL25fDg4mcqDivNqUq:Database.Persist.TH
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE:Data.UnixTime.Diff
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT:Data.Conduit.Internal.Conduit
+                         conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT:Data.Conduit.Internal.Pipe
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         email-validate-2.2.0@email-validate-2.2.0-9DdJbbiWN49B1rX3M24NIP:Text.Email.Parser
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Bitmap
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Boxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Buildable
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Collection
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Element
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Keyed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Mutable
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Numerical.Subtractive
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Block.Base
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Monad
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Types.OffsetSize
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.UTF8.Base
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.ASCII7
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.ISO_8859_1
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.UTF16
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.UTF32
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.UTF8
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
+                         main@main:Foundation
+                         monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5:Control.Monad.Trans.Control
+                         monad-logger-0.3.24@monad-logger-0.3.24-G9ZPf05x6VlDKMDQKzml3b:Control.Monad.Logger
+                         mwc-random-0.13.6.0@mwc-random-0.13.6.0-4EKMGw6QfaJLMhRUSL730j:System.Random.MWC
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF:Network.URI
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistConfig
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Types.Internal
+                         persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk:Database.Persist.Postgresql
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         resourcet-1.1.9@resourcet-1.1.9-JF0GCaCqGTSEsAmsa8Gm9e:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o:Text.Internal.Css
+                         shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o:Text.Shakespeare
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal.Builder
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Class.Handler
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Types
+                         yesod-static-1.5.2@yesod-static-1.5.2-Apz4aqm2LKc804P321bqFb:Yesod.Static
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types cca8fe352d412dcafd792be797769137
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types.Internal 854bb132d6f0fbcc043a2365356b51dc
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types.ToJSON 31e13e0fbcc1628680533c9d371f5c81
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  http-types-0.9.1@http-types-0.9.1-JfqUh6MfqqR8Kpp4vaoPhu:Network.HTTP.Types.Status b1d45c624b8c67961bc811066117346d
+import  -/  Foundation 70794cf1dd7eb65f8e6012373a0d2b63
+  exports: 73ce260fae8f29eaed84fefbf1a7c209
+  Handler a310d57e79abfd605656bf15570e24ea
+  UsuarioEmail fa5d5e0f54d982f9db11f9aa857b72f7
+  UsuarioSenha dde180a42884ab253f8795b56073d48d
+import  -/  Funcs 2402f84019fb09ceeb9e953b4013150c
+  exports: 5c1d8a0bf50fd053189d09484ae583df
+  OPTIONS c2ab4705d527069c61913c836b3099eb
+  POST d5e7ded54f2fa2b4202d10824af95d16
+  anyOriginIn 11cb7fc688f79e156c91c7af03e2c192
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist fe3a39fff4539f7b00d06ebe497b9c8f
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistEntity 9b53e00c0944774de6d888c494872c43
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistQuery a0443625c636182657a78811dabc1a54
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore 578591250a64a1e2f7989b5ddce9953d
+import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk:Database.Persist.Postgresql 14e325f69656cbdce05b427af5a05040
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Internal a2f6f66c5bb1247458d9fa25257ab188
+import  -/  yesod-1.4.5@yesod-1.4.5-KkuohOR46AGJaQebI2xaBn:Yesod e9085892ecdae63fde0f9ac2eb6f89dd
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Handler f0395cd116f061339f74fc813c1633e9
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Json e11e695487bcbdbf3c4eb6308e74451c
+import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-LBApvzv570iG1mLpIiASnM:Yesod.Persist.Core be9e13d9d70fd0775c7c65b1955335ed
+5f6fe09cc135591715fd920f37acb19d
+  $s$WUsuarioEmail2 ::
+    Data.Text.Internal.Text GHC.Types.~~ Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Text.Internal.Text
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
+26dd3420a2e4663a6a648585b493e402
+  $s$fApplicativeHandlerT_$creturn ::
+    a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ site
+                   @ a
+                   (eta :: a)
+                   (eta1 :: Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta) `cast` (GHC.Types.N:IO[0] <a>_R) eta2)
+                  `cast`
+                (forall (site :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <site>_N <GHC.Types.IO>_N <a>_N))) -}
+be3a918f83fef7a81c2b73e86f85df87
+  $s$fFromJSON(,) ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                  (GHC.Base.$
+                     @ 'GHC.Types.PtrRepLifted
+                     @ (Data.Aeson.Types.Internal.Array
+                        -> Data.Aeson.Types.Internal.Parser
+                             (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                     @ (Data.Aeson.Types.Internal.Value
+                        -> Data.Aeson.Types.Internal.Parser
+                             (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                     (Data.Aeson.Types.FromJSON.withArray
+                        @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "(a, b)"#)))
+                     (\ (t :: Data.Aeson.Types.Internal.Array) ->
+                      let {
+                        n :: GHC.Types.Int = Login.$s$fFromJSON(,)_$slength t
+                      } in
+                      case GHC.Classes.eqInt n (GHC.Types.I# 2#) of wild {
+                        GHC.Types.False
+                        -> GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ GHC.Base.String
+                             @ (Data.Aeson.Types.Internal.Parser
+                                  (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                             (Data.Aeson.Types.Internal.$fMonadFailParser_$cfail
+                                @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                             (GHC.Base.build
+                                @ GHC.Types.Char
+                                (\ @ b1
+                                   (c :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                                   (n1 :: b1)[OneShot] ->
+                                 GHC.CString.unpackFoldrCString#
+                                   @ b1
+                                   "cannot unpack array of length "#
+                                   c
+                                   (GHC.Base.foldr
+                                      @ GHC.Types.Char
+                                      @ b1
+                                      c
+                                      (GHC.CString.unpackFoldrCString#
+                                         @ b1
+                                         " into a tuple of length 2"#
+                                         c
+                                         n1)
+                                      (GHC.Show.$fShowInt_$cshow n))))
+                        GHC.Types.True
+                        -> let {
+                             d :: Data.Aeson.Types.Internal.Parser Data.Text.Internal.Text
+                             = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                 @ Data.Text.Internal.Text
+                                 Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON16
+                                 (GHC.Types.I# 0#)
+                                 t
+                           } in
+                           let {
+                             d1 :: Data.Aeson.Types.Internal.Parser
+                                     (Data.Text.Internal.Text
+                                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                               {- Arity: 3 -}
+                             = Data.Aeson.Types.FromJSON.$fFromJSON(,)_$s<$>
+                                 @ Data.Text.Internal.Text
+                                 @ (Data.Text.Internal.Text
+                                    -> (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                                 (GHC.Tuple.(,) @ Data.Text.Internal.Text @ Data.Text.Internal.Text)
+                                 d
+                           } in
+                           let {
+                             e :: Data.Aeson.Types.Internal.Parser Data.Text.Internal.Text
+                             = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                 @ Data.Text.Internal.Text
+                                 Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON16
+                                 (GHC.Types.I# 1#)
+                                 t
+                           } in
+                           GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ (forall (f :: * -> *) r.
+                                Data.Aeson.Types.Internal.JSONPath
+                                -> Data.Aeson.Types.Internal.Failure f r
+                                -> Data.Aeson.Types.Internal.Success
+                                     (Data.Text.Internal.Text, Data.Text.Internal.Text) f r
+                                -> f r)
+                             @ (Data.Aeson.Types.Internal.Parser
+                                  (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                             (\ (tpl :: forall (f :: * -> *) r.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f r
+                                        -> Data.Aeson.Types.Internal.Success
+                                             (Data.Text.Internal.Text, Data.Text.Internal.Text) f r
+                                        -> f r) ->
+                              tpl)
+                               `cast`
+                             (<forall (f :: * -> *) r.
+                               Data.Aeson.Types.Internal.JSONPath
+                               -> Data.Aeson.Types.Internal.Failure f r
+                               -> Data.Aeson.Types.Internal.Success
+                                    (Data.Text.Internal.Text, Data.Text.Internal.Text) f r
+                               -> f r>_R
+                              ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                            <(Data.Text.Internal.Text, Data.Text.Internal.Text)>_R))
+                             (\ @ (f :: * -> *)
+                                @ r
+                                (path :: Data.Aeson.Types.Internal.JSONPath)
+                                (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                (ks :: Data.Aeson.Types.Internal.Success
+                                         (Data.Text.Internal.Text, Data.Text.Internal.Text) f r) ->
+                              Data.Aeson.Types.Internal.runParser
+                                @ (Data.Text.Internal.Text
+                                   -> (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                                d1
+                                @ f
+                                @ r
+                                path
+                                kf
+                                (\ (a1 :: Data.Text.Internal.Text
+                                          -> (Data.Text.Internal.Text, Data.Text.Internal.Text)) ->
+                                 Data.Aeson.Types.Internal.runParser
+                                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                                   (GHC.Base.$
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ (forall (f1 :: * -> *) r1.
+                                         Data.Aeson.Types.Internal.JSONPath
+                                         -> Data.Aeson.Types.Internal.Failure f1 r1
+                                         -> Data.Aeson.Types.Internal.Success
+                                              (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                                              f1
+                                              r1
+                                         -> f1 r1)
+                                      @ (Data.Aeson.Types.Internal.Parser
+                                           (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                                      (\ (tpl :: forall (f1 :: * -> *) r1.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      (Data.Text.Internal.Text,
+                                                       Data.Text.Internal.Text)
+                                                      f1
+                                                      r1
+                                                 -> f1 r1) ->
+                                       tpl)
+                                        `cast`
+                                      (<forall (f1 :: * -> *) r1.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f1 r1
+                                        -> Data.Aeson.Types.Internal.Success
+                                             (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                                             f1
+                                             r1
+                                        -> f1 r1>_R
+                                       ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                     <(Data.Text.Internal.Text,
+                                                       Data.Text.Internal.Text)>_R))
+                                      (\ @ (f1 :: * -> *)
+                                         @ r1
+                                         (path1 :: Data.Aeson.Types.Internal.JSONPath)
+                                         (kf1 :: Data.Aeson.Types.Internal.Failure f1 r1)
+                                         (ks1 :: Data.Aeson.Types.Internal.Success
+                                                   (Data.Text.Internal.Text,
+                                                    Data.Text.Internal.Text)
+                                                   f1
+                                                   r1) ->
+                                       Data.Aeson.Types.Internal.runParser
+                                         @ Data.Text.Internal.Text
+                                         e
+                                         @ f1
+                                         @ r1
+                                         path1
+                                         kf1
+                                         (\ (a2 :: Data.Text.Internal.Text) ->
+                                          let {
+                                            a3 :: (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                                            = a1 a2
+                                          } in
+                                          Data.Aeson.Types.Internal.runParser
+                                            @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                                            (GHC.Base.$
+                                               @ 'GHC.Types.PtrRepLifted
+                                               @ (forall (f2 :: * -> *) r2.
+                                                  Data.Aeson.Types.Internal.JSONPath
+                                                  -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                  -> Data.Aeson.Types.Internal.Success
+                                                       (Data.Text.Internal.Text,
+                                                        Data.Text.Internal.Text)
+                                                       f2
+                                                       r2
+                                                  -> f2 r2)
+                                               @ (Data.Aeson.Types.Internal.Parser
+                                                    (Data.Text.Internal.Text,
+                                                     Data.Text.Internal.Text))
+                                               (\ (tpl :: forall (f2 :: * -> *) r2.
+                                                          Data.Aeson.Types.Internal.JSONPath
+                                                          -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                          -> Data.Aeson.Types.Internal.Success
+                                                               (Data.Text.Internal.Text,
+                                                                Data.Text.Internal.Text)
+                                                               f2
+                                                               r2
+                                                          -> f2 r2) ->
+                                                tpl)
+                                                 `cast`
+                                               (<forall (f2 :: * -> *) r2.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      (Data.Text.Internal.Text,
+                                                       Data.Text.Internal.Text)
+                                                      f2
+                                                      r2
+                                                 -> f2 r2>_R
+                                                ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                              <(Data.Text.Internal.Text,
+                                                                Data.Text.Internal.Text)>_R))
+                                               (\ @ (f2 :: * -> *)
+                                                  @ r2
+                                                  (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                                  (_kf :: Data.Aeson.Types.Internal.Failure f2 r2)
+                                                  (ks2 :: Data.Aeson.Types.Internal.Success
+                                                            (Data.Text.Internal.Text,
+                                                             Data.Text.Internal.Text)
+                                                            f2
+                                                            r2) ->
+                                                ks2 a3))
+                                            @ f1
+                                            @ r1
+                                            path1
+                                            kf1
+                                            ks1)))
+                                   @ f
+                                   @ r
+                                   path
+                                   kf
+                                   ks)) }))
+                  (Data.Aeson.Types.FromJSON.$fFromJSON(,)_$cparseJSONList
+                     @ Data.Text.Internal.Text
+                     @ Data.Text.Internal.Text
+                     Data.Aeson.Types.FromJSON.$fFromJSONText0
+                     Data.Aeson.Types.FromJSON.$fFromJSONText0) -}
+8d65581efb8e32eb8386f1ee4d3e902b
+  $s$fFromJSON(,)_$slength ::
+    Data.Vector.Vector Data.Aeson.Types.Internal.Value -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,A)>m,
+     Inline: [NEVER] -}
+98f9f944c07a67af66eb0ea9fa14614b
+  $s$fMonadHandlerHandlerT ::
+    Yesod.Core.Class.Handler.MonadHandler
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cp1MonadHandler
+                     @ GHC.Types.IO
+                     @ site
+                     Login.$s$fMonadHandlerHandlerT1)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cliftHandlerT
+                     @ GHC.Types.IO
+                     @ site
+                     Login.$s$fMonadHandlerHandlerT1) -}
+489eac202a53e15c463baee7aae5f541
+  $s$fMonadHandlerHandlerT1 ::
+    Control.Monad.Trans.Resource.MonadResourceBase GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: ((Control.Monad.Trans.Control.$fMonadBaseControlIOIO,
+                  Control.Monad.Catch.$fMonadThrowIO,
+                  Control.Monad.Base.$fMonadBaseIOIO,
+                  Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
+970f9a86ca7152ce3ce11d37ed4f0041
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad ::
+    GHC.Base.Monad GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fMonadIO -}
+72f8a2a9c41a9083add42a62dc890efe
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$cp1Monad
+                     @ GHC.Types.IO
+                     @ site
+                     Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>=
+                     @ GHC.Types.IO
+                     @ site
+                     Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>
+                     @ GHC.Types.IO
+                     @ site
+                     Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad)
+                  (Login.$s$fApplicativeHandlerT_$creturn @ site)
+                  (Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+                     @ site) -}
+8145123033cab15cda78f96d00f9399f
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail ::
+    GHC.Base.String -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Base.String) ->
+                 Yesod.Core.Types.$fMonadHandlerT1
+                   @ site
+                   @ GHC.Types.IO
+                   @ a
+                   Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad
+                   eta) -}
+1c428e775e4135463a84cc6fab0d2492
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT ::
+    Control.Monad.IO.Class.MonadIO
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+                     @ site)
+                  (Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+                     @ site) -}
+202bb189954f5dd72abb2177c735ac28
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO ::
+    GHC.Types.IO a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Types.IO a) ->
+                 let {
+                   eta1 :: GHC.Types.IO a = GHC.Base.id @ (GHC.Types.IO a) eta
+                 } in
+                 (\ (ds :: Yesod.Core.Types.HandlerData
+                             site (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
+                  eta1)
+                   `cast`
+                 (Sym (Yesod.Core.Types.N:HandlerT[0]
+                           <site>_N <GHC.Types.IO>_N <a>_N))) -}
+e375ae4ce869be4a0f5effd6d552c088
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT -}
+93149925bf401a43daf5e9ba4ea20b59
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Login.$trModule2 Login.$trModule1) -}
+9a50a2c56be0d2e6e61cf5e8f86c687d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Login"#) -}
+cdc717917136b3ad9e61eaf32057ed5c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+f786acde9547be2e858ebe9bd91f6402
+  optionsLoginR :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn Login.optionsLoginR1) -}
+b64aa8520cdee31b0e8d92a8c1ee0071
+  optionsLoginR1 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Login.optionsLoginR2) -}
+c15eb268c75ba5e4b9fe064996853e60
+  optionsLoginR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.POST
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+b10e243b8e1b5618eacba35c4a13d818
+  postLoginR :: Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Login.postLoginR1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.App>_N
+                               <GHC.Types.IO>_N
+                               <Data.Aeson.Types.Internal.Value>_N))) -}
+ee49a2ab3f0bb1b74b77073547f25abb
+  postLoginR1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (r :: Yesod.Core.Types.HandlerData
+                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Login.postLoginR10
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.App>_N
+                            <GHC.Types.IO>_N
+                            <(Data.Text.Internal.Text, Data.Text.Internal.Text)>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <(Data.Text.Internal.Text, Data.Text.Internal.Text)>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) email senha ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Usuario
+                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Login.postLoginR8
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Usuario>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendUsuario[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.App)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Usuario)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Usuario
+                             @ Data.Text.Internal.Text
+                             Database.Persist.Class.PersistField.$fPersistFieldText0
+                             Login.postLoginR7
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Data.Text.Internal.Text>_N)
+                             (Data.Either.Left
+                                @ Data.Text.Internal.Text
+                                @ [Data.Text.Internal.Text]
+                                email)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Usuario)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Usuario
+                                @ Data.Text.Internal.Text
+                                Database.Persist.Class.PersistField.$fPersistFieldText0
+                                Login.postLoginR6
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Data.Text.Internal.Text>_N)
+                                (Data.Either.Left
+                                   @ Data.Text.Internal.Text
+                                   @ [Data.Text.Internal.Text]
+                                   senha)
+                                Database.Persist.Types.Base.Eq)
+                             (GHC.Types.[]
+                                @ (Database.Persist.Class.PersistEntity.Filter
+                                     Foundation.Usuario))))
+                       Login.postLoginR5
+                 } in
+                 case Foundation.$fYesodPersistApp1
+                        @ (GHC.Base.Maybe
+                             (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.App
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Usuario)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Usuario))>_N)
+                               r1
+                         } in
+                         (\ (r2 :: Yesod.Core.Types.HandlerData
+                                     Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.App>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Usuario))>_N)
+                                  r2)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Usuario))>_R)
+                                 s1 of ds2 { (#,#) ipv2 ipv3 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                             @ (GHC.Base.Maybe
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv3
+                             (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend1
+                                @ Foundation.Usuario)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <GHC.Base.Maybe
+                                               (Database.Persist.Class.PersistEntity.Entity
+                                                  Foundation.Usuario)>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <GHC.Base.Maybe
+                                  (Database.Persist.Class.PersistEntity.Entity
+                                     Foundation.Usuario)>_R)
+                            ipv2 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <GHC.Base.Maybe
+                                                (Database.Persist.Class.PersistEntity.Entity
+                                                   Foundation.Usuario)>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.App>_N
+                                        <GHC.Types.IO>_N
+                                        <GHC.Base.Maybe
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Usuario)>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendApp[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <GHC.Base.Maybe
+                                     (Database.Persist.Class.PersistEntity.Entity
+                                        Foundation.Usuario)>_N))
+                        r
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ Data.Aeson.Types.Internal.Value
+                        Login.postLoginR3
+                        ipv2
+                   GHC.Base.Just ds
+                   -> case ds of wild2 { Database.Persist.Class.PersistEntity.Entity $dPersistEntity uid ds3 ->
+                      GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ Data.Aeson.Types.Internal.Value
+                        (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                           (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv4 ipv5 ipv6 ipv7 ->
+                            case Data.Aeson.Types.Internal.$sfromList1
+                                   @ Data.Aeson.Types.Internal.Value
+                                   (GHC.Types.:
+                                      @ Data.Aeson.Types.Internal.Pair
+                                      (Login.postLoginR2,
+                                       case uid
+                                              `cast`
+                                            (Trans
+                                                 (Foundation.D:R:KeyUsuario0[0])
+                                                 (Trans
+                                                      (Foundation.N:R:KeyUsuario[0])
+                                                      (Trans
+                                                           (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                                           (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) of wild3 { GHC.Int.I64# x# ->
+                                       case GHC.Integer.Type.smallInteger x# of dt1 { DEFAULT ->
+                                       Data.Aeson.Types.Internal.Number
+                                         (Data.Scientific.Scientific dt1 0#) } })
+                                      (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                                   (Data.HashMap.Base.Empty
+                                      @ Data.Text.Internal.Text
+                                      @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                            case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                                    (Data.Aeson.Types.Internal.Object dt1))
+                                   `cast`
+                                 (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                            Yesod.Core.Types.HCContent
+                              Network.HTTP.Types.Status.status200
+                              (Yesod.Core.Types.TypedContent
+                                 dt
+                                 (Yesod.Core.Types.ContentBuilder
+                                    nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                                    (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                        ipv2 } } } } }) -}
+1c6ffd4ae96bf096910b1aac674e1f29
+  postLoginR10 ::
+    Yesod.Core.Types.HandlerT
+      Foundation.App
+      GHC.Types.IO
+      (Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Unfolding: (Yesod.Core.Json.requireJsonBody
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text)
+                   (Login.$s$fMonadHandlerHandlerT @ Foundation.App)
+                   Login.$s$fFromJSON(,)) -}
+931c3aaab6e525ed56c5db32034b12b3
+  postLoginR2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "resp"#) -}
+d71c06f23d8bfe4ada64edf0c7d7ddb9
+  postLoginR3 :: GHC.Exception.SomeException
+  {- Unfolding: (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                   Login.postLoginR4) -}
+9258002dd15743f42159f4df97bb6577
+  postLoginR4 :: Yesod.Core.Types.HandlerContents
+  {- Unfolding: (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                 case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                         Data.Aeson.Types.Internal.emptyObject)
+                        `cast`
+                      (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                 Yesod.Core.Types.HCContent
+                   Network.HTTP.Types.Status.status401
+                   (Yesod.Core.Types.TypedContent
+                      dt
+                      (Yesod.Core.Types.ContentBuilder
+                         nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                         (GHC.Base.Nothing @ GHC.Types.Int))) } }) -}
+8fca069b06c555a6ec50258ae53bf864
+  postLoginR5 ::
+    [Database.Persist.Class.PersistEntity.SelectOpt Foundation.Usuario]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.SelectOpt
+                        Foundation.Usuario)
+                   (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend5
+                      @ Foundation.Usuario)
+                   (GHC.Types.[]
+                      @ (Database.Persist.Class.PersistEntity.SelectOpt
+                           Foundation.Usuario))) -}
+8ecbc48d3550a919f155c3ebc625a536
+  postLoginR6 ::
+    Foundation.R:EntityFieldUsuariotyp Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m4,
+     Unfolding: (Foundation.UsuarioSenha
+                   @ Data.Text.Internal.Text
+                   Login.$s$WUsuarioEmail2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_N)) -}
+b2b74f786969c9193d17df3b4f60c8b1
+  postLoginR7 ::
+    Foundation.R:EntityFieldUsuariotyp Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Foundation.UsuarioEmail
+                   @ Data.Text.Internal.Text
+                   Login.$s$WUsuarioEmail2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_N)) -}
+45f2fc0fd3c11a766c03592e699ca704
+  postLoginR8 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Usuario,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityUsuario,
+                  Login.postLoginR9
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+852c4e02de18996968d48882f578e9e5
+  postLoginR9 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
+"SPEC/Login $fApplicativeHandlerT_$creturn @ IO _" [ALWAYS] forall @ site
+                                                                   ($dMonad :: GHC.Base.Monad
+                                                                                 GHC.Types.IO)
+  Yesod.Core.Types.$fApplicativeHandlerT_$creturn @ GHC.Types.IO
+                                                  @ site
+                                                  $dMonad
+  = Login.$s$fApplicativeHandlerT_$creturn @ site
+"SPEC/Login $fFromJSON(,) @ Text @ Text" [ALWAYS] forall ($dFromJSON1 :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                           Data.Text.Internal.Text)
+                                                         ($dFromJSON :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                          Data.Text.Internal.Text)
+  Data.Aeson.Types.FromJSON.$fFromJSON(,) @ Data.Text.Internal.Text
+                                          @ Data.Text.Internal.Text
+                                          $dFromJSON
+                                          $dFromJSON1
+  = Login.$s$fFromJSON(,)
+"SPEC/Login $fMonadHandlerHandlerT @ IO _" [ALWAYS] forall @ site
+                                                           ($d(%,,,,%) :: Control.Monad.Trans.Resource.MonadResourceBase
+                                                                            GHC.Types.IO)
+  Yesod.Core.Class.Handler.$fMonadHandlerHandlerT @ GHC.Types.IO
+                                                  @ site
+                                                  $d(%,,,,%)
+  = Login.$s$fMonadHandlerHandlerT @ site
+"SPEC/Login $fMonadHandlerT @ IO _" [ALWAYS] forall @ site
+                                                    ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT @ GHC.Types.IO @ site $dMonad
+  = Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT
+      @ site
+"SPEC/Login $fMonadHandlerT_$cfail @ IO _" [ALWAYS] forall @ site
+                                                           ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT_$cfail @ GHC.Types.IO
+                                          @ site
+                                          $dMonad
+  = Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+      @ site
+"SPEC/Login $fMonadIOHandlerT @ IO _" [ALWAYS] forall @ site
+                                                      ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                      GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT @ GHC.Types.IO @ site $dMonadIO
+  = Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+      @ site
+"SPEC/Login $fMonadIOHandlerT_$cliftIO @ IO _" [ALWAYS] forall @ site
+                                                               ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                               GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cliftIO @ GHC.Types.IO
+                                              @ site
+                                              $dMonadIO
+  = Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+      @ site
+"SPEC/Login $fMonadIOHandlerT_$cp1MonadLogger @ IO _" [ALWAYS] forall @ site
+                                                                      ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                      GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cp1MonadLogger @ GHC.Types.IO
+                                                     @ site
+                                                     $dMonadIO
+  = Login.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+      @ site
+"SPEC/Login length @ Vector @ Value" [ALWAYS] forall ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                    Data.Vector.Vector
+                                                                    Data.Aeson.Types.Internal.Value)
+  Data.Vector.Generic.length @ Data.Vector.Vector
+                             @ Data.Aeson.Types.Internal.Value
+                             $dVector
+  = Login.$s$fFromJSON(,)_$slength
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

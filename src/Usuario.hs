@@ -19,6 +19,7 @@ optionsUsuarioByIdR _ = anyOriginIn [ OPTIONS, GET, PATCH ]
 optionsBuscarUsuarioR :: Text -> Handler ()
 optionsBuscarUsuarioR _ = anyOriginIn [ OPTIONS, GET ]
 
+
 -- GET -------------------------------------------------------------------------
 getUsuarioByIdR :: UsuarioId -> Handler Value
 getUsuarioByIdR usuarioId = do
@@ -39,6 +40,7 @@ postUsuarioR = do
     usuario   <- requireJsonBody :: Handler Usuario
     usuarioId <- runDB $ insert usuario
     sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey usuarioId ) ]
+
 
 -- PATCH -----------------------------------------------------------------------
 patchUsuarioByIdR :: UsuarioId -> Handler Value

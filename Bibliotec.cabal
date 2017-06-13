@@ -8,14 +8,16 @@ executable          Bibliotec
   main-is:          Main.hs
   other-modules:    Application
                     Foundation
-                    
-                    Funcs
-                    Usuario
+                  
+                    Aluguel
                     Autor
                     Categoria
                     Editora
-                    Login
+                    Funcs
                     Imagem
+                    Livro
+                    Login
+                    Usuario
 
   ghc-options:      -Wall -fwarn-tabs -O2
   

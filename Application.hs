@@ -4,10 +4,12 @@ module Application where
 import Foundation
 import Yesod.Core
 
-import Usuario
+import Aluguel
 import Autor
 import Categoria
 import Editora
+import Livro
 import Login
+import Usuario
 
 mkYesodDispatch "App" resourcesApp

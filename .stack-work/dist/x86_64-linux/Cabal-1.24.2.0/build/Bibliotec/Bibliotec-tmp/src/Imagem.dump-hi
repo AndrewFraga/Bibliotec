@@ -1,0 +1,128 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-13 22:10:40.301554 UTC
+
+interface main@main:Imagem 8002
+  interface hash: 90ca4cf01974c6d6810d19502bf36e34
+  ABI hash: 8e56317806296a0f768cbd3bd61537e2
+  export-list hash: de4c4cd01086e7bbe624c6b4d711bc3b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9fec89afbba470e88fe791025d6433b1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Imagem.uploadDirectory
+  Imagem.writeToServer
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj:Data.ByteString.Base64 a45a83e3500838257fcfde8fa8197052
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString 43e99fdac51908da414a28958688da64
+import  -/  filepath-1.4.1.1@filepath-1.4.1.1:System.FilePath a3d1d13ac7dd86705b5dfaf58a5c0b9e
+import  -/  filepath-1.4.1.1@filepath-1.4.1.1:System.FilePath.Posix 6a5e3ee74184fdcc5da09a368e7c40f5
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Encoding 7f067dcd067a42333d2656270b0727f8
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Internal a2f6f66c5bb1247458d9fa25257ab188
+a640b5c370411a8a616568930d95e711
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Imagem.$trModule2
+                   Imagem.$trModule1) -}
+2881c303ed17eae94ac401cd16754129
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Imagem"#) -}
+99921bfab9774587bddecf9e2f27387d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c389055bc42bb31d4c87c53ac9cb771b
+  $wwriteToServer ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.IO ()
+  {- Arity: 4, Strictness: <S,U><S,U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (w :: GHC.Base.String) ->
+                 case Data.Text.Encoding.$wencodeUtf8
+                        ww
+                        ww1
+                        ww2 of ww3 { Data.ByteString.Internal.PS ww4 ww5 ww6 ww7 ->
+                 case Data.ByteString.Base64.Internal.$wdecodeWithTable
+                        Data.ByteString.Base64.decodeFP
+                        ww4
+                        ww5
+                        ww6
+                        ww7 of wild {
+                   Data.Either.Left ds -> Imagem.writeToServer2
+                   Data.Either.Right img
+                   -> (Data.ByteString.writeFile1
+                         (System.FilePath.Posix.combine
+                            Imagem.uploadDirectory
+                            (GHC.Base.++ @ GHC.Types.Char w Imagem.writeToServer1))
+                         img)
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)) } }) -}
+46ab79c0a04a715e6ecb61a3991fb1a5
+  uploadDirectory :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString# "static"#) -}
+9bf72362949c92ad47c69829705e0f82
+  writeToServer ::
+    Data.Text.Internal.Text -> GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S(SSS),1*U(U,U,1*U)><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.Text.Internal.Text) (w1 :: GHC.Base.String) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Imagem.$wwriteToServer ww1 ww2 ww3 w1 }) -}
+318eb94d7eea3d17ae366cef7b53cb96
+  writeToServer1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".jpg"#) -}
+d0217855b39b37e852268b9c8e337501
+  writeToServer2 :: GHC.Types.IO ()
+  {- Strictness: x -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

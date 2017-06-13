@@ -1,0 +1,20 @@
+psql -h ec2-54-221-244-196.compute-1.amazonaws.com -U wmxeosohimzhht -d decjj5nqjumfnd
+     
+9b26c2103f3eee0fbe303f4ff5cc05b639679a8ac43c9b6a70cf72b917b7086b
+
+
+
+
+    
+    
+{-
+    listaAutorLivro <- runDB $ selectList [ AutorLivroLivro ==. livroId ] []
+    listaAutorId    <- return $ Prelude.map ( autorLivroAutor.entityVal ) listaAutorLivro
+    listaAutor      <- sequence $ Prelude.map ( \autorId -> runDB $ get404 autorId ) listaAutorId
+    
+    listaCategoriaLivro <- runDB $ selectList [ CategoriaLivroLivro ==. livroId ] []
+    listaCategoriaId    <- return $ Prelude.map ( categoriaLivroCategoria.entityVal ) listaCategoriaLivro
+    listaCategoria      <- sequence $ Prelude.map ( \categoriaId -> runDB $ get404 categoriaId ) listaCategoriaId
+    
+    sendStatusJSON ok200 $ object [ "resp" .= ( livro, listaAutor, listaCategoria ) ]
+-}

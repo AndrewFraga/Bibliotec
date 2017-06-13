@@ -1,7 +1,14 @@
- /usuario                                         UsuarioR                         OPTIONS POST
-!/usuario/#UsuarioId                              UsuarioByIdR                     OPTIONS GET PATCH
- /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS GET
- 
+ /aluguel                                         AluguelR                         OPTIONS POST
+!/aluguel/#AluguelId                              AluguelByIdR                     OPTIONS GET DELETE
+ /buscar/aluguel/usuario/#UsuarioId               BuscarAluguelByUsuarioIdR        OPTIONS GET
+ /buscar/aluguel/livro/#LivroId                   BuscarAluguelByLivroIdR          OPTIONS GET
+!/buscar/aluguel/#Day/#Day                        BuscarAluguelByDateR             OPTIONS GET
+ /buscar/aluguel/usuario/#UsuarioId/#Day/#Day     BuscarAluguelByUsuarioIdDateR    OPTIONS GET
+!/buscar/aluguel/livro/#LivroId/#Day/#Day         BuscarAluguelByLivroIdDateR      OPTIONS GET
+ /devolucao/aluguel/#AluguelId                    DevolucaoAluguelByIdR            OPTIONS PATCH
+ /saida/aluguel/#AluguelId                        SaidaAluguelByIdR                OPTIONS PATCH
+ /renovacao/aluguel/#AluguelId                    RenovacaoAluguelByIdR            OPTIONS PATCH
+
  /autor                                           AutorR                           OPTIONS POST
 !/autor/#AutorId                                  AutorByIdR                       OPTIONS GET PUT DELETE
  /buscar/autor/#Text                              BuscarAutorR                     OPTIONS GET
@@ -13,7 +20,18 @@
  /editora                                         EditoraR                         OPTIONS POST
 !/editora/#EditoraId                              EditoraByIdR                     OPTIONS GET PUT DELETE
  /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS GET
- 
+
+ /livro                                           LivroR                           OPTIONS POST 
+!/livro/#LivroId                                  LivroByIdR                       OPTIONS GET PUT DELETE
+ /buscar/livro/#Text                              BuscarLivroIdR                   OPTIONS GET
+ /qt/livro/alugado/#LivroId                       QtLivroAlugadoByIdR              OPTIONS GET
+ /buscar/livro/categoria/#CategoriaId             BuscarLivroIdByCategoriaIdR      OPTIONS GET
+ /buscar/livro/autor/#AutorId                     BuscarLivroIdByAutorIdR          OPTIONS GET
+
+ /usuario                                         UsuarioR                         OPTIONS POST
+!/usuario/#UsuarioId                              UsuarioByIdR                     OPTIONS GET PATCH
+ /buscar/usuario/#Text                            BuscarUsuarioR                   OPTIONS GET
+
  /login                                           LoginR                           OPTIONS POST
  
  /static                                          StaticR                          Static  getStatic

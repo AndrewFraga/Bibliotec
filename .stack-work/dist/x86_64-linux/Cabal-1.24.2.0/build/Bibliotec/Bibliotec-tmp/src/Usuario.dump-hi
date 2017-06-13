@@ -1,0 +1,1944 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-13 22:11:53.080796 UTC
+
+interface main@main:Usuario 8002
+  interface hash: f3635b5bbd3ce23dd1209f3935d5c607
+  ABI hash: f37a969e84455890c0967fb9a84b9390
+  export-list hash: a1bfca87fc74cb3b8a778a9917280ecd
+  orphan hash: 70f65521673dd06a927d4e4a372e0872
+  flag hash: 9fec89afbba470e88fe791025d6433b1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Usuario.getBuscarUsuarioR
+  Usuario.getUsuarioByIdR
+  Usuario.optionsBuscarUsuarioR
+  Usuario.optionsUsuarioByIdR
+  Usuario.optionsUsuarioR
+  Usuario.patchUsuarioByIdR
+  Usuario.postUsuarioR
+module dependencies: Foundation Funcs
+package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-5YZK4rUKxhP8OOPFhv9dCc
+                      ansi-terminal-0.6.3@ansi-terminal-0.6.3-5kYVXjMEHHrAlaHmqGutj8
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-395ZdLOcM0Y7ltaJ6rvhz2
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-CGB8BvrFgghHy5bLy0SFOg
+                      blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy
+                      blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT
+                      byteable-0.1.1@byteable-0.1.1-2lU1pexQSLj1KbNO17UifQ
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-7eVVX59t93gCl3XctAmuil
+                      cereal-0.5.4.0@cereal-0.5.4.0-BsAGxfp8yAs3CiRo2E875e
+                      cipher-aes-0.2.11@cipher-aes-0.2.11-8lsmmv0hSMmFUsxtl3lTHe
+                      clientsession-0.9.1.2@clientsession-0.9.1.2-HoXJNfRtHiHLFzVDwthBx0
+                      conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT
+                      conduit-extra-1.1.16@conduit-extra-1.1.16-3pKSUheUBpdA35UaF6p73j
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cookie-0.4.2.1@cookie-0.4.2.1-K68NuFIZ07nEstxwB6c3aL
+                      cprng-aes-0.6.1@cprng-aes-0.6.1-E65zC5gFDIyD7Ch2uJqJqU
+                      crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q
+                      crypto-cipher-types-0.0.9@crypto-cipher-types-0.0.9-FA7JbbMMbhEH27pAOVwcHg
+                      crypto-random-0.0.9@crypto-random-0.0.9-BFfNQwJ0z3LL4M2YAih4n4
+                      cryptohash-0.11.9@cryptohash-0.11.9-279ZsRS4xxhJVCdujU1Uyx
+                      cryptohash-conduit-0.1.1@cryptohash-conduit-0.1.1-gTLjZi1ugRKyEEBwuxGdf
+                      cryptonite-0.21@cryptonite-0.21-HIZBsFgX0eP4iYP6YdLd9f
+                      css-text-0.1.2.2@css-text-0.1.2.2-2s9sdW2ugVg7tdfgLJDLs4
+                      data-default-0.7.1.1@data-default-0.7.1.1-7EGYJX2YWqWJRbPFUHNoCr
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      deepseq-generics-0.2.0.0@deepseq-generics-0.2.0.0-IjS8Jfo7YCzLKpV8N96gbz
+                      directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      easy-file-0.2.1@easy-file-0.2.1-rguMBNaECxLikt4CCDx0D
+                      email-validate-2.2.0@email-validate-2.2.0-9DdJbbiWN49B1rX3M24NIP
+                      entropy-0.3.7@entropy-0.3.7-GVoReSVE1cZ4Y1pKgzhBYO
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-AASpkRsupvWAQEpNM5DQI
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-BAjxswArqb0E0N0L7J8qbL
+                      http-date-0.0.6.1@http-date-0.0.6.1-5HOvcIxha088JfGZJ7KCrN
+                      http-types-0.9.1@http-types-0.9.1-JfqUh6MfqqR8Kpp4vaoPhu
+                      http2-1.6.3@http2-1.6.3-CCNOUEIMNPCIwgKnOg84uS integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-2nctQ8abLa4F4qppuBPWFl
+                      memory-0.14.5@memory-0.14.5-1ona7ZgZyqo2N2VMnDny9U
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-31dnC2ifQ9r5TApUZagLPk
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5
+                      monad-logger-0.3.24@monad-logger-0.3.24-G9ZPf05x6VlDKMDQKzml3b
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mwc-random-0.13.6.0@mwc-random-0.13.6.0-4EKMGw6QfaJLMhRUSL730j
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-KGBP1BSKxH5GCm0LnZP04j
+                      old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
+                      parsec-3.1.11@parsec-3.1.11-113irVHGgd88sRnywByDNw
+                      path-pieces-0.2.1@path-pieces-0.2.1-7jYjtDsNHN0JfYriIYgB3j
+                      persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM
+                      persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk
+                      persistent-template-2.5.2@persistent-template-2.5.2-F8gewL25fDg4mcqDivNqUq
+                      postgresql-libpq-0.9.3.1@postgresql-libpq-0.9.3.1-PNtzTLZ1kPBlp0W2VWiJp
+                      postgresql-simple-0.5.3.0@postgresql-simple-0.5.3.0-FCW3vqCF2IgLr1Qc9KS5rO
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      psqueues-0.2.2.3@psqueues-0.2.2.3-9nDehYbroydEusqdFJopTa
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-1AOSrWwsk6kGNVrZRdikMV
+                      resourcet-1.1.9@resourcet-1.1.9-JF0GCaCqGTSEsAmsa8Gm9e
+                      safe-0.3.14@safe-0.3.14-GsbXn9D9F3BDazVNcErzdQ
+                      scientific-0.3.4.13@scientific-0.3.4.13-2xII4ZQfmEWrTXn2dbZc3
+                      securemem-0.1.9@securemem-0.1.9-7cBozdH7LYOGgrHRgd7B5b
+                      shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-JJ9zm1wZxYIARxlVa3oQgs
+                      skein-1.0.9.4@skein-1.0.9.4-1r9hT02ZzU5HeQ9SvXvQV
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-pXxQEId7Ie1SLoOLcDazB
+                      stringsearch-0.3.6.6@stringsearch-0.3.6.6-2soGORichTR6reHVhDqKip
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tagsoup-0.14.1@tagsoup-0.14.1-6d5jSu6VuYIIoyQixz5L7u
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl
+                      vault-0.3.0.7@vault-0.3.0.7-HJSJzPTOq6IJLrOGPrOio
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+                      wai-3.2.1.1@wai-3.2.1.1-DzgXwtfU2hBCOxHTusHk9u
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-8g4RZ6XBAEz2rInjcb9qxr
+                      wai-extra-3.0.19.1@wai-extra-3.0.19.1-GDgs7QP4bcBBbHxqxzRSRZ
+                      wai-logger-2.3.0@wai-logger-2.3.0-7qGm9HVnBFG4aOw1Kh4171
+                      warp-3.2.12@warp-3.2.12-8NkWJiglkAJ3KRAh2wZosZ
+                      word8-0.1.2@word8-0.1.2-9WDPGCTpW7JJnsiAQavtd1
+                      xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-LhrllhD0CUxGo6ZOE9B1nx
+                      yesod-1.4.5@yesod-1.4.5-KkuohOR46AGJaQebI2xaBn
+                      yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA
+                      yesod-form-1.4.12@yesod-form-1.4.12-4R82yM19wAsBZqBiggu31i
+                      yesod-persistent-1.4.2@yesod-persistent-1.4.2-LBApvzv570iG1mLpIiASnM
+                      yesod-static-1.5.2@yesod-static-1.5.2-Apz4aqm2LKc804P321bqFb
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q:Crypto.Classes
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
+         hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x:Data.Hashable.Generic
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.2@persistent-template-2.5.2-F8gewL25fDg4mcqDivNqUq:Database.Persist.TH
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE:Data.UnixTime.Diff
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-ECR7lrm2wO64uP6OW8ZTCi:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT:Data.Conduit.Internal.Conduit
+                         conduit-1.2.10@conduit-1.2.10-7LSpuK7eDymFH3gxuXprIT:Data.Conduit.Internal.Pipe
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         email-validate-2.2.0@email-validate-2.2.0-9DdJbbiWN49B1rX3M24NIP:Text.Email.Parser
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Bitmap
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Boxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Array.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Buildable
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Collection
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Element
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Keyed
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Collection.Mutable
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Numerical.Subtractive
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Block.Base
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Monad
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.Types.OffsetSize
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Primitive.UTF8.Base
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.ASCII7
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.ISO_8859_1
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.UTF16
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.Encoding.UTF32
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.String.UTF8
+                         foundation-0.0.9@foundation-0.0.9-Gz9rjrrCgakG00kTCOvbml:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
+                         main@main:Foundation
+                         monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5:Control.Monad.Trans.Control
+                         monad-logger-0.3.24@monad-logger-0.3.24-G9ZPf05x6VlDKMDQKzml3b:Control.Monad.Logger
+                         mwc-random-0.13.6.0@mwc-random-0.13.6.0-4EKMGw6QfaJLMhRUSL730j:System.Random.MWC
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF:Network.URI
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistConfig
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Types.Internal
+                         persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk:Database.Persist.Postgresql
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         resourcet-1.1.9@resourcet-1.1.9-JF0GCaCqGTSEsAmsa8Gm9e:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o:Text.Internal.Css
+                         shakespeare-2.0.13@shakespeare-2.0.13-LsVh7A19ihlHCPYj3tio0o:Text.Shakespeare
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal.Builder
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Class.Handler
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Types
+                         yesod-static-1.5.2@yesod-static-1.5.2-Apz4aqm2LKc804P321bqFb:Yesod.Static
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types cca8fe352d412dcafd792be797769137
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types.Internal 854bb132d6f0fbcc043a2365356b51dc
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-I9AyiKnSyfEHxczxWPq1iV:Data.Aeson.Types.ToJSON 31e13e0fbcc1628680533c9d371f5c81
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  http-types-0.9.1@http-types-0.9.1-JfqUh6MfqqR8Kpp4vaoPhu:Network.HTTP.Types.Status b1d45c624b8c67961bc811066117346d
+import  -/  Foundation 70794cf1dd7eb65f8e6012373a0d2b63
+  exports: 73ce260fae8f29eaed84fefbf1a7c209
+  GeneroId 501b8a2e23cf5d3bdd5b61f539fb207d
+  Handler a310d57e79abfd605656bf15570e24ea
+  Usuario abb5056eaa8711a14684f77c5911421a
+  Usuario e565bbdb64a103b714988f593a55bb21
+  UsuarioDataNascimento 1e06e107fdaaf013b31afb5487309685
+  UsuarioGenero 35305669374389a27dc638965947c1ab
+  UsuarioId f8bb054173e86473959070c863b470d7
+  UsuarioNome a4167d7e5a4c1adfcfee66ff26d889a8
+import  -/  Funcs 2402f84019fb09ceeb9e953b4013150c
+  exports: 5c1d8a0bf50fd053189d09484ae583df
+  %=. 09f9fc5e3db4aeeabad16c068d53930f
+  GET ab8c4b7d894543dab87ba97fa2ba59d4
+  OPTIONS c2ab4705d527069c61913c836b3099eb
+  PATCH f56c4303055bf49b3ae448bc3abe6f4b
+  POST d5e7ded54f2fa2b4202d10824af95d16
+  anyOriginIn 11cb7fc688f79e156c91c7af03e2c192
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist fe3a39fff4539f7b00d06ebe497b9c8f
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistEntity 9b53e00c0944774de6d888c494872c43
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistQuery a0443625c636182657a78811dabc1a54
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Class.PersistStore c1ac085d9fe14404ac8e1708e83e8691
+import  -/  persistent-2.6.1@persistent-2.6.1-4CLnmYZ15jFDYzQgkRzCIM:Database.Persist.Sql.Orphan.PersistStore 578591250a64a1e2f7989b5ddce9953d
+import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-BH5bsujW4fIGcXoM9UyYWk:Database.Persist.Postgresql 14e325f69656cbdce05b427af5a05040
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Internal a2f6f66c5bb1247458d9fa25257ab188
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time 2005a60506050a7089ec50a535292ccc
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 0625fb086700e00eeabe68d7be3fc9e6
+import  -/  yesod-1.4.5@yesod-1.4.5-KkuohOR46AGJaQebI2xaBn:Yesod e9085892ecdae63fde0f9ac2eb6f89dd
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Handler f0395cd116f061339f74fc813c1633e9
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-6nLNWHVBzVI3bUgCltXavA:Yesod.Core.Json e11e695487bcbdbf3c4eb6308e74451c
+import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-LBApvzv570iG1mLpIiASnM:Yesod.Persist.Core be9e13d9d70fd0775c7c65b1955335ed
+5ef0380ff5c92da7b3bd3872e84544d9
+  $s$WUsuarioDataNascimento2 ::
+    Data.Time.Calendar.Days.Day
+    GHC.Types.~~ Data.Time.Calendar.Days.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Time.Calendar.Days.Day
+                   @ Data.Time.Calendar.Days.Day
+                   @~ <Data.Time.Calendar.Days.Day>_N) -}
+0ba6736aaa82fbe368c91840cae964ae
+  $s$WUsuarioGenero2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Genero
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
+                   Foundation.Genero
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Genero)
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Genero)
+                   @~ <Database.Persist.Class.PersistEntity.Key
+                         Foundation.Genero>_N) -}
+fce829367bc1c66b4b82e53796664837
+  $s$WUsuarioNome2 ::
+    Data.Text.Internal.Text GHC.Types.~~ Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Text.Internal.Text
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
+6c36a9fcac3f5df8fee7c05c27a38db7
+  $s$fApplicativeHandlerT_$creturn ::
+    a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ site
+                   @ a
+                   (eta :: a)
+                   (eta1 :: Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta) `cast` (GHC.Types.N:IO[0] <a>_R) eta2)
+                  `cast`
+                (forall (site :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <site>_N <GHC.Types.IO>_N <a>_N))) -}
+1111fa4efa4ac478c11e0f01de34c71b
+  $s$fFromJSON(,,) ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      (Data.Text.Internal.Text,
+       Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+       Data.Time.Calendar.Days.Day)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Text.Internal.Text,
+                     Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                     Data.Time.Calendar.Days.Day)
+                  (GHC.Base.$
+                     @ 'GHC.Types.PtrRepLifted
+                     @ (Data.Aeson.Types.Internal.Array
+                        -> Data.Aeson.Types.Internal.Parser
+                             (Data.Text.Internal.Text,
+                              Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                              Data.Time.Calendar.Days.Day))
+                     @ (Data.Aeson.Types.Internal.Value
+                        -> Data.Aeson.Types.Internal.Parser
+                             (Data.Text.Internal.Text,
+                              Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                              Data.Time.Calendar.Days.Day))
+                     (Data.Aeson.Types.FromJSON.withArray
+                        @ (Data.Text.Internal.Text,
+                           Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                           Data.Time.Calendar.Days.Day)
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b1 -> GHC.CString.unpackFoldrCString# @ b1 "(a, b, c)"#)))
+                     (\ (t :: Data.Aeson.Types.Internal.Array) ->
+                      let {
+                        n :: GHC.Types.Int = Usuario.$s$fFromJSON(,,)_$slength t
+                      } in
+                      case GHC.Classes.eqInt n (GHC.Types.I# 3#) of wild {
+                        GHC.Types.False
+                        -> GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ GHC.Base.String
+                             @ (Data.Aeson.Types.Internal.Parser
+                                  (Data.Text.Internal.Text,
+                                   Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                   Data.Time.Calendar.Days.Day))
+                             (Data.Aeson.Types.Internal.$fMonadFailParser_$cfail
+                                @ (Data.Text.Internal.Text,
+                                   Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                   Data.Time.Calendar.Days.Day))
+                             (GHC.Base.build
+                                @ GHC.Types.Char
+                                (\ @ b1
+                                   (c1 :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                                   (n1 :: b1)[OneShot] ->
+                                 GHC.CString.unpackFoldrCString#
+                                   @ b1
+                                   "cannot unpack array of length "#
+                                   c1
+                                   (GHC.Base.foldr
+                                      @ GHC.Types.Char
+                                      @ b1
+                                      c1
+                                      (GHC.CString.unpackFoldrCString#
+                                         @ b1
+                                         " into a tuple of length 3"#
+                                         c1
+                                         n1)
+                                      (GHC.Show.$fShowInt_$cshow n))))
+                        GHC.Types.True
+                        -> let {
+                             d :: Data.Aeson.Types.Internal.Parser
+                                    (Data.Time.Calendar.Days.Day
+                                     -> (Data.Text.Internal.Text,
+                                         Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                         Data.Time.Calendar.Days.Day))
+                             = let {
+                                 d1 :: Data.Aeson.Types.Internal.Parser Data.Text.Internal.Text
+                                 = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                     @ Data.Text.Internal.Text
+                                     Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON16
+                                     (GHC.Types.I# 0#)
+                                     t
+                               } in
+                               let {
+                                 d2 :: Data.Aeson.Types.Internal.Parser
+                                         (Database.Persist.Class.PersistEntity.Key Foundation.Genero
+                                          -> Data.Time.Calendar.Days.Day
+                                          -> (Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day))
+                                   {- Arity: 3 -}
+                                 = Data.Aeson.Types.FromJSON.$fFromJSON(,)_$s<$>
+                                     @ Data.Text.Internal.Text
+                                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Genero
+                                        -> Data.Time.Calendar.Days.Day
+                                        -> (Data.Text.Internal.Text,
+                                            Database.Persist.Class.PersistEntity.Key
+                                              Foundation.Genero,
+                                            Data.Time.Calendar.Days.Day))
+                                     (GHC.Tuple.(,,)
+                                        @ Data.Text.Internal.Text
+                                        @ (Database.Persist.Class.PersistEntity.Key
+                                             Foundation.Genero)
+                                        @ Data.Time.Calendar.Days.Day)
+                                     d1
+                               } in
+                               let {
+                                 e :: Data.Aeson.Types.Internal.Parser
+                                        (Database.Persist.Class.PersistEntity.Key Foundation.Genero)
+                                 = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Genero)
+                                     Foundation.$fFromJSONKey7_$cparseJSON
+                                     (GHC.Types.I# 1#)
+                                     t
+                               } in
+                               GHC.Base.$
+                                 @ 'GHC.Types.PtrRepLifted
+                                 @ (forall (f :: * -> *) r.
+                                    Data.Aeson.Types.Internal.JSONPath
+                                    -> Data.Aeson.Types.Internal.Failure f r
+                                    -> Data.Aeson.Types.Internal.Success
+                                         (Data.Time.Calendar.Days.Day
+                                          -> (Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day))
+                                         f
+                                         r
+                                    -> f r)
+                                 @ (Data.Aeson.Types.Internal.Parser
+                                      (Data.Time.Calendar.Days.Day
+                                       -> (Data.Text.Internal.Text,
+                                           Database.Persist.Class.PersistEntity.Key
+                                             Foundation.Genero,
+                                           Data.Time.Calendar.Days.Day)))
+                                 (\ (tpl :: forall (f :: * -> *) r.
+                                            Data.Aeson.Types.Internal.JSONPath
+                                            -> Data.Aeson.Types.Internal.Failure f r
+                                            -> Data.Aeson.Types.Internal.Success
+                                                 (Data.Time.Calendar.Days.Day
+                                                  -> (Data.Text.Internal.Text,
+                                                      Database.Persist.Class.PersistEntity.Key
+                                                        Foundation.Genero,
+                                                      Data.Time.Calendar.Days.Day))
+                                                 f
+                                                 r
+                                            -> f r) ->
+                                  tpl)
+                                   `cast`
+                                 (<forall (f :: * -> *) r.
+                                   Data.Aeson.Types.Internal.JSONPath
+                                   -> Data.Aeson.Types.Internal.Failure f r
+                                   -> Data.Aeson.Types.Internal.Success
+                                        (Data.Time.Calendar.Days.Day
+                                         -> (Data.Text.Internal.Text,
+                                             Database.Persist.Class.PersistEntity.Key
+                                               Foundation.Genero,
+                                             Data.Time.Calendar.Days.Day))
+                                        f
+                                        r
+                                   -> f r>_R
+                                  ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                <Data.Time.Calendar.Days.Day
+                                                 -> (Data.Text.Internal.Text,
+                                                     Database.Persist.Class.PersistEntity.Key
+                                                       Foundation.Genero,
+                                                     Data.Time.Calendar.Days.Day)>_R))
+                                 (\ @ (f :: * -> *)
+                                    @ r
+                                    (path :: Data.Aeson.Types.Internal.JSONPath)
+                                    (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                    (ks :: Data.Aeson.Types.Internal.Success
+                                             (Data.Time.Calendar.Days.Day
+                                              -> (Data.Text.Internal.Text,
+                                                  Database.Persist.Class.PersistEntity.Key
+                                                    Foundation.Genero,
+                                                  Data.Time.Calendar.Days.Day))
+                                             f
+                                             r) ->
+                                  Data.Aeson.Types.Internal.runParser
+                                    @ (Database.Persist.Class.PersistEntity.Key Foundation.Genero
+                                       -> Data.Time.Calendar.Days.Day
+                                       -> (Data.Text.Internal.Text,
+                                           Database.Persist.Class.PersistEntity.Key
+                                             Foundation.Genero,
+                                           Data.Time.Calendar.Days.Day))
+                                    d2
+                                    @ f
+                                    @ r
+                                    path
+                                    kf
+                                    (\ (a1 :: Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero
+                                              -> Data.Time.Calendar.Days.Day
+                                              -> (Data.Text.Internal.Text,
+                                                  Database.Persist.Class.PersistEntity.Key
+                                                    Foundation.Genero,
+                                                  Data.Time.Calendar.Days.Day)) ->
+                                     Data.Aeson.Types.Internal.runParser
+                                       @ (Data.Time.Calendar.Days.Day
+                                          -> (Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day))
+                                       (GHC.Base.$
+                                          @ 'GHC.Types.PtrRepLifted
+                                          @ (forall (f1 :: * -> *) r1.
+                                             Data.Aeson.Types.Internal.JSONPath
+                                             -> Data.Aeson.Types.Internal.Failure f1 r1
+                                             -> Data.Aeson.Types.Internal.Success
+                                                  (Data.Time.Calendar.Days.Day
+                                                   -> (Data.Text.Internal.Text,
+                                                       Database.Persist.Class.PersistEntity.Key
+                                                         Foundation.Genero,
+                                                       Data.Time.Calendar.Days.Day))
+                                                  f1
+                                                  r1
+                                             -> f1 r1)
+                                          @ (Data.Aeson.Types.Internal.Parser
+                                               (Data.Time.Calendar.Days.Day
+                                                -> (Data.Text.Internal.Text,
+                                                    Database.Persist.Class.PersistEntity.Key
+                                                      Foundation.Genero,
+                                                    Data.Time.Calendar.Days.Day)))
+                                          (\ (tpl :: forall (f1 :: * -> *) r1.
+                                                     Data.Aeson.Types.Internal.JSONPath
+                                                     -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                     -> Data.Aeson.Types.Internal.Success
+                                                          (Data.Time.Calendar.Days.Day
+                                                           -> (Data.Text.Internal.Text,
+                                                               Database.Persist.Class.PersistEntity.Key
+                                                                 Foundation.Genero,
+                                                               Data.Time.Calendar.Days.Day))
+                                                          f1
+                                                          r1
+                                                     -> f1 r1) ->
+                                           tpl)
+                                            `cast`
+                                          (<forall (f1 :: * -> *) r1.
+                                            Data.Aeson.Types.Internal.JSONPath
+                                            -> Data.Aeson.Types.Internal.Failure f1 r1
+                                            -> Data.Aeson.Types.Internal.Success
+                                                 (Data.Time.Calendar.Days.Day
+                                                  -> (Data.Text.Internal.Text,
+                                                      Database.Persist.Class.PersistEntity.Key
+                                                        Foundation.Genero,
+                                                      Data.Time.Calendar.Days.Day))
+                                                 f1
+                                                 r1
+                                            -> f1 r1>_R
+                                           ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                         <Data.Time.Calendar.Days.Day
+                                                          -> (Data.Text.Internal.Text,
+                                                              Database.Persist.Class.PersistEntity.Key
+                                                                Foundation.Genero,
+                                                              Data.Time.Calendar.Days.Day)>_R))
+                                          (\ @ (f1 :: * -> *)
+                                             @ r1
+                                             (path1 :: Data.Aeson.Types.Internal.JSONPath)
+                                             (kf1 :: Data.Aeson.Types.Internal.Failure f1 r1)
+                                             (ks1 :: Data.Aeson.Types.Internal.Success
+                                                       (Data.Time.Calendar.Days.Day
+                                                        -> (Data.Text.Internal.Text,
+                                                            Database.Persist.Class.PersistEntity.Key
+                                                              Foundation.Genero,
+                                                            Data.Time.Calendar.Days.Day))
+                                                       f1
+                                                       r1) ->
+                                           Data.Aeson.Types.Internal.runParser
+                                             @ (Database.Persist.Class.PersistEntity.Key
+                                                  Foundation.Genero)
+                                             e
+                                             @ f1
+                                             @ r1
+                                             path1
+                                             kf1
+                                             (\ (a2 :: Database.Persist.Class.PersistEntity.Key
+                                                         Foundation.Genero) ->
+                                              let {
+                                                a3 :: Data.Time.Calendar.Days.Day
+                                                      -> (Data.Text.Internal.Text,
+                                                          Database.Persist.Class.PersistEntity.Key
+                                                            Foundation.Genero,
+                                                          Data.Time.Calendar.Days.Day)
+                                                = a1 a2
+                                              } in
+                                              Data.Aeson.Types.Internal.runParser
+                                                @ (Data.Time.Calendar.Days.Day
+                                                   -> (Data.Text.Internal.Text,
+                                                       Database.Persist.Class.PersistEntity.Key
+                                                         Foundation.Genero,
+                                                       Data.Time.Calendar.Days.Day))
+                                                (GHC.Base.$
+                                                   @ 'GHC.Types.PtrRepLifted
+                                                   @ (forall (f2 :: * -> *) r2.
+                                                      Data.Aeson.Types.Internal.JSONPath
+                                                      -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                      -> Data.Aeson.Types.Internal.Success
+                                                           (Data.Time.Calendar.Days.Day
+                                                            -> (Data.Text.Internal.Text,
+                                                                Database.Persist.Class.PersistEntity.Key
+                                                                  Foundation.Genero,
+                                                                Data.Time.Calendar.Days.Day))
+                                                           f2
+                                                           r2
+                                                      -> f2 r2)
+                                                   @ (Data.Aeson.Types.Internal.Parser
+                                                        (Data.Time.Calendar.Days.Day
+                                                         -> (Data.Text.Internal.Text,
+                                                             Database.Persist.Class.PersistEntity.Key
+                                                               Foundation.Genero,
+                                                             Data.Time.Calendar.Days.Day)))
+                                                   (\ (tpl :: forall (f2 :: * -> *) r2.
+                                                              Data.Aeson.Types.Internal.JSONPath
+                                                              -> Data.Aeson.Types.Internal.Failure
+                                                                   f2 r2
+                                                              -> Data.Aeson.Types.Internal.Success
+                                                                   (Data.Time.Calendar.Days.Day
+                                                                    -> (Data.Text.Internal.Text,
+                                                                        Database.Persist.Class.PersistEntity.Key
+                                                                          Foundation.Genero,
+                                                                        Data.Time.Calendar.Days.Day))
+                                                                   f2
+                                                                   r2
+                                                              -> f2 r2) ->
+                                                    tpl)
+                                                     `cast`
+                                                   (<forall (f2 :: * -> *) r2.
+                                                     Data.Aeson.Types.Internal.JSONPath
+                                                     -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                     -> Data.Aeson.Types.Internal.Success
+                                                          (Data.Time.Calendar.Days.Day
+                                                           -> (Data.Text.Internal.Text,
+                                                               Database.Persist.Class.PersistEntity.Key
+                                                                 Foundation.Genero,
+                                                               Data.Time.Calendar.Days.Day))
+                                                          f2
+                                                          r2
+                                                     -> f2 r2>_R
+                                                    ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                                  <Data.Time.Calendar.Days.Day
+                                                                   -> (Data.Text.Internal.Text,
+                                                                       Database.Persist.Class.PersistEntity.Key
+                                                                         Foundation.Genero,
+                                                                       Data.Time.Calendar.Days.Day)>_R))
+                                                   (\ @ (f2 :: * -> *)
+                                                      @ r2
+                                                      (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                                      (_kf :: Data.Aeson.Types.Internal.Failure
+                                                                f2 r2)
+                                                      (ks2 :: Data.Aeson.Types.Internal.Success
+                                                                (Data.Time.Calendar.Days.Day
+                                                                 -> (Data.Text.Internal.Text,
+                                                                     Database.Persist.Class.PersistEntity.Key
+                                                                       Foundation.Genero,
+                                                                     Data.Time.Calendar.Days.Day))
+                                                                f2
+                                                                r2) ->
+                                                    ks2 a3))
+                                                @ f1
+                                                @ r1
+                                                path1
+                                                kf1
+                                                ks1)))
+                                       @ f
+                                       @ r
+                                       path
+                                       kf
+                                       ks))
+                           } in
+                           let {
+                             e :: Data.Aeson.Types.Internal.Parser Data.Time.Calendar.Days.Day
+                             = Data.Aeson.Types.FromJSON.parseJSONElemAtIndex
+                                 @ Data.Time.Calendar.Days.Day
+                                 Data.Aeson.Types.FromJSON.$dmfromJSONKeyList_$cparseJSON19
+                                 (GHC.Types.I# 2#)
+                                 t
+                           } in
+                           GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ (forall (f :: * -> *) r.
+                                Data.Aeson.Types.Internal.JSONPath
+                                -> Data.Aeson.Types.Internal.Failure f r
+                                -> Data.Aeson.Types.Internal.Success
+                                     (Data.Text.Internal.Text,
+                                      Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                      Data.Time.Calendar.Days.Day)
+                                     f
+                                     r
+                                -> f r)
+                             @ (Data.Aeson.Types.Internal.Parser
+                                  (Data.Text.Internal.Text,
+                                   Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                   Data.Time.Calendar.Days.Day))
+                             (\ (tpl :: forall (f :: * -> *) r.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f r
+                                        -> Data.Aeson.Types.Internal.Success
+                                             (Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day)
+                                             f
+                                             r
+                                        -> f r) ->
+                              tpl)
+                               `cast`
+                             (<forall (f :: * -> *) r.
+                               Data.Aeson.Types.Internal.JSONPath
+                               -> Data.Aeson.Types.Internal.Failure f r
+                               -> Data.Aeson.Types.Internal.Success
+                                    (Data.Text.Internal.Text,
+                                     Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                     Data.Time.Calendar.Days.Day)
+                                    f
+                                    r
+                               -> f r>_R
+                              ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                            <(Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day)>_R))
+                             (\ @ (f :: * -> *)
+                                @ r
+                                (path :: Data.Aeson.Types.Internal.JSONPath)
+                                (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                (ks :: Data.Aeson.Types.Internal.Success
+                                         (Data.Text.Internal.Text,
+                                          Database.Persist.Class.PersistEntity.Key
+                                            Foundation.Genero,
+                                          Data.Time.Calendar.Days.Day)
+                                         f
+                                         r) ->
+                              Data.Aeson.Types.Internal.runParser
+                                @ (Data.Time.Calendar.Days.Day
+                                   -> (Data.Text.Internal.Text,
+                                       Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                       Data.Time.Calendar.Days.Day))
+                                d
+                                @ f
+                                @ r
+                                path
+                                kf
+                                (\ (a1 :: Data.Time.Calendar.Days.Day
+                                          -> (Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day)) ->
+                                 Data.Aeson.Types.Internal.runParser
+                                   @ (Data.Text.Internal.Text,
+                                      Database.Persist.Class.PersistEntity.Key Foundation.Genero,
+                                      Data.Time.Calendar.Days.Day)
+                                   (GHC.Base.$
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ (forall (f1 :: * -> *) r1.
+                                         Data.Aeson.Types.Internal.JSONPath
+                                         -> Data.Aeson.Types.Internal.Failure f1 r1
+                                         -> Data.Aeson.Types.Internal.Success
+                                              (Data.Text.Internal.Text,
+                                               Database.Persist.Class.PersistEntity.Key
+                                                 Foundation.Genero,
+                                               Data.Time.Calendar.Days.Day)
+                                              f1
+                                              r1
+                                         -> f1 r1)
+                                      @ (Data.Aeson.Types.Internal.Parser
+                                           (Data.Text.Internal.Text,
+                                            Database.Persist.Class.PersistEntity.Key
+                                              Foundation.Genero,
+                                            Data.Time.Calendar.Days.Day))
+                                      (\ (tpl :: forall (f1 :: * -> *) r1.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f1 r1
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      (Data.Text.Internal.Text,
+                                                       Database.Persist.Class.PersistEntity.Key
+                                                         Foundation.Genero,
+                                                       Data.Time.Calendar.Days.Day)
+                                                      f1
+                                                      r1
+                                                 -> f1 r1) ->
+                                       tpl)
+                                        `cast`
+                                      (<forall (f1 :: * -> *) r1.
+                                        Data.Aeson.Types.Internal.JSONPath
+                                        -> Data.Aeson.Types.Internal.Failure f1 r1
+                                        -> Data.Aeson.Types.Internal.Success
+                                             (Data.Text.Internal.Text,
+                                              Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero,
+                                              Data.Time.Calendar.Days.Day)
+                                             f1
+                                             r1
+                                        -> f1 r1>_R
+                                       ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                     <(Data.Text.Internal.Text,
+                                                       Database.Persist.Class.PersistEntity.Key
+                                                         Foundation.Genero,
+                                                       Data.Time.Calendar.Days.Day)>_R))
+                                      (\ @ (f1 :: * -> *)
+                                         @ r1
+                                         (path1 :: Data.Aeson.Types.Internal.JSONPath)
+                                         (kf1 :: Data.Aeson.Types.Internal.Failure f1 r1)
+                                         (ks1 :: Data.Aeson.Types.Internal.Success
+                                                   (Data.Text.Internal.Text,
+                                                    Database.Persist.Class.PersistEntity.Key
+                                                      Foundation.Genero,
+                                                    Data.Time.Calendar.Days.Day)
+                                                   f1
+                                                   r1) ->
+                                       Data.Aeson.Types.Internal.runParser
+                                         @ Data.Time.Calendar.Days.Day
+                                         e
+                                         @ f1
+                                         @ r1
+                                         path1
+                                         kf1
+                                         (\ (a2 :: Data.Time.Calendar.Days.Day) ->
+                                          let {
+                                            a3 :: (Data.Text.Internal.Text,
+                                                   Database.Persist.Class.PersistEntity.Key
+                                                     Foundation.Genero,
+                                                   Data.Time.Calendar.Days.Day)
+                                            = a1 a2
+                                          } in
+                                          Data.Aeson.Types.Internal.runParser
+                                            @ (Data.Text.Internal.Text,
+                                               Database.Persist.Class.PersistEntity.Key
+                                                 Foundation.Genero,
+                                               Data.Time.Calendar.Days.Day)
+                                            (GHC.Base.$
+                                               @ 'GHC.Types.PtrRepLifted
+                                               @ (forall (f2 :: * -> *) r2.
+                                                  Data.Aeson.Types.Internal.JSONPath
+                                                  -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                  -> Data.Aeson.Types.Internal.Success
+                                                       (Data.Text.Internal.Text,
+                                                        Database.Persist.Class.PersistEntity.Key
+                                                          Foundation.Genero,
+                                                        Data.Time.Calendar.Days.Day)
+                                                       f2
+                                                       r2
+                                                  -> f2 r2)
+                                               @ (Data.Aeson.Types.Internal.Parser
+                                                    (Data.Text.Internal.Text,
+                                                     Database.Persist.Class.PersistEntity.Key
+                                                       Foundation.Genero,
+                                                     Data.Time.Calendar.Days.Day))
+                                               (\ (tpl :: forall (f2 :: * -> *) r2.
+                                                          Data.Aeson.Types.Internal.JSONPath
+                                                          -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                          -> Data.Aeson.Types.Internal.Success
+                                                               (Data.Text.Internal.Text,
+                                                                Database.Persist.Class.PersistEntity.Key
+                                                                  Foundation.Genero,
+                                                                Data.Time.Calendar.Days.Day)
+                                                               f2
+                                                               r2
+                                                          -> f2 r2) ->
+                                                tpl)
+                                                 `cast`
+                                               (<forall (f2 :: * -> *) r2.
+                                                 Data.Aeson.Types.Internal.JSONPath
+                                                 -> Data.Aeson.Types.Internal.Failure f2 r2
+                                                 -> Data.Aeson.Types.Internal.Success
+                                                      (Data.Text.Internal.Text,
+                                                       Database.Persist.Class.PersistEntity.Key
+                                                         Foundation.Genero,
+                                                       Data.Time.Calendar.Days.Day)
+                                                      f2
+                                                      r2
+                                                 -> f2 r2>_R
+                                                ->_R Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                              <(Data.Text.Internal.Text,
+                                                                Database.Persist.Class.PersistEntity.Key
+                                                                  Foundation.Genero,
+                                                                Data.Time.Calendar.Days.Day)>_R))
+                                               (\ @ (f2 :: * -> *)
+                                                  @ r2
+                                                  (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                                  (_kf :: Data.Aeson.Types.Internal.Failure f2 r2)
+                                                  (ks2 :: Data.Aeson.Types.Internal.Success
+                                                            (Data.Text.Internal.Text,
+                                                             Database.Persist.Class.PersistEntity.Key
+                                                               Foundation.Genero,
+                                                             Data.Time.Calendar.Days.Day)
+                                                            f2
+                                                            r2) ->
+                                                ks2 a3))
+                                            @ f1
+                                            @ r1
+                                            path1
+                                            kf1
+                                            ks1)))
+                                   @ f
+                                   @ r
+                                   path
+                                   kf
+                                   ks)) }))
+                  (Data.Aeson.Types.FromJSON.$fFromJSON(,,)_$cparseJSONList
+                     @ Data.Text.Internal.Text
+                     @ (Database.Persist.Class.PersistEntity.Key Foundation.Genero)
+                     @ Data.Time.Calendar.Days.Day
+                     Data.Aeson.Types.FromJSON.$fFromJSONText0
+                     Foundation.$fFromJSONKey7
+                     Data.Aeson.Types.FromJSON.$fFromJSONDay) -}
+699ed663fc85910b0f8b3cdf8d689b1b
+  $s$fFromJSON(,,)_$slength ::
+    Data.Vector.Vector Data.Aeson.Types.Internal.Value -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,A)>m,
+     Inline: [NEVER] -}
+b7b15e3089e1d5d3c0d13a38e86005c1
+  $s$fMonadHandlerHandlerT ::
+    Yesod.Core.Class.Handler.MonadHandler
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cp1MonadHandler
+                     @ GHC.Types.IO
+                     @ site
+                     Usuario.$s$fMonadHandlerHandlerT1)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cliftHandlerT
+                     @ GHC.Types.IO
+                     @ site
+                     Usuario.$s$fMonadHandlerHandlerT1) -}
+d362bed9f8b093498cd71e1b73171b6a
+  $s$fMonadHandlerHandlerT1 ::
+    Control.Monad.Trans.Resource.MonadResourceBase GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: ((Control.Monad.Trans.Control.$fMonadBaseControlIOIO,
+                  Control.Monad.Catch.$fMonadThrowIO,
+                  Control.Monad.Base.$fMonadBaseIOIO,
+                  Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
+f6bacbbf2c42d1264008d0f9081a85b6
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad ::
+    GHC.Base.Monad GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fMonadIO -}
+d05cde8f500a7c40b7e7b08d252d4fdf
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$cp1Monad
+                     @ GHC.Types.IO
+                     @ site
+                     Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>=
+                     @ GHC.Types.IO
+                     @ site
+                     Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>
+                     @ GHC.Types.IO
+                     @ site
+                     Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad)
+                  (Usuario.$s$fApplicativeHandlerT_$creturn @ site)
+                  (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+                     @ site) -}
+8ab68d07e04a0006d16fb9c0fcabfd4d
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail ::
+    GHC.Base.String -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Base.String) ->
+                 Yesod.Core.Types.$fMonadHandlerT1
+                   @ site
+                   @ GHC.Types.IO
+                   @ a
+                   Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$dMonad
+                   eta) -}
+5c80798b41034c49d29f8fc37394c1f8
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT ::
+    Control.Monad.IO.Class.MonadIO
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+                     @ site)
+                  (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+                     @ site) -}
+18bb85b0fb56c7422733a5fc0a6149e2
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO ::
+    GHC.Types.IO a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Types.IO a) ->
+                 let {
+                   eta1 :: GHC.Types.IO a = GHC.Base.id @ (GHC.Types.IO a) eta
+                 } in
+                 (\ (ds :: Yesod.Core.Types.HandlerData
+                             site (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
+                  eta1)
+                   `cast`
+                 (Sym (Yesod.Core.Types.N:HandlerT[0]
+                           <site>_N <GHC.Types.IO>_N <a>_N))) -}
+bf0402aeff41c7ae9d8ab7523dea2109
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT -}
+7178d4f315fcda08b5970f47e47aea47
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Usuario.$trModule2
+                   Usuario.$trModule1) -}
+0772bdb0c4fd0bbc75f070c0bc2b8f3b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Usuario"#) -}
+fc3bbbaec7124ed37221ec9f275ec55b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+21629f5c8b7e08fb880a72089c1ddce2
+  getBuscarUsuarioR ::
+    Data.Text.Internal.Text
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Usuario.getBuscarUsuarioR1
+                  `cast`
+                (<Data.Text.Internal.Text>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+5d06be3ba78afb7f9ff575d1e2ed30db
+  getBuscarUsuarioR1 ::
+    Data.Text.Internal.Text
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (pesquisa :: Data.Text.Internal.Text)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Usuario
+                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Usuario.getBuscarUsuarioR6
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Usuario>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendUsuario[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.App)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Usuario)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Usuario
+                             @ Data.Text.Internal.Text
+                             Database.Persist.Class.PersistField.$fPersistFieldText0
+                             Usuario.getBuscarUsuarioR5
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Data.Text.Internal.Text>_N)
+                             (Data.Either.Left
+                                @ Data.Text.Internal.Text
+                                @ [Data.Text.Internal.Text]
+                                (Data.Text.concat
+                                   (GHC.Types.:
+                                      @ Data.Text.Internal.Text
+                                      Funcs.%=.3
+                                      (GHC.Types.:
+                                         @ Data.Text.Internal.Text
+                                         pesquisa
+                                         Usuario.getBuscarUsuarioR4))))
+                             Funcs.%=.1)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Foundation.Usuario)))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Usuario))
+                 } in
+                 case Foundation.$fYesodPersistApp1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Usuario]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.App
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Usuario)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Usuario))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.App>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Usuario))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Usuario))>_R)
+                                 s of ds1 { (#,#) ipv ipv1 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Usuario]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv1
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Usuario)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Usuario]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Usuario]>_R)
+                            ipv })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Usuario]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.App>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Usuario]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendApp[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Usuario]>_N))
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv2 ipv3 ipv4 ipv5 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Usuario.getBuscarUsuarioR3,
+                                  case GHC.Magic.runRW#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ (Data.Vector.Vector Data.Aeson.Types.Internal.Value)
+                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          case GHC.Prim.newArray#
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 0#
+                                                 (Data.Vector.Mutable.uninitialised
+                                                    @ Data.Aeson.Types.Internal.Value)
+                                                 s1
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv6 ipv7 ->
+                                          case Usuario.getBuscarUsuarioR_$sfoldlM_loop
+                                                 ipv6
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                         <GHC.Prim.RealWorld>_N))_R
+                                                 (GHC.Base.map
+                                                    @ (Database.Persist.Class.PersistEntity.Entity
+                                                         Foundation.Usuario)
+                                                    @ Data.Aeson.Types.Internal.Value
+                                                    Usuario.getBuscarUsuarioR2
+                                                    ipv1)
+                                                 0#
+                                                 0#
+                                                 ipv7
+                                                 @~ (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                     (GHC.ST.ST
+                                                                                                        GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N)
+                                                 0# of ds3 { (#,#) ipv8 ipv9 ->
+                                          case ipv9 of wild5 { (,) v' n ->
+                                          case v'
+                                                 `cast`
+                                               (Sub (Data.Vector.D:R:MutableVector[0]) <Control.Monad.Primitive.PrimState
+                                                                                          (GHC.ST.ST
+                                                                                             GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N) of wild { Data.Vector.Mutable.MVector dt1 dt2 dt3 ->
+                                          case n of dt5 { GHC.Types.I# dt6 ->
+                                          case GHC.Prim.unsafeFreezeArray#
+                                                 @ (Control.Monad.Primitive.PrimState
+                                                      (GHC.ST.ST GHC.Prim.RealWorld))
+                                                 @ Data.Aeson.Types.Internal.Value
+                                                 dt3
+                                                 ipv8
+                                                   `cast`
+                                                 (GHC.Prim.State#
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                              <GHC.Prim.RealWorld>_N)))_R of ds4 { (#,#) ipv10 ipv11 ->
+                                          (# ipv10
+                                               `cast`
+                                             (GHC.Prim.State#
+                                                (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                     <GHC.Prim.RealWorld>_N))_R,
+                                             Data.Vector.Vector
+                                               @ Data.Aeson.Types.Internal.Value
+                                               dt1
+                                               dt6
+                                               ipv11 #) } } } } } }) of ds2 { (#,#) ipv6 ipv7 ->
+                                  case ipv7 of dt1 { Data.Vector.Vector ipv8 ipv9 ipv10 ->
+                                  Data.Aeson.Types.Internal.Array dt1 } })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status200
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv }) -}
+d35cbdcab5509a813fe3173189da9638
+  getBuscarUsuarioR2 ::
+    Database.Persist.Class.PersistEntity.Entity Foundation.Usuario
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1,
+     Unfolding: (\ (x :: Database.Persist.Class.PersistEntity.Entity
+                           Foundation.Usuario) ->
+                 case x of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity i ds ->
+                 case ds of wild1 { Foundation.Usuario n e ds1 g d ->
+                 case g `cast`
+                      (Trans
+                           (Foundation.D:R:KeyGenero0[0])
+                           (Trans
+                                (Foundation.N:R:KeyGenero[0])
+                                (Trans
+                                     (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                     (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) of ww11 { GHC.Int.I64# ww12 ->
+                 Foundation.$w$ctoJSON13
+                   i
+                   n
+                   e
+                   Data.Text.Internal.empty_
+                   ww12
+                   d } } }) -}
+d5b16941c0b1ffe931480718e5b3d0a1
+  getBuscarUsuarioR3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "resp"#) -}
+7047d83ed0ce3168abf25813b0189987
+  getBuscarUsuarioR4 :: [Data.Text.Internal.Text]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Funcs.%=.3
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+ef621f49a7a97840d0b3ce4eadb18486
+  getBuscarUsuarioR5 ::
+    Foundation.R:EntityFieldUsuariotyp Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foundation.UsuarioNome
+                   @ Data.Text.Internal.Text
+                   Usuario.$s$WUsuarioNome2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_N)) -}
+6aba4004081a54c89423c7695b17403f
+  getBuscarUsuarioR6 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Usuario,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityUsuario,
+                  Usuario.getBuscarUsuarioR7
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+9a67ec11f96170b3e49dae53a1e3f14f
+  getBuscarUsuarioR7 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
+a782023c46b84cc6d1ac200615a19158
+  getBuscarUsuarioR_$sfoldlM_loop ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> [Data.Aeson.Types.Internal.Value]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray#
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+    -> Data.Vector.Mutable.MVector
+         (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+         Data.Aeson.Types.Internal.Value
+       ~R# Data.Vector.Generic.Base.Mutable
+             Data.Vector.Vector
+             (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+             Data.Aeson.Types.Internal.Value =>
+       GHC.Prim.Int#
+       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+             (Data.Vector.Generic.Base.Mutable
+                Data.Vector.Vector
+                (Control.Monad.Primitive.PrimState (GHC.ST.ST GHC.Prim.RealWorld))
+                Data.Aeson.Types.Internal.Value,
+              GHC.Types.Int) #)
+  {- Arity: 7, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U><L,U> -}
+e8ff875fad836ecfbcacc2254f041bd4
+  getUsuarioByIdR ::
+    Foundation.UsuarioId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Usuario.getUsuarioByIdR1
+                  `cast`
+                (<Foundation.UsuarioId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+33e6e77793b3c377d3dd30f7d2b21620
+  getUsuarioByIdR1 ::
+    Foundation.UsuarioId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (usuarioId :: Foundation.UsuarioId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Foundation.$fYesodPersistApp1
+                        @ Foundation.Usuario
+                        (Usuario.getUsuarioByIdR2 usuarioId)
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <Foundation.Usuario>_N)_R
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Foundation.Usuario n e ds g d ->
+                 case g `cast`
+                      (Trans
+                           (Foundation.D:R:KeyGenero0[0])
+                           (Trans
+                                (Foundation.N:R:KeyGenero[0])
+                                (Trans
+                                     (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                     (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) of ww7 { GHC.Int.I64# ww8 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv2 ipv3 ipv4 ipv5 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Usuario.getBuscarUsuarioR3,
+                                  case Foundation.$w$ctoJSON14
+                                         n
+                                         e
+                                         Data.Text.Internal.empty_
+                                         ww8
+                                         d of ww9 { Unit# ww10 ->
+                                  Data.Aeson.Types.Internal.Object ww10 })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status200
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv } } }) -}
+7bf8eb5f5b500ad842d43727c27945fb
+  getUsuarioByIdR2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Usuario
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.Internal.SqlBackend
+         (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+         Foundation.Usuario
+  {- Unfolding: (Yesod.Persist.Core.get404
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Foundation.Usuario
+                   (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                      @ Foundation.App)
+                   Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend
+                   Usuario.getBuscarUsuarioR6
+                     `cast`
+                   (GHC.Classes.(%,%)
+                      <Database.Persist.Class.PersistEntity.PersistEntity
+                         Foundation.Usuario>_N
+                      ((Data.Type.Equality.~)
+                         <*>_N
+                         (Sym (Foundation.D:R:PersistEntityBackendUsuario[0]))
+                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+f948a7770f9480b464ad0fe6f026db77
+  optionsBuscarUsuarioR ::
+    Data.Text.Internal.Text -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Data.Text.Internal.Text) ->
+                 Usuario.optionsBuscarUsuarioR1) -}
+2c0f3a88c787b1452af67674974c80aa
+  optionsBuscarUsuarioR1 :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn Usuario.optionsBuscarUsuarioR2) -}
+c31a3cabd2e5977e3fbd13b023acb494
+  optionsBuscarUsuarioR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Usuario.optionsBuscarUsuarioR3) -}
+ab7f0280ff171de0ab5a93977745182c
+  optionsBuscarUsuarioR3 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.GET
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+4a2f5317255cf5fe02cd9b47e80fba3c
+  optionsUsuarioByIdR ::
+    Foundation.UsuarioId -> Foundation.Handler ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foundation.UsuarioId) -> Usuario.optionsUsuarioByIdR1) -}
+5a998fbe62e8ebe8a2a0343f8369d141
+  optionsUsuarioByIdR1 :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn Usuario.optionsUsuarioByIdR2) -}
+85d5ff3123c69b35dc6418755ed7ad66
+  optionsUsuarioByIdR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Usuario.optionsUsuarioByIdR3) -}
+c306b68e93230b4a38ab190ddfeb0511
+  optionsUsuarioByIdR3 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.GET
+                   Usuario.optionsUsuarioByIdR4) -}
+b84bd091a01ba2492ed3933c565a79ec
+  optionsUsuarioByIdR4 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.PATCH
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+2ec83388f80ef8e4725305218f3fe581
+  optionsUsuarioR :: Foundation.Handler ()
+  {- Unfolding: (Funcs.anyOriginIn Usuario.optionsUsuarioR1) -}
+2903ec16ed51d979958343d6ac0a4d63
+  optionsUsuarioR1 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.OPTIONS
+                   Usuario.optionsUsuarioR2) -}
+7cf896fedd2cd4702c284aff882b6905
+  optionsUsuarioR2 :: [Funcs.HttpMethod]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Funcs.HttpMethod
+                   Funcs.POST
+                   (GHC.Types.[] @ Funcs.HttpMethod)) -}
+7d63c7834ff51e14c0928d36b3da1b9a
+  patchUsuarioByIdR ::
+    Foundation.UsuarioId
+    -> Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Usuario.patchUsuarioByIdR1
+                  `cast`
+                (<Foundation.UsuarioId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.App>_N
+                                    <GHC.Types.IO>_N
+                                    <Data.Aeson.Types.Internal.Value>_N))) -}
+88d9015fba8f0702496c7f2f37522a3a
+  patchUsuarioByIdR1 ::
+    Foundation.UsuarioId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (usuarioId :: Foundation.UsuarioId)
+                   (r :: Yesod.Core.Types.HandlerData
+                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Usuario.patchUsuarioByIdR6
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.App>_N
+                            <GHC.Types.IO>_N
+                            <(Data.Text.Internal.Text, Foundation.GeneroId,
+                              Data.Time.Calendar.Days.Day)>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <(Data.Text.Internal.Text, Foundation.GeneroId,
+                             Data.Time.Calendar.Days.Day)>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,,) nome genero dataNascimento ->
+                 case Foundation.$fYesodPersistApp1
+                        @ ()
+                        (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cupdate
+                           @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           @ Foundation.Usuario
+                           (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                              @ Foundation.App)
+                           Usuario.getBuscarUsuarioR6
+                             `cast`
+                           (GHC.Classes.(%,%)
+                              <Database.Persist.Class.PersistEntity.PersistEntity
+                                 Foundation.Usuario>_N
+                              ((Data.Type.Equality.~)
+                                 <*>_N
+                                 (Sym (Foundation.D:R:PersistEntityBackendUsuario[0]))
+                                 (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                           usuarioId
+                           (GHC.Types.:
+                              @ (Database.Persist.Class.PersistEntity.Update Foundation.Usuario)
+                              (Database.Persist.Class.PersistEntity.Update
+                                 @ Foundation.Usuario
+                                 @ Data.Text.Internal.Text
+                                 Database.Persist.Class.PersistField.$fPersistFieldText0
+                                 Usuario.getBuscarUsuarioR5
+                                   `cast`
+                                 (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Data.Text.Internal.Text>_N)
+                                 nome
+                                 Database.Persist.Types.Base.Assign)
+                              (GHC.Types.:
+                                 @ (Database.Persist.Class.PersistEntity.Update Foundation.Usuario)
+                                 (Database.Persist.Class.PersistEntity.Update
+                                    @ Foundation.Usuario
+                                    @ Foundation.GeneroId
+                                    Foundation.$fPersistFieldKey7
+                                    Usuario.patchUsuarioByIdR5
+                                      `cast`
+                                    (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Foundation.GeneroId>_N)
+                                    genero
+                                    Database.Persist.Types.Base.Assign)
+                                 (GHC.Types.:
+                                    @ (Database.Persist.Class.PersistEntity.Update
+                                         Foundation.Usuario)
+                                    (Database.Persist.Class.PersistEntity.Update
+                                       @ Foundation.Usuario
+                                       @ Data.Time.Calendar.Days.Day
+                                       Database.Persist.Class.PersistField.$fPersistFieldDay
+                                       Usuario.patchUsuarioByIdR4
+                                         `cast`
+                                       (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                       dataNascimento
+                                       Database.Persist.Types.Base.Assign)
+                                    (GHC.Types.[]
+                                       @ (Database.Persist.Class.PersistEntity.Update
+                                            Foundation.Usuario))))))
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <()>_N)_R
+                        r
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   Usuario.patchUsuarioByIdR2
+                   ipv2 } } }) -}
+f9871b0cbc1f16ba61b496ad166b0c59
+  patchUsuarioByIdR2 :: GHC.Exception.SomeException
+  {- Unfolding: (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                   Usuario.patchUsuarioByIdR3) -}
+8310c3a589dd24a316bea54878bea767
+  patchUsuarioByIdR3 :: Yesod.Core.Types.HandlerContents
+  {- Unfolding: (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                 case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                         Data.Aeson.Types.Internal.emptyObject)
+                        `cast`
+                      (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                 Yesod.Core.Types.HCContent
+                   Network.HTTP.Types.Status.status204
+                   (Yesod.Core.Types.TypedContent
+                      dt
+                      (Yesod.Core.Types.ContentBuilder
+                         nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                         (GHC.Base.Nothing @ GHC.Types.Int))) } }) -}
+e07435b5ab2413c9fc369629ad636787
+  patchUsuarioByIdR4 ::
+    Foundation.R:EntityFieldUsuariotyp Data.Time.Calendar.Days.Day
+  {- HasNoCafRefs, Strictness: m6,
+     Unfolding: (Foundation.UsuarioDataNascimento
+                   @ Data.Time.Calendar.Days.Day
+                   Usuario.$s$WUsuarioDataNascimento2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Time.Calendar.Days.Day>_N <Data.Time.Calendar.Days.Day>_N)) -}
+c5a76f9d1333562732442c82f42370e9
+  patchUsuarioByIdR5 ::
+    Foundation.R:EntityFieldUsuariotyp Foundation.GeneroId
+  {- HasNoCafRefs, Strictness: m5,
+     Unfolding: (Foundation.UsuarioGenero
+                   @ Foundation.GeneroId
+                   Usuario.$s$WUsuarioGenero2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                       Foundation.Genero>_N <Database.Persist.Class.PersistEntity.Key
+                                                               Foundation.Genero>_N)) -}
+f3fb6f5273c80dde45e8767a4c6d9b94
+  patchUsuarioByIdR6 ::
+    Yesod.Core.Types.HandlerT
+      Foundation.App
+      GHC.Types.IO
+      (Data.Text.Internal.Text, Foundation.GeneroId,
+       Data.Time.Calendar.Days.Day)
+  {- Unfolding: (Yesod.Core.Json.requireJsonBody
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ (Data.Text.Internal.Text, Foundation.GeneroId,
+                      Data.Time.Calendar.Days.Day)
+                   (Usuario.$s$fMonadHandlerHandlerT @ Foundation.App)
+                   Usuario.$s$fFromJSON(,,)) -}
+4c9dc8795e20ec0c1c9ffaa3de91d9b2
+  postUsuarioR :: Foundation.Handler Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Usuario.postUsuarioR1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <Data.Aeson.Types.Internal.Value>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.App>_N
+                               <GHC.Types.IO>_N
+                               <Data.Aeson.Types.Internal.Value>_N))) -}
+c9ea5505b1469500282bebeb1c7a66e1
+  postUsuarioR1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Aeson.Types.Internal.Value #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (r :: Yesod.Core.Types.HandlerData
+                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Usuario.postUsuarioR3
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.App>_N <GHC.Types.IO>_N <Foundation.Usuario>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Foundation.Usuario>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Foundation.$fYesodPersistApp1
+                        @ (Database.Persist.Class.PersistEntity.Key Foundation.Usuario)
+                        (Usuario.postUsuarioR2 ipv1)
+                          `cast`
+                        (Control.Monad.Trans.Reader.ReaderT
+                           <*>_N
+                           (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                           <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                           <Database.Persist.Class.PersistEntity.Key Foundation.Usuario>_N)_R
+                        r
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.SomeException
+                   @ Data.Aeson.Types.Internal.Value
+                   (Yesod.Core.Types.$fExceptionHandlerContents_$ctoException
+                      (case Yesod.Core.Content.typeJson of dt { Data.ByteString.Internal.PS ipv4 ipv5 ipv6 ipv7 ->
+                       case Data.Aeson.Types.Internal.$sfromList1
+                              @ Data.Aeson.Types.Internal.Value
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Usuario.getBuscarUsuarioR3,
+                                  case ipv3
+                                         `cast`
+                                       (Trans
+                                            (Foundation.D:R:KeyUsuario0[0])
+                                            (Trans
+                                                 (Foundation.N:R:KeyUsuario[0])
+                                                 (Trans
+                                                      (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
+                                                      (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) of wild { GHC.Int.I64# x# ->
+                                  case GHC.Integer.Type.smallInteger x# of dt1 { DEFAULT ->
+                                  Data.Aeson.Types.Internal.Number
+                                    (Data.Scientific.Scientific dt1 0#) } })
+                                 (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair))
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                       case (Data.Aeson.Encoding.Builder.encodeToBuilder
+                               (Data.Aeson.Types.Internal.Object dt1))
+                              `cast`
+                            (Data.ByteString.Builder.Internal.N:Builder[0]) of nt { DEFAULT ->
+                       Yesod.Core.Types.HCContent
+                         Network.HTTP.Types.Status.status201
+                         (Yesod.Core.Types.TypedContent
+                            dt
+                            (Yesod.Core.Types.ContentBuilder
+                               nt `cast` (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))
+                               (GHC.Base.Nothing @ GHC.Types.Int))) } } }))
+                   ipv2 } }) -}
+4f4275c16ba744cac304e08c34519e44
+  postUsuarioR2 ::
+    Foundation.Usuario
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.Internal.SqlBackend
+         (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+         (Database.Persist.Class.PersistEntity.Key Foundation.Usuario)
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cinsert
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Foundation.Usuario
+                   (Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                      @ Foundation.App)
+                   Usuario.getBuscarUsuarioR6
+                     `cast`
+                   (GHC.Classes.(%,%)
+                      <Database.Persist.Class.PersistEntity.PersistEntity
+                         Foundation.Usuario>_N
+                      ((Data.Type.Equality.~)
+                         <*>_N
+                         (Sym (Foundation.D:R:PersistEntityBackendUsuario[0]))
+                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
+6cfefb0bb606d9051f8d60bf571025a0
+  postUsuarioR3 ::
+    Yesod.Core.Types.HandlerT
+      Foundation.App GHC.Types.IO Foundation.Usuario
+  {- Unfolding: (Yesod.Core.Json.requireJsonBody
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ Foundation.Usuario
+                   (Usuario.$s$fMonadHandlerHandlerT @ Foundation.App)
+                   Foundation.$fFromJSONUsuario) -}
+"SPEC/Usuario $fApplicativeHandlerT_$creturn @ IO _" [ALWAYS] forall @ site
+                                                                     ($dMonad :: GHC.Base.Monad
+                                                                                   GHC.Types.IO)
+  Yesod.Core.Types.$fApplicativeHandlerT_$creturn @ GHC.Types.IO
+                                                  @ site
+                                                  $dMonad
+  = Usuario.$s$fApplicativeHandlerT_$creturn @ site
+"SPEC/Usuario $fFromJSON(,,) @ Text @ (Key Genero) @ Day" [ALWAYS] forall ($dFromJSON2 :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                            Data.Time.Calendar.Days.Day)
+                                                                          ($dFromJSON1 :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                            (Database.Persist.Class.PersistEntity.Key
+                                                                                               Foundation.Genero))
+                                                                          ($dFromJSON :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                                           Data.Text.Internal.Text)
+  Data.Aeson.Types.FromJSON.$fFromJSON(,,) @ Data.Text.Internal.Text
+                                           @ (Database.Persist.Class.PersistEntity.Key
+                                                Foundation.Genero)
+                                           @ Data.Time.Calendar.Days.Day
+                                           $dFromJSON
+                                           $dFromJSON1
+                                           $dFromJSON2
+  = Usuario.$s$fFromJSON(,,)
+"SPEC/Usuario $fMonadHandlerHandlerT @ IO _" [ALWAYS] forall @ site
+                                                             ($d(%,,,,%) :: Control.Monad.Trans.Resource.MonadResourceBase
+                                                                              GHC.Types.IO)
+  Yesod.Core.Class.Handler.$fMonadHandlerHandlerT @ GHC.Types.IO
+                                                  @ site
+                                                  $d(%,,,,%)
+  = Usuario.$s$fMonadHandlerHandlerT @ site
+"SPEC/Usuario $fMonadHandlerT @ IO _" [ALWAYS] forall @ site
+                                                      ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT @ GHC.Types.IO @ site $dMonad
+  = Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT
+      @ site
+"SPEC/Usuario $fMonadHandlerT_$cfail @ IO _" [ALWAYS] forall @ site
+                                                             ($dMonad :: GHC.Base.Monad
+                                                                           GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT_$cfail @ GHC.Types.IO
+                                          @ site
+                                          $dMonad
+  = Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+      @ site
+"SPEC/Usuario $fMonadIOHandlerT @ IO _" [ALWAYS] forall @ site
+                                                        ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                        GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT @ GHC.Types.IO @ site $dMonadIO
+  = Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+      @ site
+"SPEC/Usuario $fMonadIOHandlerT_$cliftIO @ IO _" [ALWAYS] forall @ site
+                                                                 ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                 GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cliftIO @ GHC.Types.IO
+                                              @ site
+                                              $dMonadIO
+  = Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+      @ site
+"SPEC/Usuario $fMonadIOHandlerT_$cp1MonadLogger @ IO _" [ALWAYS] forall @ site
+                                                                        ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                        GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cp1MonadLogger @ GHC.Types.IO
+                                                     @ site
+                                                     $dMonadIO
+  = Usuario.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+      @ site
+"SPEC/Usuario length @ Vector @ Value" [ALWAYS] forall ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                      Data.Vector.Vector
+                                                                      Data.Aeson.Types.Internal.Value)
+  Data.Vector.Generic.length @ Data.Vector.Vector
+                             @ Data.Aeson.Types.Internal.Value
+                             $dVector
+  = Usuario.$s$fFromJSON(,,)_$slength
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

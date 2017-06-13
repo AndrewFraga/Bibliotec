@@ -31,7 +31,6 @@ getBuscarEditoraR pesquisa = do
     listaEditora <- runDB $ selectList [ EditoraNome %=. pesquisa ] []
     sendStatusJSON ok200 $ object [ "resp" .= listaEditora ]
 
-
 -- POST ------------------------------------------------------------------------
 postEditoraR :: Handler Value
 postEditoraR = do
