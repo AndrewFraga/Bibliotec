@@ -30,3 +30,11 @@ getBuscarAutorR :: Text -> Handler Value
 getBuscarAutorR pesquisa = do
     listaAutor <- runDB $ selectList [ AutorNome %=. pesquisa ] []
     sendStatusJSON ok200 $ object [ "resp" .= listaAutor ]
+
+
+-- POST ------------------------------------------------------------------------
+postAutorR :: Handler Value
+postAutorR = do
+    autor   <- requireJsonBody :: Handler Autor
+    autorId <- runDB $ insert autor
+    sendStatusJSON created201 $ object [ "resp" .= ( fromSqlKey autorId ) ]
