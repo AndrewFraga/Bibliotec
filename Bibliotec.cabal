@@ -13,6 +13,7 @@ executable          Bibliotec
                     Usuario
                     Autor
                     Categoria
+                    Editora
 
   ghc-options:      -Wall -fwarn-tabs -O2
   
