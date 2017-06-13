@@ -15,3 +15,5 @@
  /buscar/editora/#Text                            BuscarEditoraR                   OPTIONS GET
  
  /login                                           LoginR                           OPTIONS POST
+ 
+ /static                                          StaticR                          Static  getStatic
