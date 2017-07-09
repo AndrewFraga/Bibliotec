@@ -1,4 +1,4 @@
-![alt text](https://haskmaraan-romefeller.c9users.io/static/logo.png "Logo Bibliotec")
+![alt text](https://github.com/AndrewFraga/Bibliotec/blob/master/static/logo.png "Logo Bibliotec")
 
 > Bibliotec é uma API REST para o gerenciamento de uma biblioteca.
   Suas principais funcionalidades são:
